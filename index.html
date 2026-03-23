@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farsi Beginner — Learn Persian</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="logo"><span style="font-family:'Scheherazade New','Noto Nastaliq Urdu','Traditional Arabic',serif;direction:rtl">تعارف</span>academics</div>
+  </div>
+</header>
+
+<div class="app">
+
+  <nav class="nav">
+    <button class="nav-btn active" onclick="show('flash', this)">Flashcards</button>
+    <button class="nav-btn" onclick="show('vocab', this)">Vocabulary</button>
+    <button class="nav-btn" onclick="show('grammar', this)">Grammar</button>
+    <button class="nav-btn" onclick="show('sentences', this)">Exercises</button>
+    <button class="nav-btn" onclick="show('phrases', this)">Phrasebook</button>
+    <button class="nav-btn" onclick="show('alphabet', this)">Alphabet</button>
+  </nav>
+
+  <!-- FLASHCARDS -->
+  <div id="flash" class="screen active">
+    <div class="stat-row">
+      <div class="stat"><div class="stat-n" id="fc-done">0</div><div class="stat-l">done</div></div>
+      <div class="stat"><div class="stat-n" id="fc-correct">0</div><div class="stat-l">correct</div></div>
+      <div class="stat"><div class="stat-n" id="fc-left">30</div><div class="stat-l">remaining</div></div>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" id="fc-prog" style="width:0%"></div></div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.75rem;font-size:13px;color:var(--text-secondary)">
+      <span id="srs-info"></span>
+      <button id="srs-toggle-btn" class="btn" style="padding:3px 10px;font-size:12px;margin-left:auto" onclick="toggleSRSMode()">Alle üben</button>
+    </div>
+    <div class="flip-card" id="flipcard" onclick="flipCard()">
+      <div class="flip-inner" id="flipinner">
+        <div class="flip-front">
+          <div class="fc-direction-badge recognition" id="fc-direction-badge">Erkennung</div>
+          <div class="fc-topic-label" id="fc-topic"></div>
+          <div class="fc-roman" id="fc-roman"></div>
+          <div class="fc-hint" id="fc-hint">Bedeutung zeigen</div>
+        </div>
+        <div class="flip-back">
+          <div class="fc-meaning" id="fc-meaning"></div>
+          <div class="fc-note"    id="fc-note"></div>
+        </div>
+      </div>
+    </div>
+    <div class="fc-actions" id="fc-actions">
+      <button class="btn btn-danger"  onclick="rate(false)">Hard — repeat</button>
+      <button class="btn btn-success" onclick="rate(true)">Got it ✓</button>
+    </div>
+    <div class="done-msg" id="fc-done-msg">
+      <div class="done-title">Runde abgeschlossen!</div>
+      <div class="done-sub" id="fc-score-msg"></div>
+      <button class="btn btn-primary" onclick="restartFlash()">Nochmal</button>
+    </div>
+    <div class="done-msg" id="fc-caught-up">
+      <div class="done-title">Alles gelernt!</div>
+      <div class="done-sub">Heute keine Karten fällig. Komm morgen wieder oder übe alle Karten.</div>
+      <button class="btn btn-primary" onclick="toggleSRSMode()">Alle Karten üben</button>
+    </div>
+  </div>
+
+  <!-- VOCABULARY -->
+  <div id="vocab" class="screen">
+    <div class="section-title">Dictionary</div>
+    <div class="grid3" id="topic-grid"></div>
+  </div>
+
+  <!-- VOCAB MODAL -->
+  <div id="vocab-modal" class="vocab-modal-overlay" onclick="closeVocabModal(event)">
+    <div class="vocab-modal">
+      <div class="vocab-modal-header">
+        <span id="vocab-modal-title"></span>
+        <button class="vocab-modal-close" onclick="closeVocabModal()">✕</button>
+      </div>
+      <div class="vocab-modal-body" id="vocab-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- GRAMMAR -->
+  <div id="grammar" class="screen">
+    <div class="section-title">Grammar essentials</div>
+    <div id="grammar-content"></div>
+  </div>
+
+  <!-- SENTENCES -->
+  <div id="sentences" class="screen">
+    <div class="section-title">Fill-in-the-blank exercises</div>
+    <p style="font-size:14px;color:var(--text-secondary);margin-bottom:1.25rem">Type your answer and press Enter or click Check.</p>
+    <div id="sentence-content"></div>
+  </div>
+
+  <!-- PHRASEBOOK -->
+  <div id="phrases" class="screen">
+    <div class="section-title">Essential phrasebook</div>
+    <div id="phrase-content"></div>
+  </div>
+
+  <!-- ALPHABET -->
+  <div id="alphabet" class="screen">
+    <div class="section-title">Persisch-Arabisches Alphabet</div>
+    <div id="alphabet-content"></div>
+  </div>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/srs.js"></script>
+<script src="js/flashcard.js"></script>
+<script src="js/vocab.js"></script>
+<script src="js/grammar.js"></script>
+<script src="js/exercises.js"></script>
+<script src="js/phrases.js"></script>
+<script src="js/alphabet.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
