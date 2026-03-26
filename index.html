@@ -16,13 +16,23 @@
 
   <title>Farsi Beginner — Learn Persian</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script>
+    (function() {
+      const t = localStorage.getItem('farsi_theme');
+      if (t === 'dark')  document.documentElement.classList.add('theme-dark');
+      if (t === 'light') document.documentElement.classList.add('theme-light');
+    })();
+  </script>
 </head>
 <body>
 
 <header>
   <div class="header-inner">
     <div class="logo"><span style="font-family:'Scheherazade New','Noto Nastaliq Urdu','Traditional Arabic',serif;direction:rtl">تعارف</span>academics</div>
-    <div class="streak-badge" id="streak-badge">🔥 <span id="streak-count">0</span></div>
+    <div style="display:flex;align-items:center;gap:6px">
+      <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()" title="Dark/Light Mode">🌙</button>
+      <div class="streak-badge" id="streak-badge">🔥 <span id="streak-count">0</span></div>
+    </div>
   </div>
 </header>
 
@@ -30,12 +40,24 @@
 
   <nav class="nav">
     <button class="nav-btn active" onclick="show('flash', this)">Flashcards</button>
-    <button class="nav-btn" onclick="show('vocab', this)">Vocabulary</button>
-    <button class="nav-btn" onclick="show('grammar', this)">Grammar</button>
     <button class="nav-btn" onclick="show('sentences', this)">Exercises</button>
-    <button class="nav-btn" onclick="show('phrases', this)">Phrasebook</button>
     <button class="nav-btn" onclick="show('alphabet', this)">Alphabet</button>
   </nav>
+
+  <!-- FARSI 101 COLLAPSIBLE -->
+  <div class="farsi101-wrap">
+    <button class="farsi101-toggle" id="farsi101-toggle" onclick="toggleFarsi101()">
+      <span>Farsi 101</span>
+      <span class="farsi101-arrow" id="farsi101-arrow">▾</span>
+    </button>
+    <div class="farsi101-sub" id="farsi101-sub">
+      <div>
+        <button class="subnav-btn" onclick="showSub('grammar', this)">Grammar</button>
+        <button class="subnav-btn" onclick="showSub('phrases', this)">Phrasebook</button>
+        <button class="subnav-btn" onclick="showSub('vocab', this)">Vocabulary</button>
+      </div>
+    </div>
+  </div>
 
   <!-- DAILY PROGRESS -->
   <div id="daily-progress" class="daily-progress"></div>

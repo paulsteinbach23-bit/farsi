@@ -65,54 +65,55 @@
   --radius-pill: 100px;
 }
 
+/* Dark mode variables — applied by system preference OR manual toggle */
 @media (prefers-color-scheme: dark) {
-  :root {
+  html:not(.theme-light) {
     --bg:           #1E1D1B;
     --bg-secondary: #272521;
     --bg-tertiary:  #1A1917;
-
     --text:           #F2EFE8;
     --text-secondary: #A8A49C;
     --text-tertiary:  #6A6560;
-
-    --purple-50:  #2A2660;
-    --purple-100: #3D3890;
-    --purple-200: #5249B4;
-    --purple-400: #8F88E0;
-    --purple-600: #B8B3EE;
-    --purple-800: #D8D5F8;
-
-    --teal-50:  #0A3028;
-    --teal-600: #4DC9A0;
-    --teal-800: #8FE2CB;
-
-    --amber-50:  #3A2000;
-    --amber-600: #F0A830;
-    --amber-800: #F8CB7A;
-
-    --coral-50:  #3E1500;
-    --coral-600: #F09A78;
-    --coral-800: #F5C8B0;
-
-    --green-50:  #142800;
-    --green-400: #5AAD30;
-    --green-600: #90D460;
-    --green-800: #BEED96;
-    --red-50:    #3C1010;
-    --red-400:   #E05050;
-    --red-600:   #F09090;
-    --red-800:   #FAC8C8;
-
+    --purple-50:  #2A2660; --purple-100: #3D3890; --purple-200: #5249B4;
+    --purple-400: #8F88E0; --purple-600: #B8B3EE; --purple-800: #D8D5F8;
+    --teal-50:  #0A3028; --teal-600: #4DC9A0; --teal-800: #8FE2CB;
+    --amber-50:  #3A2000; --amber-600: #F0A830; --amber-800: #F8CB7A;
+    --coral-50:  #3E1500; --coral-600: #F09A78; --coral-800: #F5C8B0;
+    --green-50:  #142800; --green-400: #5AAD30; --green-600: #90D460; --green-800: #BEED96;
+    --red-50:    #3C1010; --red-400:   #E05050; --red-600:   #F09090; --red-800:   #FAC8C8;
     --grad-primary: linear-gradient(145deg, #6A64C0 0%, #4840A0 100%);
     --grad-success: linear-gradient(145deg, #3E9020 0%, #2C6A14 100%);
     --grad-danger:  linear-gradient(145deg, #C03030 0%, #8C1E1E 100%);
     --grad-teal:    linear-gradient(145deg, #1A8A66 0%, #0A5040 100%);
-
     --shadow-xs: 0 1px 3px rgba(0,0,0,0.3);
     --shadow-sm: 0 2px 10px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.2);
     --shadow-md: 0 6px 24px rgba(0,0,0,0.4), 0 2px 8px rgba(0,0,0,0.25);
     --shadow-lg: 0 12px 40px rgba(0,0,0,0.5), 0 4px 14px rgba(0,0,0,0.3);
   }
+}
+
+html.theme-dark {
+  --bg:           #1E1D1B;
+  --bg-secondary: #272521;
+  --bg-tertiary:  #1A1917;
+  --text:           #F2EFE8;
+  --text-secondary: #A8A49C;
+  --text-tertiary:  #6A6560;
+  --purple-50:  #2A2660; --purple-100: #3D3890; --purple-200: #5249B4;
+  --purple-400: #8F88E0; --purple-600: #B8B3EE; --purple-800: #D8D5F8;
+  --teal-50:  #0A3028; --teal-600: #4DC9A0; --teal-800: #8FE2CB;
+  --amber-50:  #3A2000; --amber-600: #F0A830; --amber-800: #F8CB7A;
+  --coral-50:  #3E1500; --coral-600: #F09A78; --coral-800: #F5C8B0;
+  --green-50:  #142800; --green-400: #5AAD30; --green-600: #90D460; --green-800: #BEED96;
+  --red-50:    #3C1010; --red-400:   #E05050; --red-600:   #F09090; --red-800:   #FAC8C8;
+  --grad-primary: linear-gradient(145deg, #6A64C0 0%, #4840A0 100%);
+  --grad-success: linear-gradient(145deg, #3E9020 0%, #2C6A14 100%);
+  --grad-danger:  linear-gradient(145deg, #C03030 0%, #8C1E1E 100%);
+  --grad-teal:    linear-gradient(145deg, #1A8A66 0%, #0A5040 100%);
+  --shadow-xs: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-sm: 0 2px 10px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.2);
+  --shadow-md: 0 6px 24px rgba(0,0,0,0.4), 0 2px 8px rgba(0,0,0,0.25);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.5), 0 4px 14px rgba(0,0,0,0.3);
 }
 
 /* ── Base ── */
@@ -191,6 +192,19 @@ header {
 }
 
 .dp-fill-done { background: var(--grad-success); }
+
+/* ── Theme toggle button ── */
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+  border-radius: var(--radius-md);
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+.theme-toggle-btn:hover { transform: scale(1.2); }
 
 /* ── Streak badge ── */
 .streak-badge {
@@ -272,7 +286,7 @@ header {
   display: flex;
   gap: 4px;
   flex-wrap: wrap;
-  margin-bottom: 1.5rem;
+  margin-bottom: 8px;
   background: var(--bg);
   padding: 6px;
   border-radius: var(--radius-xl);
@@ -304,6 +318,80 @@ header {
   background: var(--grad-primary);
   color: #fff;
   box-shadow: 0 4px 14px rgba(98, 86, 196, 0.35);
+  font-weight: 600;
+}
+
+/* ── Farsi 101 collapsible ── */
+.farsi101-wrap {
+  margin-bottom: 12px;
+}
+
+.farsi101-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 16px;
+  background: var(--bg);
+  border: none;
+  border-radius: var(--radius-xl);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: background 0.15s, border-radius 0.15s, color 0.15s;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.farsi101-toggle:hover { background: var(--bg-secondary); color: var(--text); }
+
+.farsi101-toggle.sub-active { color: var(--purple-600); }
+
+.farsi101-arrow {
+  font-size: 13px;
+  transition: transform 0.22s ease;
+  display: inline-block;
+}
+
+.farsi101-arrow.open { transform: rotate(180deg); }
+
+.farsi101-sub {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s ease;
+  background: var(--bg);
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.farsi101-sub.open { grid-template-rows: 1fr; }
+
+.farsi101-sub > * { overflow: hidden; }
+
+.subnav-btn {
+  display: block;
+  width: 100%;
+  padding: 11px 20px;
+  background: none;
+  border: none;
+  border-top: 1px solid var(--bg-tertiary);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: background 0.12s, color 0.12s;
+}
+
+.subnav-btn:hover { background: var(--bg-secondary); color: var(--text); }
+
+.subnav-btn.active {
+  background: var(--purple-50);
+  color: var(--purple-600);
   font-weight: 600;
 }
 
