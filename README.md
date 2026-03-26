@@ -32,7 +32,7 @@ farsi-app/
 │   ├── phrases.js      ← Phrasebook renderer
 │   └── app.js          ← Navigation + init
 ├── data/
-│   └── vocab.json      ← Source-of-truth vocabulary (mirrors js/data.js)
+│   └── persian_vocabulary.json ← Source-of-truth vocabulary (mirrors js/data.js)
 └── README.md
 ```
 

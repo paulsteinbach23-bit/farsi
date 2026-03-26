@@ -1,0 +1,7084 @@
+[
+  {
+    "rank": 1,
+    "farsi": "و",
+    "transliteration": "vav/va",
+    "deutsch": "und",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 2,
+    "farsi": "بودن",
+    "transliteration": "budan",
+    "deutsch": "sein",
+    "pos": "verb",
+    "present_stem": "باش"
+  },
+  {
+    "rank": 3,
+    "farsi": "از",
+    "transliteration": "az",
+    "deutsch": "von, aus",
+    "pos": "preposition"
+  },
+  {
+    "rank": 4,
+    "farsi": "به",
+    "transliteration": "be",
+    "deutsch": "zu, nach",
+    "pos": "preposition"
+  },
+  {
+    "rank": 5,
+    "farsi": "که",
+    "transliteration": "ke",
+    "deutsch": "dass, welcher",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 6,
+    "farsi": "این",
+    "transliteration": "in",
+    "deutsch": "dieser",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 7,
+    "farsi": "در",
+    "transliteration": "dar",
+    "deutsch": "in",
+    "pos": "preposition"
+  },
+  {
+    "rank": 8,
+    "farsi": "با",
+    "transliteration": "ba",
+    "deutsch": "mit",
+    "pos": "preposition"
+  },
+  {
+    "rank": 9,
+    "farsi": "شدن",
+    "transliteration": "shodan",
+    "deutsch": "werden",
+    "pos": "verb",
+    "present_stem": "شو"
+  },
+  {
+    "rank": 10,
+    "farsi": "برای",
+    "transliteration": "baraye",
+    "deutsch": "für",
+    "pos": "preposition"
+  },
+  {
+    "rank": 11,
+    "farsi": "خود",
+    "transliteration": "khod",
+    "deutsch": "selbst, eigen",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 12,
+    "farsi": "یک",
+    "transliteration": "yek",
+    "deutsch": "ein, eins",
+    "pos": "noun"
+  },
+  {
+    "rank": 13,
+    "farsi": "آن",
+    "transliteration": "an",
+    "deutsch": "jener, das",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 14,
+    "farsi": "خواستن",
+    "transliteration": "khastan",
+    "deutsch": "wollen",
+    "pos": "verb",
+    "present_stem": "خواه"
+  },
+  {
+    "rank": 15,
+    "farsi": "تا",
+    "transliteration": "ta",
+    "deutsch": "bis",
+    "pos": "preposition"
+  },
+  {
+    "rank": 16,
+    "farsi": "داشتن",
+    "transliteration": "dashtan",
+    "deutsch": "haben",
+    "pos": "verb",
+    "present_stem": "دار"
+  },
+  {
+    "rank": 17,
+    "farsi": "کردن",
+    "transliteration": "kardan",
+    "deutsch": "machen, tun",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 18,
+    "farsi": "کرد",
+    "transliteration": "kard",
+    "deutsch": "machte, tat",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 19,
+    "farsi": "بایستن",
+    "transliteration": "bayestan",
+    "deutsch": "müssen",
+    "pos": "verb",
+    "present_stem": "بای"
+  },
+  {
+    "rank": 20,
+    "farsi": "اول",
+    "transliteration": "avval",
+    "deutsch": "erst, erster",
+    "pos": "adjective"
+  },
+  {
+    "rank": 21,
+    "farsi": "بر",
+    "transliteration": "bar",
+    "deutsch": "auf, über",
+    "pos": "preposition"
+  },
+  {
+    "rank": 22,
+    "farsi": "سال",
+    "transliteration": "sal",
+    "deutsch": "Jahr",
+    "pos": "noun"
+  },
+  {
+    "rank": 23,
+    "farsi": "توانستن",
+    "transliteration": "tavanestan",
+    "deutsch": "können",
+    "pos": "verb",
+    "present_stem": "توان"
+  },
+  {
+    "rank": 24,
+    "farsi": "رسیدن",
+    "transliteration": "residan",
+    "deutsch": "ankommen, erreichen",
+    "pos": "verb",
+    "present_stem": "رس"
+  },
+  {
+    "rank": 25,
+    "farsi": "پس",
+    "transliteration": "pas",
+    "deutsch": "dann, also",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 26,
+    "farsi": "هر",
+    "transliteration": "har",
+    "deutsch": "jeder",
+    "pos": "quantifier"
+  },
+  {
+    "rank": 27,
+    "farsi": "کار",
+    "transliteration": "kar",
+    "deutsch": "Arbeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 28,
+    "farsi": "بیش",
+    "transliteration": "bish",
+    "deutsch": "mehr",
+    "pos": "adverb"
+  },
+  {
+    "rank": 29,
+    "farsi": "دیگر",
+    "transliteration": "digar",
+    "deutsch": "anderer",
+    "pos": "adjective"
+  },
+  {
+    "rank": 30,
+    "farsi": "روز",
+    "transliteration": "ruz",
+    "deutsch": "Tag",
+    "pos": "noun"
+  },
+  {
+    "rank": 31,
+    "farsi": "اما",
+    "transliteration": "amma",
+    "deutsch": "aber",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 32,
+    "farsi": "ما",
+    "transliteration": "ma",
+    "deutsch": "wir",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 33,
+    "farsi": "کشور",
+    "transliteration": "keshvar",
+    "deutsch": "Land",
+    "pos": "noun"
+  },
+  {
+    "rank": 34,
+    "farsi": "گرفتن",
+    "transliteration": "gereftan",
+    "deutsch": "nehmen, ergreifen",
+    "pos": "verb",
+    "present_stem": "گیر"
+  },
+  {
+    "rank": 35,
+    "farsi": "پیش",
+    "transliteration": "pish",
+    "deutsch": "vor, früher",
+    "pos": "adjective"
+  },
+  {
+    "rank": 36,
+    "farsi": "هم",
+    "transliteration": "ham",
+    "deutsch": "auch, beide",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 37,
+    "farsi": "گفتن",
+    "transliteration": "goftan",
+    "deutsch": "sagen",
+    "pos": "verb",
+    "present_stem": "گوی"
+  },
+  {
+    "rank": 38,
+    "farsi": "بزرگ",
+    "transliteration": "bozorg",
+    "deutsch": "groß",
+    "pos": "adjective"
+  },
+  {
+    "rank": 39,
+    "farsi": "دو",
+    "transliteration": "do",
+    "deutsch": "zwei",
+    "pos": "noun"
+  },
+  {
+    "rank": 40,
+    "farsi": "شهر",
+    "transliteration": "shahr",
+    "deutsch": "Stadt",
+    "pos": "noun"
+  },
+  {
+    "rank": 41,
+    "farsi": "یا",
+    "transliteration": "ya",
+    "deutsch": "oder",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 42,
+    "farsi": "دادن",
+    "transliteration": "dadan",
+    "deutsch": "geben",
+    "pos": "verb",
+    "present_stem": "ده"
+  },
+  {
+    "rank": 43,
+    "farsi": "ایران",
+    "transliteration": "iran",
+    "deutsch": "Iran",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 44,
+    "farsi": "نیز",
+    "transliteration": "niz",
+    "deutsch": "auch",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 45,
+    "farsi": "میان",
+    "transliteration": "miyan",
+    "deutsch": "zwischen",
+    "pos": "noun"
+  },
+  {
+    "rank": 46,
+    "farsi": "صورت",
+    "transliteration": "surat",
+    "deutsch": "Gesicht",
+    "pos": "noun"
+  },
+  {
+    "rank": 47,
+    "farsi": "راه",
+    "transliteration": "rah",
+    "deutsch": "Weg, Straße",
+    "pos": "noun"
+  },
+  {
+    "rank": 48,
+    "farsi": "داشته",
+    "transliteration": "dashte",
+    "deutsch": "gehabt",
+    "pos": "verb"
+  },
+  {
+    "rank": 49,
+    "farsi": "کند",
+    "transliteration": "konad",
+    "deutsch": "macht, tut",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 50,
+    "farsi": "داده",
+    "transliteration": "dade",
+    "deutsch": "gegeben",
+    "pos": "verb"
+  },
+  {
+    "rank": 51,
+    "farsi": "بسیار",
+    "transliteration": "besyar",
+    "deutsch": "sehr",
+    "pos": "adverb"
+  },
+  {
+    "rank": 52,
+    "farsi": "قبل",
+    "transliteration": "ghabl",
+    "deutsch": "vor, vorher",
+    "pos": "adjective"
+  },
+  {
+    "rank": 53,
+    "farsi": "مدت",
+    "transliteration": "moddat",
+    "deutsch": "Zeitraum, Dauer",
+    "pos": "noun"
+  },
+  {
+    "rank": 54,
+    "farsi": "او",
+    "transliteration": "u",
+    "deutsch": "er, sie",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 55,
+    "farsi": "نظر",
+    "transliteration": "nazar",
+    "deutsch": "Meinung",
+    "pos": "noun"
+  },
+  {
+    "rank": 56,
+    "farsi": "مردم",
+    "transliteration": "mardom",
+    "deutsch": "Menschen, Volk",
+    "pos": "noun"
+  },
+  {
+    "rank": 57,
+    "farsi": "تنها",
+    "transliteration": "tanha",
+    "deutsch": "nur, allein",
+    "pos": "adverb"
+  },
+  {
+    "rank": 58,
+    "farsi": "همه",
+    "transliteration": "hame",
+    "deutsch": "alle",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 59,
+    "farsi": "مهم",
+    "transliteration": "mohem",
+    "deutsch": "wichtig",
+    "pos": "adjective"
+  },
+  {
+    "rank": 60,
+    "farsi": "کم",
+    "transliteration": "kam",
+    "deutsch": "wenig, niedrig",
+    "pos": "adjective"
+  },
+  {
+    "rank": 61,
+    "farsi": "نزدیک",
+    "transliteration": "nazdik",
+    "deutsch": "nah, nächste",
+    "pos": "adjective"
+  },
+  {
+    "rank": 62,
+    "farsi": "عنوان",
+    "transliteration": "onvan",
+    "deutsch": "Titel",
+    "pos": "noun"
+  },
+  {
+    "rank": 63,
+    "farsi": "مورد",
+    "transliteration": "mowred",
+    "deutsch": "Fall, Bezug",
+    "pos": "noun"
+  },
+  {
+    "rank": 64,
+    "farsi": "بین",
+    "transliteration": "beyn",
+    "deutsch": "zwischen",
+    "pos": "preposition"
+  },
+  {
+    "rank": 65,
+    "farsi": "تمام",
+    "transliteration": "tamam",
+    "deutsch": "ganz, alle",
+    "pos": "adjective"
+  },
+  {
+    "rank": 66,
+    "farsi": "دست",
+    "transliteration": "dast",
+    "deutsch": "Hand",
+    "pos": "noun"
+  },
+  {
+    "rank": 67,
+    "farsi": "چند",
+    "transliteration": "chand",
+    "deutsch": "mehrere",
+    "pos": "noun"
+  },
+  {
+    "rank": 68,
+    "farsi": "قرار",
+    "transliteration": "gharar",
+    "deutsch": "Vereinbarung",
+    "pos": "noun"
+  },
+  {
+    "rank": 69,
+    "farsi": "همین",
+    "transliteration": "hamin",
+    "deutsch": "eben dieser",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 70,
+    "farsi": "گروه",
+    "transliteration": "goruh",
+    "deutsch": "Gruppe",
+    "pos": "noun"
+  },
+  {
+    "rank": 71,
+    "farsi": "برنامه",
+    "transliteration": "barname",
+    "deutsch": "Programm",
+    "pos": "noun"
+  },
+  {
+    "rank": 72,
+    "farsi": "بخش",
+    "transliteration": "bakhsh",
+    "deutsch": "Abschnitt, Teil",
+    "pos": "noun"
+  },
+  {
+    "rank": 73,
+    "farsi": "وجود",
+    "transliteration": "voyud",
+    "deutsch": "Existenz",
+    "pos": "noun"
+  },
+  {
+    "rank": 74,
+    "farsi": "مسئله",
+    "transliteration": "mas'ale",
+    "deutsch": "Problem, Frage",
+    "pos": "noun"
+  },
+  {
+    "rank": 75,
+    "farsi": "توجه",
+    "transliteration": "tavayyoh",
+    "deutsch": "Aufmerksamkeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 76,
+    "farsi": "امر",
+    "transliteration": "amr",
+    "deutsch": "Angelegenheit",
+    "pos": "noun"
+  },
+  {
+    "rank": 77,
+    "farsi": "اگر",
+    "transliteration": "agar",
+    "deutsch": "wenn, falls",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 78,
+    "farsi": "گذشته",
+    "transliteration": "gozashte",
+    "deutsch": "Vergangenheit",
+    "pos": "noun"
+  },
+  {
+    "rank": 79,
+    "farsi": "ماه",
+    "transliteration": "mah",
+    "deutsch": "Monat, Mond",
+    "pos": "noun"
+  },
+  {
+    "rank": 80,
+    "farsi": "طور",
+    "transliteration": "towr",
+    "deutsch": "Art, Weise",
+    "pos": "noun"
+  },
+  {
+    "rank": 81,
+    "farsi": "بدون",
+    "transliteration": "bedune",
+    "deutsch": "ohne",
+    "pos": "preposition"
+  },
+  {
+    "rank": 82,
+    "farsi": "رو",
+    "transliteration": "ru",
+    "deutsch": "auf, Gesicht",
+    "pos": "preposition"
+  },
+  {
+    "rank": 83,
+    "farsi": "زمان",
+    "transliteration": "zaman",
+    "deutsch": "Zeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 84,
+    "farsi": "هیچ",
+    "transliteration": "hich",
+    "deutsch": "kein, nichts",
+    "pos": "quantifier"
+  },
+  {
+    "rank": 85,
+    "farsi": "مشکل",
+    "transliteration": "moshkel",
+    "deutsch": "Problem, Schwierigkeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 86,
+    "farsi": "اسلامی",
+    "transliteration": "eslami",
+    "deutsch": "islamisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 87,
+    "farsi": "دانستن",
+    "transliteration": "danestan",
+    "deutsch": "wissen",
+    "pos": "verb",
+    "present_stem": "دان"
+  },
+  {
+    "rank": 88,
+    "farsi": "رئیس",
+    "transliteration": "ra'is",
+    "deutsch": "Leiter, Chef",
+    "pos": "noun"
+  },
+  {
+    "rank": 89,
+    "farsi": "بهتر",
+    "transliteration": "behtar",
+    "deutsch": "besser",
+    "pos": "adjective"
+  },
+  {
+    "rank": 90,
+    "farsi": "دولت",
+    "transliteration": "dowlat",
+    "deutsch": "Regierung",
+    "pos": "noun"
+  },
+  {
+    "rank": 91,
+    "farsi": "جمله",
+    "transliteration": "yomle",
+    "deutsch": "Satz, Gesamt",
+    "pos": "noun"
+  },
+  {
+    "rank": 92,
+    "farsi": "نتیجه",
+    "transliteration": "natiye",
+    "deutsch": "Ergebnis",
+    "pos": "noun"
+  },
+  {
+    "rank": 93,
+    "farsi": "آمدن",
+    "transliteration": "amadan",
+    "deutsch": "kommen",
+    "pos": "verb",
+    "present_stem": "آی"
+  },
+  {
+    "rank": 94,
+    "farsi": "سو",
+    "transliteration": "su",
+    "deutsch": "Seite, Richtung",
+    "pos": "noun"
+  },
+  {
+    "rank": 95,
+    "farsi": "یعنی",
+    "transliteration": "ya'ni",
+    "deutsch": "nämlich, das heißt",
+    "pos": "adverb"
+  },
+  {
+    "rank": 96,
+    "farsi": "بار",
+    "transliteration": "bar",
+    "deutsch": "Mal, Last",
+    "pos": "noun"
+  },
+  {
+    "rank": 97,
+    "farsi": "منطقه",
+    "transliteration": "mantaghe",
+    "deutsch": "Gebiet, Region",
+    "pos": "noun"
+  },
+  {
+    "rank": 98,
+    "farsi": "نفر",
+    "transliteration": "nafar",
+    "deutsch": "Person",
+    "pos": "noun"
+  },
+  {
+    "rank": 99,
+    "farsi": "یافتن",
+    "transliteration": "yaftan",
+    "deutsch": "finden",
+    "pos": "verb",
+    "present_stem": "یاب"
+  },
+  {
+    "rank": 100,
+    "farsi": "مختلف",
+    "transliteration": "mokhtalef",
+    "deutsch": "verschieden",
+    "pos": "adjective"
+  },
+  {
+    "rank": 101,
+    "farsi": "بالا",
+    "transliteration": "bala",
+    "deutsch": "oben, hoch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 102,
+    "farsi": "من",
+    "transliteration": "man",
+    "deutsch": "ich",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 103,
+    "farsi": "سیاسی",
+    "transliteration": "siyasi",
+    "deutsch": "politisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 104,
+    "farsi": "جهان",
+    "transliteration": "yahan",
+    "deutsch": "Welt",
+    "pos": "noun"
+  },
+  {
+    "rank": 105,
+    "farsi": "رابطه",
+    "transliteration": "rabete",
+    "deutsch": "Beziehung",
+    "pos": "noun"
+  },
+  {
+    "rank": 106,
+    "farsi": "شرط",
+    "transliteration": "shart",
+    "deutsch": "Bedingung",
+    "pos": "noun"
+  },
+  {
+    "rank": 107,
+    "farsi": "آمریکا",
+    "transliteration": "amrika",
+    "deutsch": "Amerika",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 108,
+    "farsi": "جدید",
+    "transliteration": "yadid",
+    "deutsch": "neu",
+    "pos": "adjective"
+  },
+  {
+    "rank": 109,
+    "farsi": "علی",
+    "transliteration": "ali",
+    "deutsch": "Ali",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 110,
+    "farsi": "چه",
+    "transliteration": "che",
+    "deutsch": "was",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 111,
+    "farsi": "اساس",
+    "transliteration": "asas",
+    "deutsch": "Grundlage, Basis",
+    "pos": "noun"
+  },
+  {
+    "rank": 112,
+    "farsi": "آوردن",
+    "transliteration": "avardan",
+    "deutsch": "bringen",
+    "pos": "verb",
+    "present_stem": "آور"
+  },
+  {
+    "rank": 113,
+    "farsi": "حال",
+    "transliteration": "hal",
+    "deutsch": "Zustand, Lage",
+    "pos": "noun"
+  },
+  {
+    "rank": 114,
+    "farsi": "وارد",
+    "transliteration": "vared",
+    "deutsch": "eintreten",
+    "pos": "adjective"
+  },
+  {
+    "rank": 115,
+    "farsi": "نشان دادن",
+    "transliteration": "neshan dadan",
+    "deutsch": "zeigen",
+    "pos": "verb",
+    "present_stem": "ده"
+  },
+  {
+    "rank": 116,
+    "farsi": "وی",
+    "transliteration": "vey",
+    "deutsch": "er, sie",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 117,
+    "farsi": "زمینه",
+    "transliteration": "zamine",
+    "deutsch": "Hintergrund, Bereich",
+    "pos": "noun"
+  },
+  {
+    "rank": 118,
+    "farsi": "بعد",
+    "transliteration": "ba'd",
+    "deutsch": "danach, dann",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 119,
+    "farsi": "سازمان",
+    "transliteration": "sazman",
+    "deutsch": "Organisation",
+    "pos": "noun"
+  },
+  {
+    "rank": 120,
+    "farsi": "فرد",
+    "transliteration": "fard",
+    "deutsch": "Einzelperson",
+    "pos": "noun"
+  },
+  {
+    "rank": 121,
+    "farsi": "تیم",
+    "transliteration": "tim",
+    "deutsch": "Team",
+    "pos": "noun"
+  },
+  {
+    "rank": 122,
+    "farsi": "جوان",
+    "transliteration": "yavan",
+    "deutsch": "jung",
+    "pos": "adjective"
+  },
+  {
+    "rank": 123,
+    "farsi": "ملی",
+    "transliteration": "melli",
+    "deutsch": "national",
+    "pos": "adjective"
+  },
+  {
+    "rank": 124,
+    "farsi": "شورا",
+    "transliteration": "shura",
+    "deutsch": "Rat",
+    "pos": "noun"
+  },
+  {
+    "rank": 125,
+    "farsi": "البته",
+    "transliteration": "albatte",
+    "deutsch": "natürlich, selbstverständlich",
+    "pos": "adverb"
+  },
+  {
+    "rank": 126,
+    "farsi": "دوم",
+    "transliteration": "dovvom",
+    "deutsch": "zweiter",
+    "pos": "adjective"
+  },
+  {
+    "rank": 127,
+    "farsi": "دلیل",
+    "transliteration": "dalil",
+    "deutsch": "Grund, Ursache",
+    "pos": "noun"
+  },
+  {
+    "rank": 128,
+    "farsi": "رفتن",
+    "transliteration": "raftan",
+    "deutsch": "gehen",
+    "pos": "verb",
+    "present_stem": "رو"
+  },
+  {
+    "rank": 129,
+    "farsi": "نقش",
+    "transliteration": "naghsh",
+    "deutsch": "Rolle",
+    "pos": "noun"
+  },
+  {
+    "rank": 130,
+    "farsi": "نام",
+    "transliteration": "nam",
+    "deutsch": "Name",
+    "pos": "noun"
+  },
+  {
+    "rank": 131,
+    "farsi": "ولی",
+    "transliteration": "vali",
+    "deutsch": "aber",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 132,
+    "farsi": "دوره",
+    "transliteration": "dowre",
+    "deutsch": "Periode, Zeitraum",
+    "pos": "noun"
+  },
+  {
+    "rank": 133,
+    "farsi": "وزیر",
+    "transliteration": "vazir",
+    "deutsch": "Minister",
+    "pos": "noun"
+  },
+  {
+    "rank": 134,
+    "farsi": "استفاده",
+    "transliteration": "estefade",
+    "deutsch": "Nutzung, Verwendung",
+    "pos": "noun"
+  },
+  {
+    "rank": 135,
+    "farsi": "آقا",
+    "transliteration": "agha",
+    "deutsch": "Herr",
+    "pos": "noun"
+  },
+  {
+    "rank": 136,
+    "farsi": "حرکت",
+    "transliteration": "harekat",
+    "deutsch": "Bewegung",
+    "pos": "noun"
+  },
+  {
+    "rank": 137,
+    "farsi": "قرار گرفتن",
+    "transliteration": "gharar gereftan",
+    "deutsch": "sich befinden",
+    "pos": "verb",
+    "present_stem": "گیر"
+  },
+  {
+    "rank": 138,
+    "farsi": "شرکت",
+    "transliteration": "sherkat",
+    "deutsch": "Unternehmen, Firma",
+    "pos": "noun"
+  },
+  {
+    "rank": 139,
+    "farsi": "طرح",
+    "transliteration": "tarh",
+    "deutsch": "Plan, Entwurf",
+    "pos": "noun"
+  },
+  {
+    "rank": 140,
+    "farsi": "تهران",
+    "transliteration": "tehran",
+    "deutsch": "Teheran",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 141,
+    "farsi": "برخی",
+    "transliteration": "barkhi",
+    "deutsch": "manche, einige",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 142,
+    "farsi": "سه",
+    "transliteration": "se",
+    "deutsch": "drei",
+    "pos": "noun"
+  },
+  {
+    "rank": 143,
+    "farsi": "در حال",
+    "transliteration": "darhal",
+    "deutsch": "gerade dabei",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 144,
+    "farsi": "حدود",
+    "transliteration": "hodud",
+    "deutsch": "Grenzen, Bereich",
+    "pos": "noun"
+  },
+  {
+    "rank": 145,
+    "farsi": "ایجاد",
+    "transliteration": "iyad",
+    "deutsch": "Schöpfung, Entstehung",
+    "pos": "noun"
+  },
+  {
+    "rank": 146,
+    "farsi": "کس",
+    "transliteration": "kas",
+    "deutsch": "Person, jemand",
+    "pos": "noun"
+  },
+  {
+    "rank": 147,
+    "farsi": "بردن",
+    "transliteration": "bordan",
+    "deutsch": "mitnehmen",
+    "pos": "verb",
+    "present_stem": "بر"
+  },
+  {
+    "rank": 148,
+    "farsi": "شما",
+    "transliteration": "shoma",
+    "deutsch": "Sie, ihr",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 149,
+    "farsi": "اقتصادی",
+    "transliteration": "eghtesadi",
+    "deutsch": "wirtschaftlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 150,
+    "farsi": "هزار",
+    "transliteration": "hezar",
+    "deutsch": "tausend",
+    "pos": "noun"
+  },
+  {
+    "rank": 151,
+    "farsi": "حضور",
+    "transliteration": "hozur",
+    "deutsch": "Anwesenheit",
+    "pos": "noun"
+  },
+  {
+    "rank": 152,
+    "farsi": "نیرو",
+    "transliteration": "niru",
+    "deutsch": "Kraft, Energie",
+    "pos": "noun"
+  },
+  {
+    "rank": 153,
+    "farsi": "عضو",
+    "transliteration": "ozv",
+    "deutsch": "Mitglied",
+    "pos": "noun"
+  },
+  {
+    "rank": 154,
+    "farsi": "فعالیت",
+    "transliteration": "fa'aliyat",
+    "deutsch": "Aktivität",
+    "pos": "noun"
+  },
+  {
+    "rank": 155,
+    "farsi": "تن",
+    "transliteration": "tan",
+    "deutsch": "Körper, Tonne",
+    "pos": "noun"
+  },
+  {
+    "rank": 156,
+    "farsi": "اشاره",
+    "transliteration": "eshare",
+    "deutsch": "Hinweis, Andeutung",
+    "pos": "noun"
+  },
+  {
+    "rank": 157,
+    "farsi": "چون",
+    "transliteration": "chun",
+    "deutsch": "wie, weil",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 158,
+    "farsi": "حاضر",
+    "transliteration": "hazer",
+    "deutsch": "anwesend, bereit",
+    "pos": "adjective"
+  },
+  {
+    "rank": 159,
+    "farsi": "درصد",
+    "transliteration": "darsad",
+    "deutsch": "Prozent",
+    "pos": "noun"
+  },
+  {
+    "rank": 160,
+    "farsi": "حتی",
+    "transliteration": "hatta",
+    "deutsch": "sogar",
+    "pos": "adverb"
+  },
+  {
+    "rank": 161,
+    "farsi": "محمد",
+    "transliteration": "mohammad",
+    "deutsch": "Mohammad",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 162,
+    "farsi": "وجود داشتن",
+    "transliteration": "voyud dashtan",
+    "deutsch": "existieren",
+    "pos": "verb",
+    "present_stem": "دار"
+  },
+  {
+    "rank": 163,
+    "farsi": "پایان",
+    "transliteration": "payan",
+    "deutsch": "Ende",
+    "pos": "noun"
+  },
+  {
+    "rank": 164,
+    "farsi": "همچنین",
+    "transliteration": "hamchenin",
+    "deutsch": "außerdem, ebenfalls",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 165,
+    "farsi": "قانون",
+    "transliteration": "ghanun",
+    "deutsch": "Gesetz",
+    "pos": "noun"
+  },
+  {
+    "rank": 166,
+    "farsi": "جا",
+    "transliteration": "ya",
+    "deutsch": "Platz, Ort",
+    "pos": "noun"
+  },
+  {
+    "rank": 167,
+    "farsi": "ممکن",
+    "transliteration": "momken",
+    "deutsch": "möglich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 168,
+    "farsi": "هدف",
+    "transliteration": "hadaf",
+    "deutsch": "Ziel",
+    "pos": "noun"
+  },
+  {
+    "rank": 169,
+    "farsi": "انجام دادن",
+    "transliteration": "anyam dadan",
+    "deutsch": "ausführen, erledigen",
+    "pos": "verb",
+    "present_stem": "ده"
+  },
+  {
+    "rank": 170,
+    "farsi": "بزرگی",
+    "transliteration": "bozorgi",
+    "deutsch": "Größe",
+    "pos": "noun"
+  },
+  {
+    "rank": 171,
+    "farsi": "جامعه",
+    "transliteration": "yame'e",
+    "deutsch": "Gesellschaft",
+    "pos": "noun"
+  },
+  {
+    "rank": 172,
+    "farsi": "حق",
+    "transliteration": "hagh",
+    "deutsch": "Recht",
+    "pos": "noun"
+  },
+  {
+    "rank": 173,
+    "farsi": "اثر",
+    "transliteration": "asar",
+    "deutsch": "Wirkung, Einfluss",
+    "pos": "noun"
+  },
+  {
+    "rank": 174,
+    "farsi": "بحث",
+    "transliteration": "bahs",
+    "deutsch": "Diskussion",
+    "pos": "noun"
+  },
+  {
+    "rank": 175,
+    "farsi": "ارزش",
+    "transliteration": "arzesh",
+    "deutsch": "Wert",
+    "pos": "noun"
+  },
+  {
+    "rank": 176,
+    "farsi": "موضوع",
+    "transliteration": "mowzu'",
+    "deutsch": "Thema, Gegenstand",
+    "pos": "noun"
+  },
+  {
+    "rank": 177,
+    "farsi": "طرف",
+    "transliteration": "taraf",
+    "deutsch": "Seite, Richtung",
+    "pos": "noun"
+  },
+  {
+    "rank": 178,
+    "farsi": "نه",
+    "transliteration": "na/noh",
+    "deutsch": "nein, neun",
+    "pos": "adverb"
+  },
+  {
+    "rank": 179,
+    "farsi": "آب",
+    "transliteration": "ab",
+    "deutsch": "Wasser",
+    "pos": "noun"
+  },
+  {
+    "rank": 180,
+    "farsi": "آینده",
+    "transliteration": "ayande",
+    "deutsch": "Zukunft",
+    "pos": "noun"
+  },
+  {
+    "rank": 181,
+    "farsi": "نوع",
+    "transliteration": "now'",
+    "deutsch": "Art, Typ",
+    "pos": "noun"
+  },
+  {
+    "rank": 182,
+    "farsi": "مقام",
+    "transliteration": "magham",
+    "deutsch": "Rang, Beamter",
+    "pos": "noun"
+  },
+  {
+    "rank": 183,
+    "farsi": "زیادی",
+    "transliteration": "ziyadi",
+    "deutsch": "übermäßig",
+    "pos": "adjective"
+  },
+  {
+    "rank": 184,
+    "farsi": "جهت",
+    "transliteration": "yahat",
+    "deutsch": "Richtung, Grund",
+    "pos": "noun"
+  },
+  {
+    "rank": 185,
+    "farsi": "اجرا",
+    "transliteration": "eyra",
+    "deutsch": "Durchführung, Umsetzung",
+    "pos": "noun"
+  },
+  {
+    "rank": 186,
+    "farsi": "اصلی",
+    "transliteration": "asli",
+    "deutsch": "hauptsächlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 187,
+    "farsi": "مجلس",
+    "transliteration": "mayles",
+    "deutsch": "Parlament",
+    "pos": "noun"
+  },
+  {
+    "rank": 188,
+    "farsi": "آخر",
+    "transliteration": "akhar",
+    "deutsch": "letzte, final",
+    "pos": "adjective"
+  },
+  {
+    "rank": 189,
+    "farsi": "عمل",
+    "transliteration": "amal",
+    "deutsch": "Handlung",
+    "pos": "noun"
+  },
+  {
+    "rank": 190,
+    "farsi": "زندگی",
+    "transliteration": "zendegi",
+    "deutsch": "Leben",
+    "pos": "noun"
+  },
+  {
+    "rank": 191,
+    "farsi": "چنین",
+    "transliteration": "chenin",
+    "deutsch": "solch",
+    "pos": "adverb"
+  },
+  {
+    "rank": 192,
+    "farsi": "رساندن",
+    "transliteration": "resandan",
+    "deutsch": "liefern, übermitteln",
+    "pos": "verb",
+    "present_stem": "رسان"
+  },
+  {
+    "rank": 193,
+    "farsi": "نظام",
+    "transliteration": "nezam",
+    "deutsch": "System, Ordnung",
+    "pos": "noun"
+  },
+  {
+    "rank": 194,
+    "farsi": "گذاشتن",
+    "transliteration": "gozashtan",
+    "deutsch": "legen, lassen",
+    "pos": "verb",
+    "present_stem": "گذار"
+  },
+  {
+    "rank": 195,
+    "farsi": "شکل",
+    "transliteration": "shekl",
+    "deutsch": "Form, Gestalt",
+    "pos": "noun"
+  },
+  {
+    "rank": 196,
+    "farsi": "نسبت",
+    "transliteration": "nesbat",
+    "deutsch": "Verhältnis, Beziehung",
+    "pos": "noun"
+  },
+  {
+    "rank": 197,
+    "farsi": "دنیا",
+    "transliteration": "donya",
+    "deutsch": "Welt",
+    "pos": "noun"
+  },
+  {
+    "rank": 198,
+    "farsi": "خارجی",
+    "transliteration": "khareyi",
+    "deutsch": "ausländisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 199,
+    "farsi": "همراه",
+    "transliteration": "hamrah",
+    "deutsch": "zusammen",
+    "pos": "adjective"
+  },
+  {
+    "rank": 200,
+    "farsi": "کتاب",
+    "transliteration": "ketab",
+    "deutsch": "Buch",
+    "pos": "noun"
+  },
+  {
+    "rank": 201,
+    "farsi": "امروز",
+    "transliteration": "emruz",
+    "deutsch": "heute",
+    "pos": "adverb"
+  },
+  {
+    "rank": 202,
+    "farsi": "دیدن",
+    "transliteration": "didan",
+    "deutsch": "sehen",
+    "pos": "verb",
+    "present_stem": "بین"
+  },
+  {
+    "rank": 203,
+    "farsi": "جهانی",
+    "transliteration": "yahani",
+    "deutsch": "global, weltweit",
+    "pos": "adjective"
+  },
+  {
+    "rank": 204,
+    "farsi": "توسعه",
+    "transliteration": "towse'e",
+    "deutsch": "Entwicklung",
+    "pos": "noun"
+  },
+  {
+    "rank": 205,
+    "farsi": "ویژه",
+    "transliteration": "vizhe",
+    "deutsch": "besonders, speziell",
+    "pos": "adjective"
+  },
+  {
+    "rank": 206,
+    "farsi": "انجام",
+    "transliteration": "anyam",
+    "deutsch": "Ausführung, Durchführung",
+    "pos": "noun"
+  },
+  {
+    "rank": 207,
+    "farsi": "مرکز",
+    "transliteration": "markaz",
+    "deutsch": "Zentrum",
+    "pos": "noun"
+  },
+  {
+    "rank": 208,
+    "farsi": "اعلام",
+    "transliteration": "e'lam",
+    "deutsch": "Ankündigung",
+    "pos": "noun"
+  },
+  {
+    "rank": 209,
+    "farsi": "اطلاع",
+    "transliteration": "ettela'",
+    "deutsch": "Information",
+    "pos": "noun"
+  },
+  {
+    "rank": 210,
+    "farsi": "داخل",
+    "transliteration": "dakhel",
+    "deutsch": "innen, innerhalb",
+    "pos": "noun"
+  },
+  {
+    "rank": 211,
+    "farsi": "پرداختن",
+    "transliteration": "pardakhtan",
+    "deutsch": "bezahlen, sich befassen",
+    "pos": "verb",
+    "present_stem": "پرداز"
+  },
+  {
+    "rank": 212,
+    "farsi": "کاملاً",
+    "transliteration": "kamelan",
+    "deutsch": "vollständig",
+    "pos": "adverb"
+  },
+  {
+    "rank": 213,
+    "farsi": "گفته",
+    "transliteration": "gofte",
+    "deutsch": "Aussage",
+    "pos": "noun"
+  },
+  {
+    "rank": 214,
+    "farsi": "زن",
+    "transliteration": "zan",
+    "deutsch": "Frau, Ehefrau",
+    "pos": "noun"
+  },
+  {
+    "rank": 215,
+    "farsi": "گزارش",
+    "transliteration": "gozaresh",
+    "deutsch": "Bericht",
+    "pos": "noun"
+  },
+  {
+    "rank": 216,
+    "farsi": "سر",
+    "transliteration": "sar",
+    "deutsch": "Kopf, Geheimnis",
+    "pos": "noun"
+  },
+  {
+    "rank": 217,
+    "farsi": "دست دادن",
+    "transliteration": "dast dadan",
+    "deutsch": "Händeschütteln, verlieren",
+    "pos": "verb",
+    "present_stem": "ده"
+  },
+  {
+    "rank": 218,
+    "farsi": "هنوز",
+    "transliteration": "hanuz",
+    "deutsch": "noch, immer noch",
+    "pos": "adverb"
+  },
+  {
+    "rank": 219,
+    "farsi": "جمهوری",
+    "transliteration": "yomhuri",
+    "deutsch": "Republik",
+    "pos": "noun"
+  },
+  {
+    "rank": 220,
+    "farsi": "تغییر",
+    "transliteration": "taghyir",
+    "deutsch": "Veränderung",
+    "pos": "noun"
+  },
+  {
+    "rank": 221,
+    "farsi": "تعداد",
+    "transliteration": "te'dad",
+    "deutsch": "Anzahl",
+    "pos": "noun"
+  },
+  {
+    "rank": 222,
+    "farsi": "میلیون",
+    "transliteration": "milyun",
+    "deutsch": "Million",
+    "pos": "noun"
+  },
+  {
+    "rank": 223,
+    "farsi": "سیاست",
+    "transliteration": "siyasat",
+    "deutsch": "Politik",
+    "pos": "noun"
+  },
+  {
+    "rank": 224,
+    "farsi": "بررسی",
+    "transliteration": "barresi",
+    "deutsch": "Überprüfung",
+    "pos": "noun"
+  },
+  {
+    "rank": 225,
+    "farsi": "اقدام",
+    "transliteration": "eghdam",
+    "deutsch": "Maßnahme",
+    "pos": "noun"
+  },
+  {
+    "rank": 226,
+    "farsi": "افزایش",
+    "transliteration": "afzayesh",
+    "deutsch": "Zunahme, Anstieg",
+    "pos": "noun"
+  },
+  {
+    "rank": 227,
+    "farsi": "برابر",
+    "transliteration": "barabar",
+    "deutsch": "gleich, gegenüber",
+    "pos": "adjective"
+  },
+  {
+    "rank": 228,
+    "farsi": "درباره",
+    "transliteration": "darbare",
+    "deutsch": "über, bezüglich",
+    "pos": "preposition"
+  },
+  {
+    "rank": 229,
+    "farsi": "گونه",
+    "transliteration": "gune",
+    "deutsch": "Art, Spezies",
+    "pos": "noun"
+  },
+  {
+    "rank": 230,
+    "farsi": "سوم",
+    "transliteration": "sevvom",
+    "deutsch": "dritter",
+    "pos": "adjective"
+  },
+  {
+    "rank": 231,
+    "farsi": "خدمت",
+    "transliteration": "khedmat",
+    "deutsch": "Dienst",
+    "pos": "noun"
+  },
+  {
+    "rank": 232,
+    "farsi": "خبر",
+    "transliteration": "khabar",
+    "deutsch": "Nachricht",
+    "pos": "noun"
+  },
+  {
+    "rank": 233,
+    "farsi": "ایرانی",
+    "transliteration": "irani",
+    "deutsch": "iranisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 234,
+    "farsi": "کامل",
+    "transliteration": "kamel",
+    "deutsch": "vollständig",
+    "pos": "adjective"
+  },
+  {
+    "rank": 235,
+    "farsi": "آزاد",
+    "transliteration": "azad",
+    "deutsch": "frei",
+    "pos": "adjective"
+  },
+  {
+    "rank": 236,
+    "farsi": "منبع",
+    "transliteration": "manba'",
+    "deutsch": "Quelle",
+    "pos": "noun"
+  },
+  {
+    "rank": 237,
+    "farsi": "خط",
+    "transliteration": "khatt",
+    "deutsch": "Linie",
+    "pos": "noun"
+  },
+  {
+    "rank": 238,
+    "farsi": "قدرت",
+    "transliteration": "ghodrat",
+    "deutsch": "Macht, Stärke",
+    "pos": "noun"
+  },
+  {
+    "rank": 239,
+    "farsi": "نیاز",
+    "transliteration": "niyaz",
+    "deutsch": "Bedarf, Bedürfnis",
+    "pos": "noun"
+  },
+  {
+    "rank": 240,
+    "farsi": "مسئول",
+    "transliteration": "mas'ul",
+    "deutsch": "verantwortlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 241,
+    "farsi": "نماینده",
+    "transliteration": "namayande",
+    "deutsch": "Vertreter",
+    "pos": "noun"
+  },
+  {
+    "rank": 242,
+    "farsi": "ساعت",
+    "transliteration": "sa'at",
+    "deutsch": "Stunde, Uhr",
+    "pos": "noun"
+  },
+  {
+    "rank": 243,
+    "farsi": "زمین",
+    "transliteration": "zamin",
+    "deutsch": "Boden, Erde",
+    "pos": "noun"
+  },
+  {
+    "rank": 244,
+    "farsi": "ملت",
+    "transliteration": "mellat",
+    "deutsch": "Nation",
+    "pos": "noun"
+  },
+  {
+    "rank": 245,
+    "farsi": "میزان",
+    "transliteration": "mizan",
+    "deutsch": "Rate, Maß",
+    "pos": "noun"
+  },
+  {
+    "rank": 246,
+    "farsi": "تحت",
+    "transliteration": "taht",
+    "deutsch": "unter",
+    "pos": "preposition"
+  },
+  {
+    "rank": 247,
+    "farsi": "اختیار",
+    "transliteration": "ekhtiyar",
+    "deutsch": "Autorität, Befugnis",
+    "pos": "noun"
+  },
+  {
+    "rank": 248,
+    "farsi": "نخست",
+    "transliteration": "nokhost",
+    "deutsch": "zuerst, zunächst",
+    "pos": "adverb"
+  },
+  {
+    "rank": 249,
+    "farsi": "ارائه",
+    "transliteration": "era'e",
+    "deutsch": "Präsentation",
+    "pos": "noun"
+  },
+  {
+    "rank": 250,
+    "farsi": "باعث",
+    "transliteration": "ba'es",
+    "deutsch": "Ursache",
+    "pos": "noun"
+  },
+  {
+    "rank": 251,
+    "farsi": "رشد",
+    "transliteration": "roshd",
+    "deutsch": "Wachstum",
+    "pos": "noun"
+  },
+  {
+    "rank": 252,
+    "farsi": "دنبال",
+    "transliteration": "dombal",
+    "deutsch": "verfolgen",
+    "pos": "noun"
+  },
+  {
+    "rank": 253,
+    "farsi": "انتخاب",
+    "transliteration": "entekhab",
+    "deutsch": "Auswahl, Wahl",
+    "pos": "noun"
+  },
+  {
+    "rank": 254,
+    "farsi": "گفت‌وگو",
+    "transliteration": "goftogu",
+    "deutsch": "Gespräch",
+    "pos": "noun"
+  },
+  {
+    "rank": 255,
+    "farsi": "موفق",
+    "transliteration": "movaffagh",
+    "deutsch": "erfolgreich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 256,
+    "farsi": "روزنامه",
+    "transliteration": "ruzname",
+    "deutsch": "Zeitung",
+    "pos": "noun"
+  },
+  {
+    "rank": 257,
+    "farsi": "گذشتن",
+    "transliteration": "gozashtan",
+    "deutsch": "vergehen, passieren",
+    "pos": "verb",
+    "present_stem": "گذر"
+  },
+  {
+    "rank": 258,
+    "farsi": "طی",
+    "transliteration": "tey",
+    "deutsch": "während",
+    "pos": "preposition"
+  },
+  {
+    "rank": 259,
+    "farsi": "خاطر",
+    "transliteration": "khater",
+    "deutsch": "Gedanke, Grund",
+    "pos": "noun"
+  },
+  {
+    "rank": 260,
+    "farsi": "سمت",
+    "transliteration": "samt",
+    "deutsch": "Seite, Position",
+    "pos": "noun"
+  },
+  {
+    "rank": 261,
+    "farsi": "عامل",
+    "transliteration": "amel",
+    "deutsch": "Faktor, Agent",
+    "pos": "noun"
+  },
+  {
+    "rank": 262,
+    "farsi": "تأثیر",
+    "transliteration": "ta'sir",
+    "deutsch": "Einfluss, Wirkung",
+    "pos": "noun"
+  },
+  {
+    "rank": 263,
+    "farsi": "جنگ",
+    "transliteration": "yang",
+    "deutsch": "Krieg",
+    "pos": "noun"
+  },
+  {
+    "rank": 264,
+    "farsi": "ساخت",
+    "transliteration": "sakht",
+    "deutsch": "Konstruktion, Struktur",
+    "pos": "noun",
+    "present_stem": "ساز"
+  },
+  {
+    "rank": 265,
+    "farsi": "طریق",
+    "transliteration": "tarigh",
+    "deutsch": "Weg, Methode",
+    "pos": "noun"
+  },
+  {
+    "rank": 266,
+    "farsi": "کاهش",
+    "transliteration": "kahesh",
+    "deutsch": "Rückgang, Abnahme",
+    "pos": "noun"
+  },
+  {
+    "rank": 267,
+    "farsi": "اخیر",
+    "transliteration": "akhir",
+    "deutsch": "jüngst, kürzlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 268,
+    "farsi": "خارج",
+    "transliteration": "kharey",
+    "deutsch": "außen, extern",
+    "pos": "noun"
+  },
+  {
+    "rank": 269,
+    "farsi": "هفته",
+    "transliteration": "hafte",
+    "deutsch": "Woche",
+    "pos": "noun"
+  },
+  {
+    "rank": 270,
+    "farsi": "آغاز",
+    "transliteration": "aghaz",
+    "deutsch": "Beginn, Anfang",
+    "pos": "noun"
+  },
+  {
+    "rank": 271,
+    "farsi": "مرحله",
+    "transliteration": "marhale",
+    "deutsch": "Phase, Stufe",
+    "pos": "noun"
+  },
+  {
+    "rank": 272,
+    "farsi": "همان",
+    "transliteration": "haman",
+    "deutsch": "eben jener",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 273,
+    "farsi": "صنعت",
+    "transliteration": "san'at",
+    "deutsch": "Industrie",
+    "pos": "noun"
+  },
+  {
+    "rank": 274,
+    "farsi": "تشکیل",
+    "transliteration": "tashkil",
+    "deutsch": "Gründung, Bildung",
+    "pos": "noun"
+  },
+  {
+    "rank": 275,
+    "farsi": "همکاری",
+    "transliteration": "hamkari",
+    "deutsch": "Zusammenarbeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 276,
+    "farsi": "اسلام",
+    "transliteration": "eslam",
+    "deutsch": "Islam",
+    "pos": "noun"
+  },
+  {
+    "rank": 277,
+    "farsi": "افزودن",
+    "transliteration": "afzudan",
+    "deutsch": "hinzufügen",
+    "pos": "verb",
+    "present_stem": "افزا"
+  },
+  {
+    "rank": 278,
+    "farsi": "حسن",
+    "transliteration": "hasan",
+    "deutsch": "Hasan, Tugend",
+    "pos": "noun"
+  },
+  {
+    "rank": 279,
+    "farsi": "یافته",
+    "transliteration": "yafte",
+    "deutsch": "gefunden, Ergebnis",
+    "pos": "noun"
+  },
+  {
+    "rank": 280,
+    "farsi": "خواندن",
+    "transliteration": "khandan",
+    "deutsch": "lesen",
+    "pos": "verb",
+    "present_stem": "خوان"
+  },
+  {
+    "rank": 281,
+    "farsi": "غیر",
+    "transliteration": "gheyr",
+    "deutsch": "anderer",
+    "pos": "noun"
+  },
+  {
+    "rank": 282,
+    "farsi": "خانواده",
+    "transliteration": "khanevade",
+    "deutsch": "Familie",
+    "pos": "noun"
+  },
+  {
+    "rank": 283,
+    "farsi": "دور",
+    "transliteration": "dowr",
+    "deutsch": "Periode, weit",
+    "pos": "adjective"
+  },
+  {
+    "rank": 284,
+    "farsi": "نقطه",
+    "transliteration": "noghte",
+    "deutsch": "Punkt",
+    "pos": "noun"
+  },
+  {
+    "rank": 285,
+    "farsi": "بازی",
+    "transliteration": "bazi",
+    "deutsch": "Spiel",
+    "pos": "noun"
+  },
+  {
+    "rank": 286,
+    "farsi": "تولید",
+    "transliteration": "towlid",
+    "deutsch": "Produktion",
+    "pos": "noun"
+  },
+  {
+    "rank": 287,
+    "farsi": "برگزار",
+    "transliteration": "bargozar",
+    "deutsch": "abgehalten",
+    "pos": "adjective"
+  },
+  {
+    "rank": 288,
+    "farsi": "پیدا کردن",
+    "transliteration": "peyda kardan",
+    "deutsch": "finden",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 289,
+    "farsi": "وزارت",
+    "transliteration": "vezarat",
+    "deutsch": "Ministerium",
+    "pos": "noun"
+  },
+  {
+    "rank": 290,
+    "farsi": "دیده",
+    "transliteration": "dide",
+    "deutsch": "Auge, gesehen",
+    "pos": "noun"
+  },
+  {
+    "rank": 291,
+    "farsi": "بلکه",
+    "transliteration": "balke",
+    "deutsch": "sondern",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 292,
+    "farsi": "اصل",
+    "transliteration": "asl",
+    "deutsch": "Prinzip, Grundsatz",
+    "pos": "noun"
+  },
+  {
+    "rank": 293,
+    "farsi": "کمک",
+    "transliteration": "komak",
+    "deutsch": "Hilfe",
+    "pos": "noun"
+  },
+  {
+    "rank": 294,
+    "farsi": "قابل",
+    "transliteration": "ghabel",
+    "deutsch": "fähig",
+    "pos": "adjective"
+  },
+  {
+    "rank": 295,
+    "farsi": "توسط",
+    "transliteration": "tavassot",
+    "deutsch": "durch, mittels",
+    "pos": "preposition"
+  },
+  {
+    "rank": 296,
+    "farsi": "زیر",
+    "transliteration": "zir",
+    "deutsch": "unter",
+    "pos": "preposition"
+  },
+  {
+    "rank": 297,
+    "farsi": "مانند",
+    "transliteration": "manand",
+    "deutsch": "wie, ähnlich wie",
+    "pos": "adverb"
+  },
+  {
+    "rank": 298,
+    "farsi": "اکنون",
+    "transliteration": "aknun",
+    "deutsch": "jetzt",
+    "pos": "adverb"
+  },
+  {
+    "rank": 299,
+    "farsi": "اهمیت",
+    "transliteration": "ahammiyyat",
+    "deutsch": "Wichtigkeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 300,
+    "farsi": "اندیشه",
+    "transliteration": "andishe",
+    "deutsch": "Gedanke, Idee",
+    "pos": "noun"
+  },
+  {
+    "rank": 301,
+    "farsi": "استان",
+    "transliteration": "ostan",
+    "deutsch": "Provinz",
+    "pos": "noun"
+  },
+  {
+    "rank": 302,
+    "farsi": "دفاع",
+    "transliteration": "defa'",
+    "deutsch": "Verteidigung",
+    "pos": "noun"
+  },
+  {
+    "rank": 303,
+    "farsi": "نامه",
+    "transliteration": "name",
+    "deutsch": "Brief",
+    "pos": "noun"
+  },
+  {
+    "rank": 304,
+    "farsi": "انسان",
+    "transliteration": "ensan",
+    "deutsch": "Mensch",
+    "pos": "noun"
+  },
+  {
+    "rank": 305,
+    "farsi": "نمودن",
+    "transliteration": "nemudan",
+    "deutsch": "zeigen, tun",
+    "pos": "verb",
+    "present_stem": "نمای"
+  },
+  {
+    "rank": 306,
+    "farsi": "عمومی",
+    "transliteration": "omumi",
+    "deutsch": "öffentlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 307,
+    "farsi": "جدی",
+    "transliteration": "yeddi",
+    "deutsch": "ernst",
+    "pos": "adjective"
+  },
+  {
+    "rank": 308,
+    "farsi": "دیدار",
+    "transliteration": "didar",
+    "deutsch": "Besuch",
+    "pos": "noun"
+  },
+  {
+    "rank": 309,
+    "farsi": "سایر",
+    "transliteration": "sayer",
+    "deutsch": "andere",
+    "pos": "noun"
+  },
+  {
+    "rank": 310,
+    "farsi": "زدن",
+    "transliteration": "zadan",
+    "deutsch": "schlagen, treffen",
+    "pos": "verb",
+    "present_stem": "زن"
+  },
+  {
+    "rank": 311,
+    "farsi": "فرصت",
+    "transliteration": "forsat",
+    "deutsch": "Gelegenheit, Chance",
+    "pos": "noun"
+  },
+  {
+    "rank": 312,
+    "farsi": "دانشگاه",
+    "transliteration": "daneshgah",
+    "deutsch": "Universität",
+    "pos": "noun"
+  },
+  {
+    "rank": 313,
+    "farsi": "قرار دادن",
+    "transliteration": "gharar dadan",
+    "deutsch": "stellen, platzieren",
+    "pos": "verb",
+    "present_stem": "ده"
+  },
+  {
+    "rank": 314,
+    "farsi": "تأکید",
+    "transliteration": "ta'kid",
+    "deutsch": "Betonung, Nachdruck",
+    "pos": "noun"
+  },
+  {
+    "rank": 315,
+    "farsi": "نوشتن",
+    "transliteration": "neveshtan",
+    "deutsch": "schreiben",
+    "pos": "verb",
+    "present_stem": "نویس"
+  },
+  {
+    "rank": 316,
+    "farsi": "ساختن",
+    "transliteration": "sakhtan",
+    "deutsch": "bauen, errichten",
+    "pos": "verb",
+    "present_stem": "ساز"
+  },
+  {
+    "rank": 317,
+    "farsi": "ترتیب",
+    "transliteration": "tartib",
+    "deutsch": "Reihenfolge, Ordnung",
+    "pos": "noun"
+  },
+  {
+    "rank": 318,
+    "farsi": "فقط",
+    "transliteration": "faghat",
+    "deutsch": "nur",
+    "pos": "adverb"
+  },
+  {
+    "rank": 319,
+    "farsi": "علت",
+    "transliteration": "ellat",
+    "deutsch": "Ursache, Grund",
+    "pos": "noun"
+  },
+  {
+    "rank": 320,
+    "farsi": "داخلی",
+    "transliteration": "dakheli",
+    "deutsch": "intern",
+    "pos": "adjective"
+  },
+  {
+    "rank": 321,
+    "farsi": "آزادی",
+    "transliteration": "azadi",
+    "deutsch": "Freiheit",
+    "pos": "noun"
+  },
+  {
+    "rank": 322,
+    "farsi": "وضعیت",
+    "transliteration": "vaz'iyyat",
+    "deutsch": "Situation, Lage",
+    "pos": "noun"
+  },
+  {
+    "rank": 323,
+    "farsi": "آیا",
+    "transliteration": "aya",
+    "deutsch": "ob",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 324,
+    "farsi": "جریان",
+    "transliteration": "yarayan",
+    "deutsch": "Fluss, Strömung",
+    "pos": "noun"
+  },
+  {
+    "rank": 325,
+    "farsi": "تلاش",
+    "transliteration": "talash",
+    "deutsch": "Bemühung, Anstrengung",
+    "pos": "noun"
+  },
+  {
+    "rank": 326,
+    "farsi": "لازم",
+    "transliteration": "lazem",
+    "deutsch": "notwendig",
+    "pos": "adjective"
+  },
+  {
+    "rank": 327,
+    "farsi": "حمایت",
+    "transliteration": "hemayat",
+    "deutsch": "Schutz, Unterstützung",
+    "pos": "noun"
+  },
+  {
+    "rank": 328,
+    "farsi": "چیز",
+    "transliteration": "chiz",
+    "deutsch": "Ding, Sache",
+    "pos": "noun"
+  },
+  {
+    "rank": 329,
+    "farsi": "ادامه",
+    "transliteration": "edame",
+    "deutsch": "Fortsetzung",
+    "pos": "noun"
+  },
+  {
+    "rank": 330,
+    "farsi": "دلار",
+    "transliteration": "dolar",
+    "deutsch": "Dollar",
+    "pos": "noun"
+  },
+  {
+    "rank": 331,
+    "farsi": "قرار داشتن",
+    "transliteration": "gharar dashtan",
+    "deutsch": "sich befinden",
+    "pos": "verb",
+    "present_stem": "دار"
+  },
+  {
+    "rank": 332,
+    "farsi": "تاریخ",
+    "transliteration": "tarikh",
+    "deutsch": "Geschichte, Datum",
+    "pos": "noun"
+  },
+  {
+    "rank": 333,
+    "farsi": "علمی",
+    "transliteration": "elmi",
+    "deutsch": "wissenschaftlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 334,
+    "farsi": "سطح",
+    "transliteration": "sath",
+    "deutsch": "Niveau, Ebene",
+    "pos": "noun"
+  },
+  {
+    "rank": 335,
+    "farsi": "اجتماعی",
+    "transliteration": "eytema'i",
+    "deutsch": "sozial",
+    "pos": "adjective"
+  },
+  {
+    "rank": 336,
+    "farsi": "استاد",
+    "transliteration": "ostad",
+    "deutsch": "Professor",
+    "pos": "noun"
+  },
+  {
+    "rank": 337,
+    "farsi": "انتخابات",
+    "transliteration": "entekhabat",
+    "deutsch": "Wahlen",
+    "pos": "noun"
+  },
+  {
+    "rank": 338,
+    "farsi": "مرکزی",
+    "transliteration": "markazi",
+    "deutsch": "zentral",
+    "pos": "adjective"
+  },
+  {
+    "rank": 339,
+    "farsi": "تصویر",
+    "transliteration": "tasvir",
+    "deutsch": "Bild",
+    "pos": "noun"
+  },
+  {
+    "rank": 340,
+    "farsi": "مطرح",
+    "transliteration": "matrah",
+    "deutsch": "diskutiert, besprochen",
+    "pos": "adjective"
+  },
+  {
+    "rank": 341,
+    "farsi": "انسانی",
+    "transliteration": "ensani",
+    "deutsch": "menschlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 342,
+    "farsi": "خاص",
+    "transliteration": "khass",
+    "deutsch": "spezifisch, besonders",
+    "pos": "adjective"
+  },
+  {
+    "rank": 343,
+    "farsi": "مقابل",
+    "transliteration": "moghabel",
+    "deutsch": "gegenüber",
+    "pos": "preposition"
+  },
+  {
+    "rank": 344,
+    "farsi": "سفر",
+    "transliteration": "safar",
+    "deutsch": "Reise",
+    "pos": "noun"
+  },
+  {
+    "rank": 345,
+    "farsi": "مشخص",
+    "transliteration": "moshakhkhas",
+    "deutsch": "bestimmt, spezifisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 346,
+    "farsi": "فرهنگ",
+    "transliteration": "farhang",
+    "deutsch": "Kultur",
+    "pos": "noun"
+  },
+  {
+    "rank": 347,
+    "farsi": "استفاده کردن",
+    "transliteration": "estefade kardan",
+    "deutsch": "benutzen, verwenden",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 348,
+    "farsi": "انقلاب",
+    "transliteration": "enghelab",
+    "deutsch": "Revolution",
+    "pos": "noun"
+  },
+  {
+    "rank": 349,
+    "farsi": "جمع",
+    "transliteration": "yam'",
+    "deutsch": "Summe, Addition",
+    "pos": "noun"
+  },
+  {
+    "rank": 350,
+    "farsi": "پیشنهاد",
+    "transliteration": "pishnehad",
+    "deutsch": "Vorschlag",
+    "pos": "noun"
+  },
+  {
+    "rank": 351,
+    "farsi": "ماده",
+    "transliteration": "made",
+    "deutsch": "weiblich, Materie",
+    "pos": "noun"
+  },
+  {
+    "rank": 352,
+    "farsi": "معنا",
+    "transliteration": "ma'na",
+    "deutsch": "Bedeutung",
+    "pos": "noun"
+  },
+  {
+    "rank": 353,
+    "farsi": "کنار",
+    "transliteration": "kenar",
+    "deutsch": "neben, bei",
+    "pos": "preposition"
+  },
+  {
+    "rank": 354,
+    "farsi": "رأی",
+    "transliteration": "ra'y",
+    "deutsch": "Stimme, Wahl",
+    "pos": "noun"
+  },
+  {
+    "rank": 355,
+    "farsi": "کلی",
+    "transliteration": "kolli",
+    "deutsch": "gesamt, allgemein",
+    "pos": "adjective"
+  },
+  {
+    "rank": 356,
+    "farsi": "حقیقت",
+    "transliteration": "haghighat",
+    "deutsch": "Wahrheit",
+    "pos": "noun"
+  },
+  {
+    "rank": 357,
+    "farsi": "تأمین",
+    "transliteration": "ta'min",
+    "deutsch": "Sicherheit",
+    "pos": "noun"
+  },
+  {
+    "rank": 358,
+    "farsi": "خانه",
+    "transliteration": "khane",
+    "deutsch": "Haus",
+    "pos": "noun"
+  },
+  {
+    "rank": 359,
+    "farsi": "جمعیت",
+    "transliteration": "yam'iyyat",
+    "deutsch": "Bevölkerung",
+    "pos": "noun"
+  },
+  {
+    "rank": 360,
+    "farsi": "دین",
+    "transliteration": "din",
+    "deutsch": "Religion",
+    "pos": "noun"
+  },
+  {
+    "rank": 361,
+    "farsi": "امکان",
+    "transliteration": "emkan",
+    "deutsch": "Möglichkeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 362,
+    "farsi": "علم",
+    "transliteration": "elm",
+    "deutsch": "Wissenschaft",
+    "pos": "noun"
+  },
+  {
+    "rank": 363,
+    "farsi": "انتظار",
+    "transliteration": "entezar",
+    "deutsch": "Warten",
+    "pos": "noun"
+  },
+  {
+    "rank": 364,
+    "farsi": "کوتاه",
+    "transliteration": "kutah",
+    "deutsch": "kurz",
+    "pos": "adjective"
+  },
+  {
+    "rank": 365,
+    "farsi": "بازار",
+    "transliteration": "bazar",
+    "deutsch": "Markt, Basar",
+    "pos": "noun"
+  },
+  {
+    "rank": 366,
+    "farsi": "کل",
+    "transliteration": "kol",
+    "deutsch": "ganz, gesamt",
+    "pos": "noun"
+  },
+  {
+    "rank": 367,
+    "farsi": "میدان",
+    "transliteration": "meydan",
+    "deutsch": "Platz, Feld",
+    "pos": "noun"
+  },
+  {
+    "rank": 368,
+    "farsi": "فرهنگی",
+    "transliteration": "farhangi",
+    "deutsch": "kulturell, bildend",
+    "pos": "adjective"
+  },
+  {
+    "rank": 369,
+    "farsi": "خارج شدن",
+    "transliteration": "kharey shodan",
+    "deutsch": "verlassen, herausgehen",
+    "pos": "verb",
+    "present_stem": "شو"
+  },
+  {
+    "rank": 370,
+    "farsi": "شدت",
+    "transliteration": "sheddat",
+    "deutsch": "Intensität",
+    "pos": "noun"
+  },
+  {
+    "rank": 371,
+    "farsi": "حقوق",
+    "transliteration": "hoghugh",
+    "deutsch": "Rechte, Gehalt",
+    "pos": "noun"
+  },
+  {
+    "rank": 372,
+    "farsi": "گل",
+    "transliteration": "gol",
+    "deutsch": "Blume, Tor",
+    "pos": "noun"
+  },
+  {
+    "rank": 373,
+    "farsi": "رشته",
+    "transliteration": "reshte",
+    "deutsch": "Fachgebiet, Nudeln",
+    "pos": "noun"
+  },
+  {
+    "rank": 374,
+    "farsi": "جلسه",
+    "transliteration": "yalase",
+    "deutsch": "Sitzung, Treffen",
+    "pos": "noun"
+  },
+  {
+    "rank": 375,
+    "farsi": "دکتر",
+    "transliteration": "doktor",
+    "deutsch": "Doktor, Arzt",
+    "pos": "noun"
+  },
+  {
+    "rank": 376,
+    "farsi": "سؤال",
+    "transliteration": "so'al",
+    "deutsch": "Frage",
+    "pos": "noun"
+  },
+  {
+    "rank": 377,
+    "farsi": "فضا",
+    "transliteration": "faza",
+    "deutsch": "Raum, Weltraum",
+    "pos": "noun"
+  },
+  {
+    "rank": 378,
+    "farsi": "فیلم",
+    "transliteration": "film",
+    "deutsch": "Film",
+    "pos": "noun"
+  },
+  {
+    "rank": 379,
+    "farsi": "منظور",
+    "transliteration": "manzur",
+    "deutsch": "Absicht, Zweck",
+    "pos": "noun"
+  },
+  {
+    "rank": 380,
+    "farsi": "دفتر",
+    "transliteration": "daftar",
+    "deutsch": "Büro",
+    "pos": "noun"
+  },
+  {
+    "rank": 381,
+    "farsi": "تو",
+    "transliteration": "to",
+    "deutsch": "du, in",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 382,
+    "farsi": "هیئت",
+    "transliteration": "hey'at",
+    "deutsch": "Gremium, Ausschuss",
+    "pos": "noun"
+  },
+  {
+    "rank": 383,
+    "farsi": "زبان",
+    "transliteration": "zaban",
+    "deutsch": "Sprache, Zunge",
+    "pos": "noun"
+  },
+  {
+    "rank": 384,
+    "farsi": "مسابقه",
+    "transliteration": "mosabeghe",
+    "deutsch": "Wettbewerb",
+    "pos": "noun"
+  },
+  {
+    "rank": 385,
+    "farsi": "حوزه",
+    "transliteration": "howze",
+    "deutsch": "Bezirk, Bereich",
+    "pos": "noun"
+  },
+  {
+    "rank": 386,
+    "farsi": "چرا",
+    "transliteration": "chera",
+    "deutsch": "warum",
+    "pos": "adverb"
+  },
+  {
+    "rank": 387,
+    "farsi": "خیلی",
+    "transliteration": "kheyli",
+    "deutsch": "sehr",
+    "pos": "adverb"
+  },
+  {
+    "rank": 388,
+    "farsi": "دقیقه",
+    "transliteration": "daghighe",
+    "deutsch": "Minute",
+    "pos": "noun"
+  },
+  {
+    "rank": 389,
+    "farsi": "فرانسه",
+    "transliteration": "faranse",
+    "deutsch": "Frankreich, Französisch",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 390,
+    "farsi": "بیان",
+    "transliteration": "bayan",
+    "deutsch": "Ausdruck",
+    "pos": "noun"
+  },
+  {
+    "rank": 391,
+    "farsi": "واحد",
+    "transliteration": "vahed",
+    "deutsch": "Einheit",
+    "pos": "noun"
+  },
+  {
+    "rank": 392,
+    "farsi": "کاری",
+    "transliteration": "kari",
+    "deutsch": "aktiv, arbeitend",
+    "pos": "adjective"
+  },
+  {
+    "rank": 393,
+    "farsi": "مرگ",
+    "transliteration": "marg",
+    "deutsch": "Tod",
+    "pos": "noun"
+  },
+  {
+    "rank": 394,
+    "farsi": "سخن",
+    "transliteration": "sokhan",
+    "deutsch": "Rede, Sprache",
+    "pos": "noun"
+  },
+  {
+    "rank": 395,
+    "farsi": "ادامه دادن",
+    "transliteration": "edame dadan",
+    "deutsch": "fortsetzen",
+    "pos": "verb",
+    "present_stem": "ده"
+  },
+  {
+    "rank": 396,
+    "farsi": "زمانی",
+    "transliteration": "zamani",
+    "deutsch": "zeitlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 397,
+    "farsi": "ارتباط",
+    "transliteration": "ertebat",
+    "deutsch": "Verbindung, Kontakt",
+    "pos": "noun"
+  },
+  {
+    "rank": 398,
+    "farsi": "موافق",
+    "transliteration": "movafegh",
+    "deutsch": "zustimmend",
+    "pos": "adjective"
+  },
+  {
+    "rank": 399,
+    "farsi": "شهید",
+    "transliteration": "shahid",
+    "deutsch": "Märtyrer",
+    "pos": "noun"
+  },
+  {
+    "rank": 400,
+    "farsi": "شاهد",
+    "transliteration": "shahed",
+    "deutsch": "Zeuge",
+    "pos": "noun"
+  },
+  {
+    "rank": 401,
+    "farsi": "حد",
+    "transliteration": "hadd",
+    "deutsch": "Grenze, Limit",
+    "pos": "noun"
+  },
+  {
+    "rank": 402,
+    "farsi": "امید",
+    "transliteration": "omid",
+    "deutsch": "Hoffnung",
+    "pos": "noun"
+  },
+  {
+    "rank": 403,
+    "farsi": "روش",
+    "transliteration": "ravesh",
+    "deutsch": "Methode, Weise",
+    "pos": "noun"
+  },
+  {
+    "rank": 404,
+    "farsi": "امنیت",
+    "transliteration": "amniyat",
+    "deutsch": "Sicherheit",
+    "pos": "noun"
+  },
+  {
+    "rank": 405,
+    "farsi": "قرار بودن",
+    "transliteration": "gharar budan",
+    "deutsch": "sollen, vorgesehen sein",
+    "pos": "verb",
+    "present_stem": "باش"
+  },
+  {
+    "rank": 406,
+    "farsi": "نفت",
+    "transliteration": "naft",
+    "deutsch": "Öl, Petroleum",
+    "pos": "noun"
+  },
+  {
+    "rank": 407,
+    "farsi": "دوران",
+    "transliteration": "dowran",
+    "deutsch": "Periode, Umlauf",
+    "pos": "noun"
+  },
+  {
+    "rank": 408,
+    "farsi": "چاپ",
+    "transliteration": "chap",
+    "deutsch": "Druck",
+    "pos": "noun"
+  },
+  {
+    "rank": 409,
+    "farsi": "شبکه",
+    "transliteration": "shabake",
+    "deutsch": "Netzwerk",
+    "pos": "noun"
+  },
+  {
+    "rank": 410,
+    "farsi": "وقت",
+    "transliteration": "vaght",
+    "deutsch": "Zeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 411,
+    "farsi": "وقتی",
+    "transliteration": "vaghti",
+    "deutsch": "wenn, als",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 412,
+    "farsi": "حزب",
+    "transliteration": "hezb",
+    "deutsch": "Partei",
+    "pos": "noun"
+  },
+  {
+    "rank": 413,
+    "farsi": "مانع",
+    "transliteration": "mane'",
+    "deutsch": "Hindernis",
+    "pos": "noun"
+  },
+  {
+    "rank": 414,
+    "farsi": "فصل",
+    "transliteration": "fasl",
+    "deutsch": "Jahreszeit, Kapitel",
+    "pos": "noun"
+  },
+  {
+    "rank": 415,
+    "farsi": "نشان",
+    "transliteration": "neshan",
+    "deutsch": "Zeichen",
+    "pos": "noun"
+  },
+  {
+    "rank": 416,
+    "farsi": "مناسب",
+    "transliteration": "monaseb",
+    "deutsch": "geeignet, angemessen",
+    "pos": "adjective"
+  },
+  {
+    "rank": 417,
+    "farsi": "شب",
+    "transliteration": "shab",
+    "deutsch": "Nacht",
+    "pos": "noun"
+  },
+  {
+    "rank": 418,
+    "farsi": "روند",
+    "transliteration": "ravand",
+    "deutsch": "Prozess, Verlauf",
+    "pos": "noun"
+  },
+  {
+    "rank": 419,
+    "farsi": "مدرسه",
+    "transliteration": "madrese",
+    "deutsch": "Schule",
+    "pos": "noun"
+  },
+  {
+    "rank": 420,
+    "farsi": "حاکم",
+    "transliteration": "hakem",
+    "deutsch": "Herrscher",
+    "pos": "noun"
+  },
+  {
+    "rank": 421,
+    "farsi": "آماده",
+    "transliteration": "amade",
+    "deutsch": "bereit",
+    "pos": "adjective"
+  },
+  {
+    "rank": 422,
+    "farsi": "پول",
+    "transliteration": "pul",
+    "deutsch": "Geld",
+    "pos": "noun"
+  },
+  {
+    "rank": 423,
+    "farsi": "پاسخ",
+    "transliteration": "pasokh",
+    "deutsch": "Antwort",
+    "pos": "noun"
+  },
+  {
+    "rank": 424,
+    "farsi": "ایشان",
+    "transliteration": "ishan",
+    "deutsch": "sie (höflich)",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 425,
+    "farsi": "میلیارد",
+    "transliteration": "milyard",
+    "deutsch": "Milliarde",
+    "pos": "noun"
+  },
+  {
+    "rank": 426,
+    "farsi": "مسیر",
+    "transliteration": "masir",
+    "deutsch": "Route, Strecke",
+    "pos": "noun"
+  },
+  {
+    "rank": 427,
+    "farsi": "واقعیت",
+    "transliteration": "vaghe'iyyat",
+    "deutsch": "Realität, Wirklichkeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 428,
+    "farsi": "موجود",
+    "transliteration": "mowyud",
+    "deutsch": "verfügbar, Lebewesen",
+    "pos": "adjective"
+  },
+  {
+    "rank": 429,
+    "farsi": "فشار",
+    "transliteration": "feshar",
+    "deutsch": "Druck",
+    "pos": "noun"
+  },
+  {
+    "rank": 430,
+    "farsi": "دستور",
+    "transliteration": "dastur",
+    "deutsch": "Anweisung, Befehl",
+    "pos": "noun"
+  },
+  {
+    "rank": 431,
+    "farsi": "اصلاح",
+    "transliteration": "eslah",
+    "deutsch": "Korrektur",
+    "pos": "noun"
+  },
+  {
+    "rank": 432,
+    "farsi": "کوچک",
+    "transliteration": "kuchak",
+    "deutsch": "klein",
+    "pos": "adjective"
+  },
+  {
+    "rank": 433,
+    "farsi": "افغانستان",
+    "transliteration": "afghanestan",
+    "deutsch": "Afghanistan",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 434,
+    "farsi": "پیدا",
+    "transliteration": "peyda",
+    "deutsch": "finden",
+    "pos": "adjective"
+  },
+  {
+    "rank": 435,
+    "farsi": "طولانی",
+    "transliteration": "tulani",
+    "deutsch": "lang",
+    "pos": "adjective"
+  },
+  {
+    "rank": 436,
+    "farsi": "سعی",
+    "transliteration": "sa'y",
+    "deutsch": "versuchen",
+    "pos": "noun"
+  },
+  {
+    "rank": 437,
+    "farsi": "شروع",
+    "transliteration": "shoru'",
+    "deutsch": "Beginn, Start",
+    "pos": "noun"
+  },
+  {
+    "rank": 438,
+    "farsi": "چهار",
+    "transliteration": "chahar",
+    "deutsch": "vier",
+    "pos": "noun"
+  },
+  {
+    "rank": 439,
+    "farsi": "پرداخت",
+    "transliteration": "pardakht",
+    "deutsch": "Zahlung",
+    "pos": "noun",
+    "present_stem": "پرداز"
+  },
+  {
+    "rank": 440,
+    "farsi": "طول",
+    "transliteration": "tul",
+    "deutsch": "Länge",
+    "pos": "noun"
+  },
+  {
+    "rank": 441,
+    "farsi": "معتقد",
+    "transliteration": "mo'taghed",
+    "deutsch": "überzeugt",
+    "pos": "adjective"
+  },
+  {
+    "rank": 442,
+    "farsi": "حفظ",
+    "transliteration": "hefz",
+    "deutsch": "Bewahrung",
+    "pos": "noun"
+  },
+  {
+    "rank": 443,
+    "farsi": "چهارم",
+    "transliteration": "chaharom",
+    "deutsch": "vierter",
+    "pos": "adjective"
+  },
+  {
+    "rank": 444,
+    "farsi": "مشترک",
+    "transliteration": "moshtarak",
+    "deutsch": "gemeinsam, Abonnent",
+    "pos": "adjective"
+  },
+  {
+    "rank": 445,
+    "farsi": "خوبی",
+    "transliteration": "khubi",
+    "deutsch": "Güte",
+    "pos": "noun"
+  },
+  {
+    "rank": 446,
+    "farsi": "زیاد",
+    "transliteration": "ziyad",
+    "deutsch": "viel",
+    "pos": "adverb"
+  },
+  {
+    "rank": 447,
+    "farsi": "حادثه",
+    "transliteration": "hadese",
+    "deutsch": "Unfall, Vorfall",
+    "pos": "noun"
+  },
+  {
+    "rank": 448,
+    "farsi": "محل",
+    "transliteration": "mahal",
+    "deutsch": "Ort, Stelle",
+    "pos": "noun"
+  },
+  {
+    "rank": 449,
+    "farsi": "مستقیم",
+    "transliteration": "mostaghim",
+    "deutsch": "direkt",
+    "pos": "adjective"
+  },
+  {
+    "rank": 450,
+    "farsi": "اروپا",
+    "transliteration": "orupa",
+    "deutsch": "Europa",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 451,
+    "farsi": "عرصه",
+    "transliteration": "arse",
+    "deutsch": "Gebiet, Arena",
+    "pos": "noun"
+  },
+  {
+    "rank": 452,
+    "farsi": "آمریکایی",
+    "transliteration": "amrikayi",
+    "deutsch": "amerikanisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 453,
+    "farsi": "مالی",
+    "transliteration": "mali",
+    "deutsch": "finanziell",
+    "pos": "adjective"
+  },
+  {
+    "rank": 454,
+    "farsi": "جز",
+    "transliteration": "yoz",
+    "deutsch": "außer",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 455,
+    "farsi": "تازه",
+    "transliteration": "taze",
+    "deutsch": "frisch, neu",
+    "pos": "adjective"
+  },
+  {
+    "rank": 456,
+    "farsi": "ساخته",
+    "transliteration": "sakhte",
+    "deutsch": "hergestellt",
+    "pos": "adjective"
+  },
+  {
+    "rank": 457,
+    "farsi": "مقاله",
+    "transliteration": "maghale",
+    "deutsch": "Artikel",
+    "pos": "noun"
+  },
+  {
+    "rank": 458,
+    "farsi": "چین",
+    "transliteration": "chin",
+    "deutsch": "China",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 459,
+    "farsi": "مرد",
+    "transliteration": "mard",
+    "deutsch": "Mann",
+    "pos": "noun"
+  },
+  {
+    "rank": 460,
+    "farsi": "امام",
+    "transliteration": "emam",
+    "deutsch": "Imam",
+    "pos": "noun"
+  },
+  {
+    "rank": 461,
+    "farsi": "واقعی",
+    "transliteration": "vaghe'i",
+    "deutsch": "real, wirklich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 462,
+    "farsi": "انجام شدن",
+    "transliteration": "anyam shodan",
+    "deutsch": "erledigt werden",
+    "pos": "verb",
+    "present_stem": "شو"
+  },
+  {
+    "rank": 463,
+    "farsi": "وضع",
+    "transliteration": "vaz'",
+    "deutsch": "Situation, Zustand",
+    "pos": "noun"
+  },
+  {
+    "rank": 464,
+    "farsi": "دستگاه",
+    "transliteration": "dastgah",
+    "deutsch": "Maschine, System",
+    "pos": "noun"
+  },
+  {
+    "rank": 465,
+    "farsi": "سیستم",
+    "transliteration": "sistem",
+    "deutsch": "System",
+    "pos": "noun"
+  },
+  {
+    "rank": 466,
+    "farsi": "دینی",
+    "transliteration": "dini",
+    "deutsch": "religiös",
+    "pos": "adjective"
+  },
+  {
+    "rank": 467,
+    "farsi": "کودک",
+    "transliteration": "kudak",
+    "deutsch": "Kind",
+    "pos": "noun"
+  },
+  {
+    "rank": 468,
+    "farsi": "ابتدا",
+    "transliteration": "ebteda",
+    "deutsch": "Anfang, Beginn",
+    "pos": "adverb"
+  },
+  {
+    "rank": 469,
+    "farsi": "خواست",
+    "transliteration": "khast",
+    "deutsch": "Wunsch, wollte",
+    "pos": "verb",
+    "present_stem": "خواه"
+  },
+  {
+    "rank": 470,
+    "farsi": "دولتی",
+    "transliteration": "dowlati",
+    "deutsch": "staatlich, regierungsseitig",
+    "pos": "adjective"
+  },
+  {
+    "rank": 471,
+    "farsi": "رسمی",
+    "transliteration": "rasmi",
+    "deutsch": "offiziell",
+    "pos": "adjective"
+  },
+  {
+    "rank": 472,
+    "farsi": "هزینه",
+    "transliteration": "hazine",
+    "deutsch": "Kosten",
+    "pos": "noun"
+  },
+  {
+    "rank": 473,
+    "farsi": "بانک",
+    "transliteration": "bank",
+    "deutsch": "Bank",
+    "pos": "noun"
+  },
+  {
+    "rank": 474,
+    "farsi": "هوا",
+    "transliteration": "hava",
+    "deutsch": "Luft, Wetter",
+    "pos": "noun"
+  },
+  {
+    "rank": 475,
+    "farsi": "فکر",
+    "transliteration": "fekr",
+    "deutsch": "Gedanke",
+    "pos": "noun"
+  },
+  {
+    "rank": 476,
+    "farsi": "شنبه",
+    "transliteration": "shambe",
+    "deutsch": "Samstag",
+    "pos": "noun"
+  },
+  {
+    "rank": 477,
+    "farsi": "انتقال",
+    "transliteration": "enteghal",
+    "deutsch": "Transfer, Übertragung",
+    "pos": "noun"
+  },
+  {
+    "rank": 478,
+    "farsi": "انگلیسی",
+    "transliteration": "engelisi",
+    "deutsch": "Englisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 479,
+    "farsi": "تحقیق",
+    "transliteration": "tahghigh",
+    "deutsch": "Forschung",
+    "pos": "noun"
+  },
+  {
+    "rank": 480,
+    "farsi": "پی",
+    "transliteration": "pey",
+    "deutsch": "Grundlage",
+    "pos": "noun"
+  },
+  {
+    "rank": 481,
+    "farsi": "ده",
+    "transliteration": "dah",
+    "deutsch": "zehn, Ortschaft",
+    "pos": "noun"
+  },
+  {
+    "rank": 482,
+    "farsi": "موجب",
+    "transliteration": "muyeb",
+    "deutsch": "Ursache, Grund",
+    "pos": "noun"
+  },
+  {
+    "rank": 483,
+    "farsi": "سنگین",
+    "transliteration": "sangin",
+    "deutsch": "schwer",
+    "pos": "adjective"
+  },
+  {
+    "rank": 484,
+    "farsi": "اداره",
+    "transliteration": "edare",
+    "deutsch": "Büro, Verwaltung",
+    "pos": "noun"
+  },
+  {
+    "rank": 485,
+    "farsi": "خطر",
+    "transliteration": "khatar",
+    "deutsch": "Gefahr, Risiko",
+    "pos": "noun"
+  },
+  {
+    "rank": 486,
+    "farsi": "نظامی",
+    "transliteration": "nezami",
+    "deutsch": "militärisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 487,
+    "farsi": "نقل",
+    "transliteration": "naghl",
+    "deutsch": "Transport, Erzählung",
+    "pos": "noun"
+  },
+  {
+    "rank": 488,
+    "farsi": "شدید",
+    "transliteration": "shadid",
+    "deutsch": "schwer, heftig",
+    "pos": "adjective"
+  },
+  {
+    "rank": 489,
+    "farsi": "مربوط",
+    "transliteration": "marbut",
+    "deutsch": "verwandt, zugehörig",
+    "pos": "adjective"
+  },
+  {
+    "rank": 490,
+    "farsi": "فوتبال",
+    "transliteration": "futbal",
+    "deutsch": "Fußball",
+    "pos": "noun"
+  },
+  {
+    "rank": 491,
+    "farsi": "واقع",
+    "transliteration": "vaghe'",
+    "deutsch": "gelegen, befindlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 492,
+    "farsi": "کافی",
+    "transliteration": "kafi",
+    "deutsch": "ausreichend, genug",
+    "pos": "adjective"
+  },
+  {
+    "rank": 493,
+    "farsi": "آموزش",
+    "transliteration": "amuzesh",
+    "deutsch": "Unterricht, Ausbildung",
+    "pos": "noun"
+  },
+  {
+    "rank": 494,
+    "farsi": "شایستن",
+    "transliteration": "shayastan",
+    "deutsch": "möglich sein",
+    "pos": "verb"
+  },
+  {
+    "rank": 495,
+    "farsi": "کنترل",
+    "transliteration": "kontrol",
+    "deutsch": "Kontrolle",
+    "pos": "noun"
+  },
+  {
+    "rank": 496,
+    "farsi": "دوست",
+    "transliteration": "dust",
+    "deutsch": "Freund",
+    "pos": "noun"
+  },
+  {
+    "rank": 497,
+    "farsi": "تاکنون",
+    "transliteration": "taknun",
+    "deutsch": "bisher, noch",
+    "pos": "adverb"
+  },
+  {
+    "rank": 498,
+    "farsi": "انتخاب کردن",
+    "transliteration": "entekhab kardan",
+    "deutsch": "wählen",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 499,
+    "farsi": "دهه",
+    "transliteration": "dahe",
+    "deutsch": "Jahrzehnt",
+    "pos": "noun"
+  },
+  {
+    "rank": 500,
+    "farsi": "صاحب",
+    "transliteration": "saheb",
+    "deutsch": "Besitzer, Herr",
+    "pos": "noun"
+  },
+  {
+    "rank": 501,
+    "farsi": "نشست",
+    "transliteration": "neshast",
+    "deutsch": "Sitzung, saß",
+    "pos": "noun",
+    "present_stem": "نشین"
+  },
+  {
+    "rank": 502,
+    "farsi": "نگاه",
+    "transliteration": "negah",
+    "deutsch": "Blick, Schauen",
+    "pos": "noun"
+  },
+  {
+    "rank": 503,
+    "farsi": "معاون",
+    "transliteration": "mo'aven",
+    "deutsch": "Stellvertreter",
+    "pos": "noun"
+  },
+  {
+    "rank": 504,
+    "farsi": "خصوص",
+    "transliteration": "khosus",
+    "deutsch": "Bezug, Hinsicht",
+    "pos": "noun"
+  },
+  {
+    "rank": 505,
+    "farsi": "ماندن",
+    "transliteration": "mandan",
+    "deutsch": "bleiben",
+    "pos": "verb",
+    "present_stem": "مان"
+  },
+  {
+    "rank": 506,
+    "farsi": "برق",
+    "transliteration": "bargh",
+    "deutsch": "Strom, Blitz",
+    "pos": "noun"
+  },
+  {
+    "rank": 507,
+    "farsi": "مبارزه",
+    "transliteration": "mobareze",
+    "deutsch": "Kampf, Widerstand",
+    "pos": "noun"
+  },
+  {
+    "rank": 508,
+    "farsi": "مؤسسه",
+    "transliteration": "mo'assese",
+    "deutsch": "Gründung, Institution",
+    "pos": "noun"
+  },
+  {
+    "rank": 509,
+    "farsi": "نمونه",
+    "transliteration": "nemune",
+    "deutsch": "Muster, Beispiel",
+    "pos": "noun"
+  },
+  {
+    "rank": 510,
+    "farsi": "خوب",
+    "transliteration": "khub",
+    "deutsch": "gut",
+    "pos": "adjective"
+  },
+  {
+    "rank": 511,
+    "farsi": "عصر",
+    "transliteration": "asr",
+    "deutsch": "Nachmittag, Zeitalter",
+    "pos": "noun"
+  },
+  {
+    "rank": 512,
+    "farsi": "پنج",
+    "transliteration": "pany",
+    "deutsch": "fünf",
+    "pos": "noun"
+  },
+  {
+    "rank": 513,
+    "farsi": "همیشه",
+    "transliteration": "hamishe",
+    "deutsch": "immer",
+    "pos": "adverb"
+  },
+  {
+    "rank": 514,
+    "farsi": "باز",
+    "transliteration": "baz",
+    "deutsch": "offen, wieder",
+    "pos": "adverb"
+  },
+  {
+    "rank": 515,
+    "farsi": "موفقیت",
+    "transliteration": "movaffaghiyat",
+    "deutsch": "Erfolg",
+    "pos": "noun"
+  },
+  {
+    "rank": 516,
+    "farsi": "آنچه",
+    "transliteration": "anche",
+    "deutsch": "dasjenige was",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 517,
+    "farsi": "مصرف",
+    "transliteration": "masraf",
+    "deutsch": "Verbrauch, Konsum",
+    "pos": "noun"
+  },
+  {
+    "rank": 518,
+    "farsi": "عراق",
+    "transliteration": "eragh",
+    "deutsch": "Irak",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 519,
+    "farsi": "کسب",
+    "transliteration": "kasb",
+    "deutsch": "Erwerb, Geschäft",
+    "pos": "noun"
+  },
+  {
+    "rank": 520,
+    "farsi": "آمار",
+    "transliteration": "amar",
+    "deutsch": "Statistik",
+    "pos": "noun"
+  },
+  {
+    "rank": 521,
+    "farsi": "دانشجو",
+    "transliteration": "daneshyu",
+    "deutsch": "Student",
+    "pos": "noun"
+  },
+  {
+    "rank": 522,
+    "farsi": "نوشته",
+    "transliteration": "neveshte",
+    "deutsch": "Schrift, Geschriebenes",
+    "pos": "noun"
+  },
+  {
+    "rank": 523,
+    "farsi": "ریاست",
+    "transliteration": "riyasat",
+    "deutsch": "Präsidentschaft",
+    "pos": "noun"
+  },
+  {
+    "rank": 524,
+    "farsi": "رهبر",
+    "transliteration": "rahbar",
+    "deutsch": "Anführer, Führer",
+    "pos": "noun"
+  },
+  {
+    "rank": 525,
+    "farsi": "دارا",
+    "transliteration": "dara",
+    "deutsch": "besitzend, habend",
+    "pos": "adjective"
+  },
+  {
+    "rank": 526,
+    "farsi": "تصمیم",
+    "transliteration": "tasmim",
+    "deutsch": "Entscheidung",
+    "pos": "noun"
+  },
+  {
+    "rank": 527,
+    "farsi": "فرزند",
+    "transliteration": "farzand",
+    "deutsch": "Kind, Nachkomme",
+    "pos": "noun"
+  },
+  {
+    "rank": 528,
+    "farsi": "تجربه",
+    "transliteration": "tayrobe",
+    "deutsch": "Erfahrung",
+    "pos": "noun"
+  },
+  {
+    "rank": 529,
+    "farsi": "آسیا",
+    "transliteration": "asiya",
+    "deutsch": "Asien",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 530,
+    "farsi": "قیمت",
+    "transliteration": "gheymat",
+    "deutsch": "Preis",
+    "pos": "noun"
+  },
+  {
+    "rank": 531,
+    "farsi": "رخ",
+    "transliteration": "rokh",
+    "deutsch": "Gesicht",
+    "pos": "noun"
+  },
+  {
+    "rank": 532,
+    "farsi": "تحول",
+    "transliteration": "tahavvol",
+    "deutsch": "Entwicklung, Wandel",
+    "pos": "noun"
+  },
+  {
+    "rank": 533,
+    "farsi": "رقابت",
+    "transliteration": "reghabat",
+    "deutsch": "Wettbewerb",
+    "pos": "noun"
+  },
+  {
+    "rank": 534,
+    "farsi": "حمله",
+    "transliteration": "hamle",
+    "deutsch": "Angriff",
+    "pos": "noun"
+  },
+  {
+    "rank": 535,
+    "farsi": "شمار",
+    "transliteration": "shomar",
+    "deutsch": "Anzahl, Zahl",
+    "pos": "noun"
+  },
+  {
+    "rank": 536,
+    "farsi": "فاصله",
+    "transliteration": "fasele",
+    "deutsch": "Abstand, Entfernung",
+    "pos": "noun"
+  },
+  {
+    "rank": 537,
+    "farsi": "اقتصاد",
+    "transliteration": "eghtesad",
+    "deutsch": "Wirtschaft",
+    "pos": "noun"
+  },
+  {
+    "rank": 538,
+    "farsi": "حکومت",
+    "transliteration": "hokumat",
+    "deutsch": "Regierung",
+    "pos": "noun"
+  },
+  {
+    "rank": 539,
+    "farsi": "نقشه",
+    "transliteration": "naghshe",
+    "deutsch": "Karte, Plan",
+    "pos": "noun"
+  },
+  {
+    "rank": 540,
+    "farsi": "همواره",
+    "transliteration": "hamvare",
+    "deutsch": "stets, immer",
+    "pos": "adverb"
+  },
+  {
+    "rank": 541,
+    "farsi": "غرب",
+    "transliteration": "gharb",
+    "deutsch": "Westen",
+    "pos": "noun"
+  },
+  {
+    "rank": 542,
+    "farsi": "گسترش",
+    "transliteration": "gostaresh",
+    "deutsch": "Ausbreitung",
+    "pos": "noun"
+  },
+  {
+    "rank": 543,
+    "farsi": "حل",
+    "transliteration": "hall",
+    "deutsch": "Lösung",
+    "pos": "noun"
+  },
+  {
+    "rank": 544,
+    "farsi": "روشن",
+    "transliteration": "rowshan",
+    "deutsch": "hell, eingeschaltet",
+    "pos": "adjective"
+  },
+  {
+    "rank": 545,
+    "farsi": "گام",
+    "transliteration": "gam",
+    "deutsch": "Schritt",
+    "pos": "noun"
+  },
+  {
+    "rank": 546,
+    "farsi": "خدا",
+    "transliteration": "khoda",
+    "deutsch": "Gott",
+    "pos": "noun"
+  },
+  {
+    "rank": 547,
+    "farsi": "احساس",
+    "transliteration": "ehsas",
+    "deutsch": "Gefühl",
+    "pos": "noun"
+  },
+  {
+    "rank": 548,
+    "farsi": "ساله",
+    "transliteration": "sale",
+    "deutsch": "Jahre alt",
+    "pos": "noun"
+  },
+  {
+    "rank": 549,
+    "farsi": "قرارداد",
+    "transliteration": "gharardad",
+    "deutsch": "Vertrag",
+    "pos": "noun"
+  },
+  {
+    "rank": 550,
+    "farsi": "مرز",
+    "transliteration": "marz",
+    "deutsch": "Grenze",
+    "pos": "noun"
+  },
+  {
+    "rank": 551,
+    "farsi": "خاک",
+    "transliteration": "khak",
+    "deutsch": "Erde, Staub",
+    "pos": "noun"
+  },
+  {
+    "rank": 552,
+    "farsi": "جمعه",
+    "transliteration": "yom'e",
+    "deutsch": "Freitag",
+    "pos": "noun"
+  },
+  {
+    "rank": 553,
+    "farsi": "عملیات",
+    "transliteration": "amaliyat",
+    "deutsch": "Kampagne, Einsatz",
+    "pos": "noun"
+  },
+  {
+    "rank": 554,
+    "farsi": "سرانجام",
+    "transliteration": "saranyam",
+    "deutsch": "schließlich, endlich",
+    "pos": "adverb"
+  },
+  {
+    "rank": 555,
+    "farsi": "معرفی",
+    "transliteration": "moarrefi",
+    "deutsch": "Vorstellung, Einführung",
+    "pos": "noun"
+  },
+  {
+    "rank": 556,
+    "farsi": "سبب",
+    "transliteration": "sabab",
+    "deutsch": "Ursache, Grund",
+    "pos": "noun"
+  },
+  {
+    "rank": 557,
+    "farsi": "عهده",
+    "transliteration": "ohde",
+    "deutsch": "Verantwortung",
+    "pos": "noun"
+  },
+  {
+    "rank": 558,
+    "farsi": "زیرا",
+    "transliteration": "zira",
+    "deutsch": "weil",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 559,
+    "farsi": "ضمن",
+    "transliteration": "zemn",
+    "deutsch": "innerhalb, während",
+    "pos": "preposition"
+  },
+  {
+    "rank": 560,
+    "farsi": "صحنه",
+    "transliteration": "sahne",
+    "deutsch": "Bühne, Szene",
+    "pos": "noun"
+  },
+  {
+    "rank": 561,
+    "farsi": "خارجه",
+    "transliteration": "khareye",
+    "deutsch": "ausländisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 562,
+    "farsi": "صدا",
+    "transliteration": "seda",
+    "deutsch": "Stimme, Ton",
+    "pos": "noun"
+  },
+  {
+    "rank": 563,
+    "farsi": "بعضی",
+    "transliteration": "ba'zi",
+    "deutsch": "manche, einige",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 564,
+    "farsi": "مراسم",
+    "transliteration": "marasem",
+    "deutsch": "Zeremonie",
+    "pos": "noun"
+  },
+  {
+    "rank": 565,
+    "farsi": "دریافت",
+    "transliteration": "daryaft",
+    "deutsch": "Empfang, Erhalt",
+    "pos": "noun"
+  },
+  {
+    "rank": 566,
+    "farsi": "خون",
+    "transliteration": "khun",
+    "deutsch": "Blut",
+    "pos": "noun"
+  },
+  {
+    "rank": 567,
+    "farsi": "مقدمه",
+    "transliteration": "moghaddame",
+    "deutsch": "Einleitung, Vorwort",
+    "pos": "noun"
+  },
+  {
+    "rank": 568,
+    "farsi": "روسیه",
+    "transliteration": "rusiye",
+    "deutsch": "Russland",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 569,
+    "farsi": "استقلال",
+    "transliteration": "esteghlal",
+    "deutsch": "Unabhängigkeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 570,
+    "farsi": "مثل",
+    "transliteration": "mesl",
+    "deutsch": "wie, Sprichwort",
+    "pos": "adverb"
+  },
+  {
+    "rank": 571,
+    "farsi": "سخت",
+    "transliteration": "sakht",
+    "deutsch": "hart, schwer",
+    "pos": "adjective"
+  },
+  {
+    "rank": 572,
+    "farsi": "برگزاری",
+    "transliteration": "bargozari",
+    "deutsch": "Abhaltung",
+    "pos": "noun"
+  },
+  {
+    "rank": 573,
+    "farsi": "دسته",
+    "transliteration": "daste",
+    "deutsch": "Bündel, Gruppe",
+    "pos": "noun"
+  },
+  {
+    "rank": 574,
+    "farsi": "آتش",
+    "transliteration": "atash",
+    "deutsch": "Feuer",
+    "pos": "noun"
+  },
+  {
+    "rank": 575,
+    "farsi": "سرعت",
+    "transliteration": "sor'at",
+    "deutsch": "Geschwindigkeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 576,
+    "farsi": "بین‌المللی",
+    "transliteration": "beynolmelali",
+    "deutsch": "international",
+    "pos": "adjective"
+  },
+  {
+    "rank": 577,
+    "farsi": "مشارکت",
+    "transliteration": "mosharekat",
+    "deutsch": "Partnerschaft, Beteiligung",
+    "pos": "noun"
+  },
+  {
+    "rank": 578,
+    "farsi": "وظیفه",
+    "transliteration": "vazife",
+    "deutsch": "Pflicht, Aufgabe",
+    "pos": "noun"
+  },
+  {
+    "rank": 579,
+    "farsi": "فعال",
+    "transliteration": "fa'al",
+    "deutsch": "aktiv",
+    "pos": "adjective"
+  },
+  {
+    "rank": 580,
+    "farsi": "رقم",
+    "transliteration": "ragham",
+    "deutsch": "Ziffer, Zahl",
+    "pos": "noun"
+  },
+  {
+    "rank": 581,
+    "farsi": "نیمه",
+    "transliteration": "nime",
+    "deutsch": "Hälfte",
+    "pos": "noun"
+  },
+  {
+    "rank": 582,
+    "farsi": "شمال",
+    "transliteration": "shomal",
+    "deutsch": "Norden",
+    "pos": "noun"
+  },
+  {
+    "rank": 583,
+    "farsi": "یاد",
+    "transliteration": "yad",
+    "deutsch": "Erinnerung",
+    "pos": "noun"
+  },
+  {
+    "rank": 584,
+    "farsi": "بهار",
+    "transliteration": "bahar",
+    "deutsch": "Frühling",
+    "pos": "noun"
+  },
+  {
+    "rank": 585,
+    "farsi": "برداشتن",
+    "transliteration": "bardashtan",
+    "deutsch": "aufheben, wegnehmen",
+    "pos": "verb",
+    "present_stem": "بردار"
+  },
+  {
+    "rank": 586,
+    "farsi": "سریع",
+    "transliteration": "sari'",
+    "deutsch": "schnell",
+    "pos": "adjective"
+  },
+  {
+    "rank": 587,
+    "farsi": "چهره",
+    "transliteration": "chehre",
+    "deutsch": "Gesicht",
+    "pos": "noun"
+  },
+  {
+    "rank": 588,
+    "farsi": "محصول",
+    "transliteration": "mahsul",
+    "deutsch": "Produkt",
+    "pos": "noun"
+  },
+  {
+    "rank": 589,
+    "farsi": "تاریخی",
+    "transliteration": "tarikhi",
+    "deutsch": "historisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 590,
+    "farsi": "چشم",
+    "transliteration": "chashm",
+    "deutsch": "Auge",
+    "pos": "noun"
+  },
+  {
+    "rank": 591,
+    "farsi": "بند",
+    "transliteration": "band",
+    "deutsch": "Schnur, Absatz",
+    "pos": "noun"
+  },
+  {
+    "rank": 592,
+    "farsi": "مخالف",
+    "transliteration": "mokhalef",
+    "deutsch": "entgegen, ablehnend",
+    "pos": "adjective"
+  },
+  {
+    "rank": 593,
+    "farsi": "بیست",
+    "transliteration": "bist",
+    "deutsch": "zwanzig",
+    "pos": "noun"
+  },
+  {
+    "rank": 594,
+    "farsi": "آلمان",
+    "transliteration": "alman",
+    "deutsch": "Deutschland",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 595,
+    "farsi": "تقویت",
+    "transliteration": "taghviyat",
+    "deutsch": "Stärkung",
+    "pos": "noun"
+  },
+  {
+    "rank": 596,
+    "farsi": "احتمال",
+    "transliteration": "ehtemal",
+    "deutsch": "Wahrscheinlichkeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 597,
+    "farsi": "تعیین",
+    "transliteration": "ta'yin",
+    "deutsch": "Bestimmung",
+    "pos": "noun"
+  },
+  {
+    "rank": 598,
+    "farsi": "پلیس",
+    "transliteration": "polis",
+    "deutsch": "Polizei",
+    "pos": "noun"
+  },
+  {
+    "rank": 599,
+    "farsi": "فروش",
+    "transliteration": "forush",
+    "deutsch": "Verkauf",
+    "pos": "noun"
+  },
+  {
+    "rank": 600,
+    "farsi": "رسانه",
+    "transliteration": "resane",
+    "deutsch": "Medium, Medien",
+    "pos": "noun"
+  },
+  {
+    "rank": 601,
+    "farsi": "جنوب",
+    "transliteration": "yonub",
+    "deutsch": "Süden",
+    "pos": "noun"
+  },
+  {
+    "rank": 602,
+    "farsi": "تهیه",
+    "transliteration": "tahiyye",
+    "deutsch": "Vorbereitung",
+    "pos": "noun"
+  },
+  {
+    "rank": 603,
+    "farsi": "بیماری",
+    "transliteration": "bimari",
+    "deutsch": "Krankheit",
+    "pos": "noun"
+  },
+  {
+    "rank": 604,
+    "farsi": "گردیدن",
+    "transliteration": "gardidan",
+    "deutsch": "sich drehen, werden",
+    "pos": "verb",
+    "present_stem": "گرد"
+  },
+  {
+    "rank": 605,
+    "farsi": "صرف",
+    "transliteration": "sarf",
+    "deutsch": "Ausgaben, rein",
+    "pos": "noun"
+  },
+  {
+    "rank": 606,
+    "farsi": "مجموعه",
+    "transliteration": "maymu'e",
+    "deutsch": "Sammlung",
+    "pos": "noun"
+  },
+  {
+    "rank": 607,
+    "farsi": "نمایش",
+    "transliteration": "namayesh",
+    "deutsch": "Ausstellung, Vorführung",
+    "pos": "noun"
+  },
+  {
+    "rank": 608,
+    "farsi": "اساسی",
+    "transliteration": "asasi",
+    "deutsch": "grundlegend",
+    "pos": "adjective"
+  },
+  {
+    "rank": 609,
+    "farsi": "قبلی",
+    "transliteration": "ghabli",
+    "deutsch": "vorherig",
+    "pos": "adjective"
+  },
+  {
+    "rank": 610,
+    "farsi": "پایه",
+    "transliteration": "paye",
+    "deutsch": "Basis, Grundlage",
+    "pos": "noun"
+  },
+  {
+    "rank": 611,
+    "farsi": "انگلیس",
+    "transliteration": "engelis",
+    "deutsch": "England, Großbritannien",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 612,
+    "farsi": "موقعیت",
+    "transliteration": "mowghe'iyyat",
+    "deutsch": "Situation, Position",
+    "pos": "noun"
+  },
+  {
+    "rank": 613,
+    "farsi": "مهر",
+    "transliteration": "mehr",
+    "deutsch": "Sonne, Zuneigung",
+    "pos": "noun"
+  },
+  {
+    "rank": 614,
+    "farsi": "عمل کردن",
+    "transliteration": "amal kardan",
+    "deutsch": "handeln, ausführen",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 615,
+    "farsi": "جایگاه",
+    "transliteration": "yaygah",
+    "deutsch": "Position, Stellung",
+    "pos": "noun"
+  },
+  {
+    "rank": 616,
+    "farsi": "اعتقاد",
+    "transliteration": "e'teghad",
+    "deutsch": "Glaube, Überzeugung",
+    "pos": "noun"
+  },
+  {
+    "rank": 617,
+    "farsi": "شعر",
+    "transliteration": "she'r",
+    "deutsch": "Poesie, Gedicht",
+    "pos": "noun"
+  },
+  {
+    "rank": 618,
+    "farsi": "نو",
+    "transliteration": "now",
+    "deutsch": "neu",
+    "pos": "adjective"
+  },
+  {
+    "rank": 619,
+    "farsi": "احترام",
+    "transliteration": "ehteram",
+    "deutsch": "Respekt, Achtung",
+    "pos": "noun"
+  },
+  {
+    "rank": 620,
+    "farsi": "متر",
+    "transliteration": "metr",
+    "deutsch": "Meter",
+    "pos": "noun"
+  },
+  {
+    "rank": 621,
+    "farsi": "ترکیه",
+    "transliteration": "torkiye",
+    "deutsch": "Türkei",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 622,
+    "farsi": "پیروزی",
+    "transliteration": "piruzi",
+    "deutsch": "Sieg",
+    "pos": "noun"
+  },
+  {
+    "rank": 623,
+    "farsi": "اختلاف",
+    "transliteration": "ekhtelaf",
+    "deutsch": "Unterschied",
+    "pos": "noun"
+  },
+  {
+    "rank": 624,
+    "farsi": "محسوب",
+    "transliteration": "mahsub",
+    "deutsch": "gerechnet, betrachtet",
+    "pos": "adjective"
+  },
+  {
+    "rank": 625,
+    "farsi": "دریا",
+    "transliteration": "darya",
+    "deutsch": "Meer",
+    "pos": "noun"
+  },
+  {
+    "rank": 626,
+    "farsi": "حضرت",
+    "transliteration": "hazrat",
+    "deutsch": "Heiligkeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 627,
+    "farsi": "بنا",
+    "transliteration": "bana",
+    "deutsch": "Gebäude",
+    "pos": "noun"
+  },
+  {
+    "rank": 628,
+    "farsi": "پا",
+    "transliteration": "pa",
+    "deutsch": "Fuß, Bein",
+    "pos": "noun"
+  },
+  {
+    "rank": 629,
+    "farsi": "خبرنگار",
+    "transliteration": "khabarnegar",
+    "deutsch": "Reporter, Journalist",
+    "pos": "noun"
+  },
+  {
+    "rank": 630,
+    "farsi": "غربی",
+    "transliteration": "gharbi",
+    "deutsch": "westlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 631,
+    "farsi": "چندین",
+    "transliteration": "chandin",
+    "deutsch": "mehrere",
+    "pos": "noun"
+  },
+  {
+    "rank": 632,
+    "farsi": "ورود",
+    "transliteration": "vorud",
+    "deutsch": "Eingang, Einreise",
+    "pos": "noun"
+  },
+  {
+    "rank": 633,
+    "farsi": "جان",
+    "transliteration": "yan",
+    "deutsch": "Leben, Seele",
+    "pos": "noun"
+  },
+  {
+    "rank": 634,
+    "farsi": "پرواز",
+    "transliteration": "parvaz",
+    "deutsch": "Flug",
+    "pos": "noun"
+  },
+  {
+    "rank": 635,
+    "farsi": "علیه",
+    "transliteration": "aleyh",
+    "deutsch": "gegen",
+    "pos": "preposition"
+  },
+  {
+    "rank": 636,
+    "farsi": "پیشرفت",
+    "transliteration": "pishraft",
+    "deutsch": "Fortschritt",
+    "pos": "noun"
+  },
+  {
+    "rank": 637,
+    "farsi": "ابراز",
+    "transliteration": "ebraz",
+    "deutsch": "Ausdruck",
+    "pos": "noun"
+  },
+  {
+    "rank": 638,
+    "farsi": "توان",
+    "transliteration": "tavan",
+    "deutsch": "Fähigkeit, Können",
+    "pos": "noun"
+  },
+  {
+    "rank": 639,
+    "farsi": "حالت",
+    "transliteration": "halat",
+    "deutsch": "Zustand, Verfassung",
+    "pos": "noun"
+  },
+  {
+    "rank": 640,
+    "farsi": "فراهم",
+    "transliteration": "faraham",
+    "deutsch": "verfügbar, bereit",
+    "pos": "noun"
+  },
+  {
+    "rank": 641,
+    "farsi": "برخورد",
+    "transliteration": "barkhord",
+    "deutsch": "Zusammenstoß, Kollision",
+    "pos": "noun"
+  },
+  {
+    "rank": 642,
+    "farsi": "رفتار",
+    "transliteration": "raftar",
+    "deutsch": "Verhalten",
+    "pos": "noun"
+  },
+  {
+    "rank": 643,
+    "farsi": "نکته",
+    "transliteration": "nokte",
+    "deutsch": "Punkt, Hinweis",
+    "pos": "noun"
+  },
+  {
+    "rank": 644,
+    "farsi": "جلوگیری",
+    "transliteration": "yelowgiri",
+    "deutsch": "Verhinderung, Prävention",
+    "pos": "noun"
+  },
+  {
+    "rank": 645,
+    "farsi": "سابق",
+    "transliteration": "sabegh",
+    "deutsch": "ehemals, früher",
+    "pos": "adjective"
+  },
+  {
+    "rank": 646,
+    "farsi": "گویا",
+    "transliteration": "guya",
+    "deutsch": "anscheinend, klar",
+    "pos": "adverb"
+  },
+  {
+    "rank": 647,
+    "farsi": "متهم",
+    "transliteration": "mottaham",
+    "deutsch": "Beschuldigter, Angeklagter",
+    "pos": "noun"
+  },
+  {
+    "rank": 648,
+    "farsi": "تأسیس",
+    "transliteration": "ta'sis",
+    "deutsch": "Gründung",
+    "pos": "noun"
+  },
+  {
+    "rank": 649,
+    "farsi": "سال بودن",
+    "transliteration": "sal budan",
+    "deutsch": "Jahre sein",
+    "pos": "verb",
+    "present_stem": "باش"
+  },
+  {
+    "rank": 650,
+    "farsi": "تحقق",
+    "transliteration": "tahaghghogh",
+    "deutsch": "Verwirklichung",
+    "pos": "noun"
+  },
+  {
+    "rank": 651,
+    "farsi": "قانونی",
+    "transliteration": "ghanuni",
+    "deutsch": "legal, gesetzlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 652,
+    "farsi": "ادعا",
+    "transliteration": "edde'a",
+    "deutsch": "Behauptung",
+    "pos": "noun"
+  },
+  {
+    "rank": 653,
+    "farsi": "دیدگاه",
+    "transliteration": "didgah",
+    "deutsch": "Standpunkt, Sichtweise",
+    "pos": "noun"
+  },
+  {
+    "rank": 654,
+    "farsi": "مکان",
+    "transliteration": "makan",
+    "deutsch": "Ort, Platz",
+    "pos": "noun"
+  },
+  {
+    "rank": 655,
+    "farsi": "مطلب",
+    "transliteration": "matlab",
+    "deutsch": "Thema, Inhalt",
+    "pos": "noun"
+  },
+  {
+    "rank": 656,
+    "farsi": "امسال",
+    "transliteration": "emsal",
+    "deutsch": "dieses Jahr",
+    "pos": "adverb"
+  },
+  {
+    "rank": 657,
+    "farsi": "درآمد",
+    "transliteration": "daramad",
+    "deutsch": "Einkommen",
+    "pos": "noun"
+  },
+  {
+    "rank": 658,
+    "farsi": "گشتن",
+    "transliteration": "gashtan",
+    "deutsch": "sich drehen, streifen",
+    "pos": "verb",
+    "present_stem": "گرد"
+  },
+  {
+    "rank": 659,
+    "farsi": "همچون",
+    "transliteration": "hamchun",
+    "deutsch": "wie, ähnlich",
+    "pos": "adverb"
+  },
+  {
+    "rank": 660,
+    "farsi": "عین",
+    "transliteration": "eyn",
+    "deutsch": "dasselbe, Original",
+    "pos": "noun"
+  },
+  {
+    "rank": 661,
+    "farsi": "کارشناس",
+    "transliteration": "karshenas",
+    "deutsch": "Experte, Fachmann",
+    "pos": "noun"
+  },
+  {
+    "rank": 662,
+    "farsi": "هنر",
+    "transliteration": "honar",
+    "deutsch": "Kunst",
+    "pos": "noun"
+  },
+  {
+    "rank": 663,
+    "farsi": "همچنان",
+    "transliteration": "hamchenan",
+    "deutsch": "weiterhin, ebenso",
+    "pos": "adverb"
+  },
+  {
+    "rank": 664,
+    "farsi": "شامل",
+    "transliteration": "shamel",
+    "deutsch": "einschließlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 665,
+    "farsi": "روستا",
+    "transliteration": "rusta",
+    "deutsch": "Dorf",
+    "pos": "noun"
+  },
+  {
+    "rank": 666,
+    "farsi": "رهبری",
+    "transliteration": "rahbari",
+    "deutsch": "Führung",
+    "pos": "noun"
+  },
+  {
+    "rank": 667,
+    "farsi": "ظرفیت",
+    "transliteration": "zarfiyat",
+    "deutsch": "Kapazität",
+    "pos": "noun"
+  },
+  {
+    "rank": 668,
+    "farsi": "نظارت",
+    "transliteration": "nezarat",
+    "deutsch": "Aufsicht, Kontrolle",
+    "pos": "noun"
+  },
+  {
+    "rank": 669,
+    "farsi": "طبیعی",
+    "transliteration": "tabi'i",
+    "deutsch": "natürlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 670,
+    "farsi": "آغاز شدن",
+    "transliteration": "aghaz shodan",
+    "deutsch": "beginnen",
+    "pos": "verb",
+    "present_stem": "شو"
+  },
+  {
+    "rank": 671,
+    "farsi": "صنعتی",
+    "transliteration": "san'ati",
+    "deutsch": "industriell",
+    "pos": "adjective"
+  },
+  {
+    "rank": 672,
+    "farsi": "هنگام",
+    "transliteration": "hengam",
+    "deutsch": "Zeit, Moment",
+    "pos": "noun"
+  },
+  {
+    "rank": 673,
+    "farsi": "مثبت",
+    "transliteration": "mosbat",
+    "deutsch": "positiv",
+    "pos": "adjective"
+  },
+  {
+    "rank": 674,
+    "farsi": "یکدیگر",
+    "transliteration": "yekdigar",
+    "deutsch": "einander",
+    "pos": "pronoun"
+  },
+  {
+    "rank": 675,
+    "farsi": "پروژه",
+    "transliteration": "porozhe",
+    "deutsch": "Projekt",
+    "pos": "noun"
+  },
+  {
+    "rank": 676,
+    "farsi": "خلاف",
+    "transliteration": "khalaf",
+    "deutsch": "entgegen, gegen",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 677,
+    "farsi": "شیخ",
+    "transliteration": "sheykh",
+    "deutsch": "Scheich",
+    "pos": "noun"
+  },
+  {
+    "rank": 678,
+    "farsi": "سن",
+    "transliteration": "senn",
+    "deutsch": "Alter",
+    "pos": "noun"
+  },
+  {
+    "rank": 679,
+    "farsi": "حکم",
+    "transliteration": "hokm",
+    "deutsch": "Urteil, Befehl",
+    "pos": "noun"
+  },
+  {
+    "rank": 680,
+    "farsi": "تصویب",
+    "transliteration": "tasvib",
+    "deutsch": "Genehmigung, Billigung",
+    "pos": "noun"
+  },
+  {
+    "rank": 681,
+    "farsi": "شخصیت",
+    "transliteration": "shakhsiyyat",
+    "deutsch": "Persönlichkeit, Charakter",
+    "pos": "noun"
+  },
+  {
+    "rank": 682,
+    "farsi": "کدام",
+    "transliteration": "kodam",
+    "deutsch": "welcher",
+    "pos": "noun"
+  },
+  {
+    "rank": 683,
+    "farsi": "سرزمین",
+    "transliteration": "sarzamin",
+    "deutsch": "Land, Gebiet",
+    "pos": "noun"
+  },
+  {
+    "rank": 684,
+    "farsi": "مسلمان",
+    "transliteration": "mosalman",
+    "deutsch": "muslimisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 685,
+    "farsi": "ساز",
+    "transliteration": "saz",
+    "deutsch": "Instrument",
+    "pos": "noun"
+  },
+  {
+    "rank": 686,
+    "farsi": "خوردن",
+    "transliteration": "khordan",
+    "deutsch": "essen",
+    "pos": "verb",
+    "present_stem": "خور"
+  },
+  {
+    "rank": 687,
+    "farsi": "مسئولیت",
+    "transliteration": "mas'uliyyat",
+    "deutsch": "Verantwortung",
+    "pos": "noun"
+  },
+  {
+    "rank": 688,
+    "farsi": "جام",
+    "transliteration": "yam",
+    "deutsch": "Becher, Pokal",
+    "pos": "noun"
+  },
+  {
+    "rank": 689,
+    "farsi": "پذیرفتن",
+    "transliteration": "paziroftan",
+    "deutsch": "akzeptieren",
+    "pos": "verb",
+    "present_stem": "پذیر"
+  },
+  {
+    "rank": 690,
+    "farsi": "عبور",
+    "transliteration": "obur",
+    "deutsch": "Durchgang, Überquerung",
+    "pos": "noun"
+  },
+  {
+    "rank": 691,
+    "farsi": "سید",
+    "transliteration": "seyyed",
+    "deutsch": "Nachkomme des Propheten",
+    "pos": "noun"
+  },
+  {
+    "rank": 692,
+    "farsi": "پیام",
+    "transliteration": "payam",
+    "deutsch": "Nachricht, Botschaft",
+    "pos": "noun"
+  },
+  {
+    "rank": 693,
+    "farsi": "خصوصی",
+    "transliteration": "khosusi",
+    "deutsch": "privat",
+    "pos": "adjective"
+  },
+  {
+    "rank": 694,
+    "farsi": "حداقل",
+    "transliteration": "haddeaghal",
+    "deutsch": "mindestens, Minimum",
+    "pos": "adverb"
+  },
+  {
+    "rank": 695,
+    "farsi": "هرچه",
+    "transliteration": "harche",
+    "deutsch": "was auch immer",
+    "pos": "adverb"
+  },
+  {
+    "rank": 696,
+    "farsi": "وابسته",
+    "transliteration": "vabaste",
+    "deutsch": "abhängig",
+    "pos": "adjective"
+  },
+  {
+    "rank": 697,
+    "farsi": "دعوت",
+    "transliteration": "da'vat",
+    "deutsch": "Einladung",
+    "pos": "noun"
+  },
+  {
+    "rank": 698,
+    "farsi": "ترک",
+    "transliteration": "tark",
+    "deutsch": "verlassen, Türke",
+    "pos": "noun"
+  },
+  {
+    "rank": 699,
+    "farsi": "کنفرانس",
+    "transliteration": "konferans",
+    "deutsch": "Konferenz",
+    "pos": "noun"
+  },
+  {
+    "rank": 700,
+    "farsi": "نمایشگاه",
+    "transliteration": "namayeshgah",
+    "deutsch": "Ausstellung",
+    "pos": "noun"
+  },
+  {
+    "rank": 701,
+    "farsi": "تکرار",
+    "transliteration": "tekrar",
+    "deutsch": "Wiederholung",
+    "pos": "noun"
+  },
+  {
+    "rank": 702,
+    "farsi": "بسته",
+    "transliteration": "baste",
+    "deutsch": "Paket, geschlossen",
+    "pos": "noun"
+  },
+  {
+    "rank": 703,
+    "farsi": "عملکرد",
+    "transliteration": "amalkard",
+    "deutsch": "Leistung, Betrieb",
+    "pos": "noun"
+  },
+  {
+    "rank": 704,
+    "farsi": "ریشه",
+    "transliteration": "rishe",
+    "deutsch": "Wurzel",
+    "pos": "noun"
+  },
+  {
+    "rank": 705,
+    "farsi": "شناختن",
+    "transliteration": "shenakhtan",
+    "deutsch": "kennen, erkennen",
+    "pos": "verb",
+    "present_stem": "شناس"
+  },
+  {
+    "rank": 706,
+    "farsi": "سرمایه",
+    "transliteration": "sarmaye",
+    "deutsch": "Kapital",
+    "pos": "noun"
+  },
+  {
+    "rank": 707,
+    "farsi": "گاه",
+    "transliteration": "gah",
+    "deutsch": "manchmal, Zeitpunkt",
+    "pos": "adverb"
+  },
+  {
+    "rank": 708,
+    "farsi": "مدیر",
+    "transliteration": "modir",
+    "deutsch": "Manager, Direktor",
+    "pos": "noun"
+  },
+  {
+    "rank": 709,
+    "farsi": "سهم",
+    "transliteration": "sahm",
+    "deutsch": "Anteil, Los",
+    "pos": "noun"
+  },
+  {
+    "rank": 710,
+    "farsi": "سرنوشت",
+    "transliteration": "sarnevesht",
+    "deutsch": "Schicksal",
+    "pos": "noun"
+  },
+  {
+    "rank": 711,
+    "farsi": "کمیته",
+    "transliteration": "komite",
+    "deutsch": "Komitee",
+    "pos": "noun"
+  },
+  {
+    "rank": 712,
+    "farsi": "هند",
+    "transliteration": "hend",
+    "deutsch": "Indien",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 713,
+    "farsi": "اعلام کردن",
+    "transliteration": "e'lam kardan",
+    "deutsch": "ankündigen",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 714,
+    "farsi": "بخشیدن",
+    "transliteration": "bakhshidan",
+    "deutsch": "vergeben, schenken",
+    "pos": "verb",
+    "present_stem": "بخش"
+  },
+  {
+    "rank": 715,
+    "farsi": "مدیریت",
+    "transliteration": "modiriyyat",
+    "deutsch": "Management, Verwaltung",
+    "pos": "noun"
+  },
+  {
+    "rank": 716,
+    "farsi": "عده",
+    "transliteration": "edde",
+    "deutsch": "Anzahl",
+    "pos": "noun"
+  },
+  {
+    "rank": 717,
+    "farsi": "متأسفانه",
+    "transliteration": "mote'assefane",
+    "deutsch": "leider, bedauerlicherweise",
+    "pos": "adverb"
+  },
+  {
+    "rank": 718,
+    "farsi": "حساب",
+    "transliteration": "hesab",
+    "deutsch": "Konto, Rechnung",
+    "pos": "noun"
+  },
+  {
+    "rank": 719,
+    "farsi": "فکر کردن",
+    "transliteration": "fekr kardan",
+    "deutsch": "denken",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 720,
+    "farsi": "صورتی",
+    "transliteration": "surati",
+    "deutsch": "rosa, eine Form",
+    "pos": "adjective"
+  },
+  {
+    "rank": 721,
+    "farsi": "کالا",
+    "transliteration": "kala",
+    "deutsch": "Waren, Güter",
+    "pos": "noun"
+  },
+  {
+    "rank": 722,
+    "farsi": "طبق",
+    "transliteration": "tebgh",
+    "deutsch": "gemäß, laut",
+    "pos": "preposition"
+  },
+  {
+    "rank": 723,
+    "farsi": "ملاحظه",
+    "transliteration": "molaheze",
+    "deutsch": "Beobachtung",
+    "pos": "noun"
+  },
+  {
+    "rank": 724,
+    "farsi": "فراوان",
+    "transliteration": "faravan",
+    "deutsch": "reichlich, viel",
+    "pos": "adverb"
+  },
+  {
+    "rank": 725,
+    "farsi": "پیچیده",
+    "transliteration": "pichide",
+    "deutsch": "komplex, kompliziert",
+    "pos": "adjective"
+  },
+  {
+    "rank": 726,
+    "farsi": "اظهار",
+    "transliteration": "ezhar",
+    "deutsch": "Aussage, Erklärung",
+    "pos": "noun"
+  },
+  {
+    "rank": 727,
+    "farsi": "نجات",
+    "transliteration": "neyat",
+    "deutsch": "Rettung",
+    "pos": "noun"
+  },
+  {
+    "rank": 728,
+    "farsi": "گاز",
+    "transliteration": "gaz",
+    "deutsch": "Gas",
+    "pos": "noun"
+  },
+  {
+    "rank": 729,
+    "farsi": "شیوه",
+    "transliteration": "shive",
+    "deutsch": "Methode, Stil",
+    "pos": "noun"
+  },
+  {
+    "rank": 730,
+    "farsi": "عباس",
+    "transliteration": "abbas",
+    "deutsch": "Abbas",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 731,
+    "farsi": "عالی",
+    "transliteration": "ali",
+    "deutsch": "hoch, ausgezeichnet",
+    "pos": "adjective"
+  },
+  {
+    "rank": 732,
+    "farsi": "بعدی",
+    "transliteration": "ba'di",
+    "deutsch": "nächster",
+    "pos": "adjective"
+  },
+  {
+    "rank": 733,
+    "farsi": "زندان",
+    "transliteration": "zendan",
+    "deutsch": "Gefängnis",
+    "pos": "noun"
+  },
+  {
+    "rank": 734,
+    "farsi": "مشاهده",
+    "transliteration": "moshahede",
+    "deutsch": "Beobachtung",
+    "pos": "noun"
+  },
+  {
+    "rank": 735,
+    "farsi": "دادگاه",
+    "transliteration": "dadgah",
+    "deutsch": "Gericht",
+    "pos": "noun"
+  },
+  {
+    "rank": 736,
+    "farsi": "معرفی کردن",
+    "transliteration": "mo'arrefi kardan",
+    "deutsch": "vorstellen",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 737,
+    "farsi": "نرخ",
+    "transliteration": "nerkh",
+    "deutsch": "Rate, Tarif",
+    "pos": "noun"
+  },
+  {
+    "rank": 738,
+    "farsi": "کننده",
+    "transliteration": "konande",
+    "deutsch": "Ausführende, Täter",
+    "pos": "noun"
+  },
+  {
+    "rank": 739,
+    "farsi": "ضرورت",
+    "transliteration": "zarurat",
+    "deutsch": "Notwendigkeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 740,
+    "farsi": "شش",
+    "transliteration": "shesh",
+    "deutsch": "sechs, Lunge",
+    "pos": "noun"
+  },
+  {
+    "rank": 741,
+    "farsi": "مجبور",
+    "transliteration": "maybur",
+    "deutsch": "gezwungen",
+    "pos": "adjective"
+  },
+  {
+    "rank": 742,
+    "farsi": "عکس",
+    "transliteration": "aks",
+    "deutsch": "Foto, Bild",
+    "pos": "noun"
+  },
+  {
+    "rank": 743,
+    "farsi": "تردید",
+    "transliteration": "tardid",
+    "deutsch": "Zögern, Zweifel",
+    "pos": "noun"
+  },
+  {
+    "rank": 744,
+    "farsi": "خبری",
+    "transliteration": "khabari",
+    "deutsch": "Nachrichten-",
+    "pos": "adjective"
+  },
+  {
+    "rank": 745,
+    "farsi": "بهبود",
+    "transliteration": "behbud",
+    "deutsch": "Verbesserung",
+    "pos": "noun"
+  },
+  {
+    "rank": 746,
+    "farsi": "نشانه",
+    "transliteration": "neshane",
+    "deutsch": "Zeichen, Hinweis",
+    "pos": "noun"
+  },
+  {
+    "rank": 747,
+    "farsi": "رژیم",
+    "transliteration": "rezhim",
+    "deutsch": "Regime",
+    "pos": "noun"
+  },
+  {
+    "rank": 748,
+    "farsi": "اوج",
+    "transliteration": "owy",
+    "deutsch": "Höhepunkt, Gipfel",
+    "pos": "noun"
+  },
+  {
+    "rank": 749,
+    "farsi": "منفعت",
+    "transliteration": "manfa'at",
+    "deutsch": "Gewinn, Nutzen",
+    "pos": "noun"
+  },
+  {
+    "rank": 750,
+    "farsi": "منجر",
+    "transliteration": "monyar",
+    "deutsch": "führend zu",
+    "pos": "adjective"
+  },
+  {
+    "rank": 751,
+    "farsi": "نهاد",
+    "transliteration": "nahad",
+    "deutsch": "Institution",
+    "pos": "noun",
+    "present_stem": "نه"
+  },
+  {
+    "rank": 752,
+    "farsi": "کشاندن",
+    "transliteration": "keshandan",
+    "deutsch": "ziehen, schleppen",
+    "pos": "verb",
+    "present_stem": "کشان"
+  },
+  {
+    "rank": 753,
+    "farsi": "سابقه",
+    "transliteration": "sabeghe",
+    "deutsch": "Präzedenzfall",
+    "pos": "noun"
+  },
+  {
+    "rank": 754,
+    "farsi": "سپس",
+    "transliteration": "sepas",
+    "deutsch": "dann, danach",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 755,
+    "farsi": "نیم",
+    "transliteration": "nim",
+    "deutsch": "halb",
+    "pos": "noun"
+  },
+  {
+    "rank": 756,
+    "farsi": "درخواست",
+    "transliteration": "darkhast",
+    "deutsch": "Anfrage, Antrag",
+    "pos": "noun"
+  },
+  {
+    "rank": 757,
+    "farsi": "رد",
+    "transliteration": "radd",
+    "deutsch": "Ablehnung, Spur",
+    "pos": "noun"
+  },
+  {
+    "rank": 758,
+    "farsi": "منزل",
+    "transliteration": "manzel",
+    "deutsch": "Haus, Wohnung",
+    "pos": "noun"
+  },
+  {
+    "rank": 759,
+    "farsi": "پرونده",
+    "transliteration": "parvande",
+    "deutsch": "Akte, Dossier",
+    "pos": "noun"
+  },
+  {
+    "rank": 760,
+    "farsi": "حالا",
+    "transliteration": "hala",
+    "deutsch": "jetzt, gerade",
+    "pos": "adverb"
+  },
+  {
+    "rank": 761,
+    "farsi": "کنونی",
+    "transliteration": "konuni",
+    "deutsch": "gegenwärtig, aktuell",
+    "pos": "adjective"
+  },
+  {
+    "rank": 762,
+    "farsi": "وزن",
+    "transliteration": "vazn",
+    "deutsch": "Gewicht",
+    "pos": "noun"
+  },
+  {
+    "rank": 763,
+    "farsi": "تومان",
+    "transliteration": "tuman",
+    "deutsch": "Toman (Währung)",
+    "pos": "noun"
+  },
+  {
+    "rank": 764,
+    "farsi": "عدم",
+    "transliteration": "adam",
+    "deutsch": "Fehlen, Mangel",
+    "pos": "noun"
+  },
+  {
+    "rank": 765,
+    "farsi": "اتفاق افتادن",
+    "transliteration": "ettefagh oftadan",
+    "deutsch": "passieren, stattfinden",
+    "pos": "verb",
+    "present_stem": "افت"
+  },
+  {
+    "rank": 766,
+    "farsi": "بودجه",
+    "transliteration": "budye",
+    "deutsch": "Budget",
+    "pos": "noun"
+  },
+  {
+    "rank": 767,
+    "farsi": "اختصاص",
+    "transliteration": "ekhtesas",
+    "deutsch": "Zuteilung, Zuweisung",
+    "pos": "noun"
+  },
+  {
+    "rank": 768,
+    "farsi": "متعدد",
+    "transliteration": "mota'added",
+    "deutsch": "zahlreich, mehrfach",
+    "pos": "adjective"
+  },
+  {
+    "rank": 769,
+    "farsi": "سی",
+    "transliteration": "si",
+    "deutsch": "dreißig",
+    "pos": "noun"
+  },
+  {
+    "rank": 770,
+    "farsi": "اهل",
+    "transliteration": "ahl",
+    "deutsch": "einheimisch, zugehörig",
+    "pos": "noun"
+  },
+  {
+    "rank": 771,
+    "farsi": "هدایت",
+    "transliteration": "hedayat",
+    "deutsch": "Führung, Leitung",
+    "pos": "noun"
+  },
+  {
+    "rank": 772,
+    "farsi": "سند",
+    "transliteration": "sanad",
+    "deutsch": "Dokument, Urkunde",
+    "pos": "noun"
+  },
+  {
+    "rank": 773,
+    "farsi": "صد",
+    "transliteration": "sad",
+    "deutsch": "hundert",
+    "pos": "noun"
+  },
+  {
+    "rank": 774,
+    "farsi": "نشستن",
+    "transliteration": "neshastan",
+    "deutsch": "sitzen",
+    "pos": "verb",
+    "present_stem": "نشین"
+  },
+  {
+    "rank": 775,
+    "farsi": "آنجا",
+    "transliteration": "anya",
+    "deutsch": "dort",
+    "pos": "adverb"
+  },
+  {
+    "rank": 776,
+    "farsi": "تسلیم",
+    "transliteration": "taslim",
+    "deutsch": "Kapitulation, Übergabe",
+    "pos": "noun"
+  },
+  {
+    "rank": 777,
+    "farsi": "تقریباً",
+    "transliteration": "taghriban",
+    "deutsch": "ungefähr, etwa",
+    "pos": "adverb"
+  },
+  {
+    "rank": 778,
+    "farsi": "وارد شدن",
+    "transliteration": "vared shodan",
+    "deutsch": "eintreten, betreten",
+    "pos": "verb",
+    "present_stem": "شو"
+  },
+  {
+    "rank": 779,
+    "farsi": "طراحی",
+    "transliteration": "tarrahi",
+    "deutsch": "Design, Gestaltung",
+    "pos": "noun"
+  },
+  {
+    "rank": 780,
+    "farsi": "دانش",
+    "transliteration": "danesh",
+    "deutsch": "Wissen",
+    "pos": "noun"
+  },
+  {
+    "rank": 781,
+    "farsi": "علاوه",
+    "transliteration": "alave",
+    "deutsch": "Zusatz, Ergänzung",
+    "pos": "noun"
+  },
+  {
+    "rank": 782,
+    "farsi": "راهی",
+    "transliteration": "rahi",
+    "deutsch": "unterwegs nach, ein Weg",
+    "pos": "adjective"
+  },
+  {
+    "rank": 783,
+    "farsi": "انرژی",
+    "transliteration": "enerzhi",
+    "deutsch": "Energie",
+    "pos": "noun"
+  },
+  {
+    "rank": 784,
+    "farsi": "قالب",
+    "transliteration": "ghaleb",
+    "deutsch": "Modell, Rahmen",
+    "pos": "noun"
+  },
+  {
+    "rank": 785,
+    "farsi": "جمهور",
+    "transliteration": "yomhur",
+    "deutsch": "Republik",
+    "pos": "noun"
+  },
+  {
+    "rank": 786,
+    "farsi": "کشیدن",
+    "transliteration": "keshidan",
+    "deutsch": "ziehen, zeichnen",
+    "pos": "verb",
+    "present_stem": "کش"
+  },
+  {
+    "rank": 787,
+    "farsi": "باور",
+    "transliteration": "bavar",
+    "deutsch": "Glaube, Überzeugung",
+    "pos": "noun"
+  },
+  {
+    "rank": 788,
+    "farsi": "مسجد",
+    "transliteration": "masyed",
+    "deutsch": "Moschee",
+    "pos": "noun"
+  },
+  {
+    "rank": 789,
+    "farsi": "دشمن",
+    "transliteration": "doshman",
+    "deutsch": "Feind",
+    "pos": "noun"
+  },
+  {
+    "rank": 790,
+    "farsi": "پایین",
+    "transliteration": "payin",
+    "deutsch": "unten, nach unten",
+    "pos": "adverb"
+  },
+  {
+    "rank": 791,
+    "farsi": "ناشی",
+    "transliteration": "nashi",
+    "deutsch": "resultierend",
+    "pos": "adjective"
+  },
+  {
+    "rank": 792,
+    "farsi": "روبرو",
+    "transliteration": "ruberu",
+    "deutsch": "gegenüber",
+    "pos": "adjective"
+  },
+  {
+    "rank": 793,
+    "farsi": "دقیق",
+    "transliteration": "daghigh",
+    "deutsch": "genau, präzise",
+    "pos": "adjective"
+  },
+  {
+    "rank": 794,
+    "farsi": "پخش",
+    "transliteration": "pakhsh",
+    "deutsch": "Verteilung, Sendung",
+    "pos": "noun"
+  },
+  {
+    "rank": 795,
+    "farsi": "محمود",
+    "transliteration": "mahmud",
+    "deutsch": "Mahmoud",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 796,
+    "farsi": "خیابان",
+    "transliteration": "khiyaban",
+    "deutsch": "Straße",
+    "pos": "noun"
+  },
+  {
+    "rank": 797,
+    "farsi": "ساختمان",
+    "transliteration": "sakhteman",
+    "deutsch": "Gebäude",
+    "pos": "noun"
+  },
+  {
+    "rank": 798,
+    "farsi": "محقق",
+    "transliteration": "mohaghghegh",
+    "deutsch": "Gelehrter, ermittelt",
+    "pos": "noun"
+  },
+  {
+    "rank": 799,
+    "farsi": "ساکن",
+    "transliteration": "saken",
+    "deutsch": "Bewohner, ansässig",
+    "pos": "adjective"
+  },
+  {
+    "rank": 800,
+    "farsi": "شخص",
+    "transliteration": "shakhs",
+    "deutsch": "Person",
+    "pos": "noun"
+  },
+  {
+    "rank": 801,
+    "farsi": "کمیسیون",
+    "transliteration": "komisiyon",
+    "deutsch": "Kommission",
+    "pos": "noun"
+  },
+  {
+    "rank": 802,
+    "farsi": "خواسته",
+    "transliteration": "khaste",
+    "deutsch": "Forderung",
+    "pos": "noun"
+  },
+  {
+    "rank": 803,
+    "farsi": "تبدیل",
+    "transliteration": "tabdil",
+    "deutsch": "Umwandlung, Konvertierung",
+    "pos": "noun"
+  },
+  {
+    "rank": 804,
+    "farsi": "امتیاز",
+    "transliteration": "emtiyaz",
+    "deutsch": "Punkt, Privileg",
+    "pos": "noun"
+  },
+  {
+    "rank": 805,
+    "farsi": "لحاظ",
+    "transliteration": "lahaz",
+    "deutsch": "Hinsicht, Perspektive",
+    "pos": "noun"
+  },
+  {
+    "rank": 806,
+    "farsi": "شرق",
+    "transliteration": "shargh",
+    "deutsch": "Osten",
+    "pos": "noun"
+  },
+  {
+    "rank": 807,
+    "farsi": "وسیله",
+    "transliteration": "vasile",
+    "deutsch": "Mittel, Werkzeug",
+    "pos": "noun"
+  },
+  {
+    "rank": 808,
+    "farsi": "نسل",
+    "transliteration": "nasl",
+    "deutsch": "Generation",
+    "pos": "noun"
+  },
+  {
+    "rank": 809,
+    "farsi": "قسمت",
+    "transliteration": "ghesmat",
+    "deutsch": "Abschnitt, Teil",
+    "pos": "noun"
+  },
+  {
+    "rank": 810,
+    "farsi": "سراسر",
+    "transliteration": "sarasar",
+    "deutsch": "überall, durch und durch",
+    "pos": "noun"
+  },
+  {
+    "rank": 811,
+    "farsi": "اعتبار",
+    "transliteration": "e'tebar",
+    "deutsch": "Kredit, Gültigkeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 812,
+    "farsi": "گسترده",
+    "transliteration": "gostarde",
+    "deutsch": "weitverbreitet",
+    "pos": "adjective"
+  },
+  {
+    "rank": 813,
+    "farsi": "دوباره",
+    "transliteration": "dobare",
+    "deutsch": "wieder, erneut",
+    "pos": "adverb"
+  },
+  {
+    "rank": 814,
+    "farsi": "جاده",
+    "transliteration": "yadde",
+    "deutsch": "Straße, Weg",
+    "pos": "noun"
+  },
+  {
+    "rank": 815,
+    "farsi": "فارس",
+    "transliteration": "fars",
+    "deutsch": "Fars",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 816,
+    "farsi": "سالگی",
+    "transliteration": "salegi",
+    "deutsch": "Jahre alt",
+    "pos": "noun"
+  },
+  {
+    "rank": 817,
+    "farsi": "اشتباه",
+    "transliteration": "eshtebah",
+    "deutsch": "Fehler, Irrtum",
+    "pos": "noun"
+  },
+  {
+    "rank": 818,
+    "farsi": "چگونه",
+    "transliteration": "chegune",
+    "deutsch": "wie, auf welche Weise",
+    "pos": "adverb"
+  },
+  {
+    "rank": 819,
+    "farsi": "کشته",
+    "transliteration": "koshte",
+    "deutsch": "getötet, kultiviert",
+    "pos": "adjective"
+  },
+  {
+    "rank": 820,
+    "farsi": "متفاوت",
+    "transliteration": "motafavet",
+    "deutsch": "unterschiedlich, verschieden",
+    "pos": "adjective"
+  },
+  {
+    "rank": 821,
+    "farsi": "اینجا",
+    "transliteration": "inya",
+    "deutsch": "hier",
+    "pos": "adverb"
+  },
+  {
+    "rank": 822,
+    "farsi": "برخوردار بودن",
+    "transliteration": "barkhordar budan",
+    "deutsch": "besitzen, haben",
+    "pos": "verb",
+    "present_stem": "باش"
+  },
+  {
+    "rank": 823,
+    "farsi": "کشتی",
+    "transliteration": "keshti",
+    "deutsch": "Schiff, Ringen",
+    "pos": "noun"
+  },
+  {
+    "rank": 824,
+    "farsi": "جنوبی",
+    "transliteration": "yonubi",
+    "deutsch": "südlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 825,
+    "farsi": "بروز",
+    "transliteration": "boruz",
+    "deutsch": "Erscheinen, Auftreten",
+    "pos": "noun"
+  },
+  {
+    "rank": 826,
+    "farsi": "کشاورزی",
+    "transliteration": "keshavarzi",
+    "deutsch": "Landwirtschaft",
+    "pos": "noun"
+  },
+  {
+    "rank": 827,
+    "farsi": "انتقاد",
+    "transliteration": "enteghad",
+    "deutsch": "Kritik",
+    "pos": "noun"
+  },
+  {
+    "rank": 828,
+    "farsi": "شناخته",
+    "transliteration": "shenakhte",
+    "deutsch": "bekannt",
+    "pos": "adjective"
+  },
+  {
+    "rank": 829,
+    "farsi": "تعریف",
+    "transliteration": "ta'rif",
+    "deutsch": "Definition, Beschreibung",
+    "pos": "noun"
+  },
+  {
+    "rank": 830,
+    "farsi": "بازیکن",
+    "transliteration": "bazikon",
+    "deutsch": "Spieler",
+    "pos": "noun"
+  },
+  {
+    "rank": 831,
+    "farsi": "پست",
+    "transliteration": "post",
+    "deutsch": "Post, Stelle",
+    "pos": "noun"
+  },
+  {
+    "rank": 832,
+    "farsi": "زندگی کردن",
+    "transliteration": "zendegi kardan",
+    "deutsch": "leben",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 833,
+    "farsi": "باقی",
+    "transliteration": "baghi",
+    "deutsch": "verbleibend, übrig",
+    "pos": "adjective"
+  },
+  {
+    "rank": 834,
+    "farsi": "حسین",
+    "transliteration": "hoseyn",
+    "deutsch": "Hossein",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 835,
+    "farsi": "جمعی",
+    "transliteration": "yam'i",
+    "deutsch": "kollektiv, gemeinschaftlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 836,
+    "farsi": "مقایسه",
+    "transliteration": "moghayese",
+    "deutsch": "Vergleich",
+    "pos": "noun"
+  },
+  {
+    "rank": 837,
+    "farsi": "زمینی",
+    "transliteration": "zamini",
+    "deutsch": "Land-, irdisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 838,
+    "farsi": "اجازه دادن",
+    "transliteration": "eyaze dadan",
+    "deutsch": "erlauben, gestatten",
+    "pos": "verb",
+    "present_stem": "ده"
+  },
+  {
+    "rank": 839,
+    "farsi": "پذیرش",
+    "transliteration": "paziresh",
+    "deutsch": "Empfang, Aufnahme",
+    "pos": "noun"
+  },
+  {
+    "rank": 840,
+    "farsi": "درمان",
+    "transliteration": "darman",
+    "deutsch": "Behandlung",
+    "pos": "noun"
+  },
+  {
+    "rank": 841,
+    "farsi": "کار کردن",
+    "transliteration": "kar kardan",
+    "deutsch": "arbeiten",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 842,
+    "farsi": "جلب",
+    "transliteration": "yalb",
+    "deutsch": "Anziehung",
+    "pos": "noun"
+  },
+  {
+    "rank": 843,
+    "farsi": "محروم",
+    "transliteration": "mahrum",
+    "deutsch": "benachteiligt, gesperrt",
+    "pos": "adjective"
+  },
+  {
+    "rank": 844,
+    "farsi": "صادرات",
+    "transliteration": "saderat",
+    "deutsch": "Exporte",
+    "pos": "noun"
+  },
+  {
+    "rank": 845,
+    "farsi": "پاکستان",
+    "transliteration": "pakestan",
+    "deutsch": "Pakistan",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 846,
+    "farsi": "قضایی",
+    "transliteration": "ghazayi",
+    "deutsch": "Justiz-",
+    "pos": "adjective"
+  },
+  {
+    "rank": 847,
+    "farsi": "پزشکی",
+    "transliteration": "pezeshki",
+    "deutsch": "medizinisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 848,
+    "farsi": "عالم",
+    "transliteration": "alem",
+    "deutsch": "Gelehrter, Welt",
+    "pos": "noun"
+  },
+  {
+    "rank": 849,
+    "farsi": "آموزشی",
+    "transliteration": "amuzeshi",
+    "deutsch": "pädagogisch, lehrend",
+    "pos": "adjective"
+  },
+  {
+    "rank": 850,
+    "farsi": "افتادن",
+    "transliteration": "oftadan",
+    "deutsch": "fallen",
+    "pos": "verb",
+    "present_stem": "افت"
+  },
+  {
+    "rank": 851,
+    "farsi": "برداشت",
+    "transliteration": "bardasht",
+    "deutsch": "Ernte, Abhebung, Verständnis",
+    "pos": "noun"
+  },
+  {
+    "rank": 852,
+    "farsi": "نویسنده",
+    "transliteration": "nevisande",
+    "deutsch": "Schriftsteller, Autor",
+    "pos": "noun"
+  },
+  {
+    "rank": 853,
+    "farsi": "هفت",
+    "transliteration": "haft",
+    "deutsch": "sieben",
+    "pos": "noun"
+  },
+  {
+    "rank": 854,
+    "farsi": "تجارت",
+    "transliteration": "teyarat",
+    "deutsch": "Handel",
+    "pos": "noun"
+  },
+  {
+    "rank": 855,
+    "farsi": "خرید",
+    "transliteration": "kharid",
+    "deutsch": "Kauf",
+    "pos": "noun",
+    "present_stem": "خر"
+  },
+  {
+    "rank": 856,
+    "farsi": "سوریه",
+    "transliteration": "suriye",
+    "deutsch": "Syrien",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 857,
+    "farsi": "دچار",
+    "transliteration": "dochar",
+    "deutsch": "betroffen von",
+    "pos": "adjective"
+  },
+  {
+    "rank": 858,
+    "farsi": "فردی",
+    "transliteration": "fardi",
+    "deutsch": "individuell, persönlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 859,
+    "farsi": "دختر",
+    "transliteration": "dokhtar",
+    "deutsch": "Mädchen, Tochter",
+    "pos": "noun"
+  },
+  {
+    "rank": 860,
+    "farsi": "نهایی",
+    "transliteration": "nahayi",
+    "deutsch": "endgültig, abschließend",
+    "pos": "adjective"
+  },
+  {
+    "rank": 861,
+    "farsi": "کمک کردن",
+    "transliteration": "komak kardan",
+    "deutsch": "helfen",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 862,
+    "farsi": "احمد",
+    "transliteration": "ahmad",
+    "deutsch": "Ahmad",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 863,
+    "farsi": "ارسال",
+    "transliteration": "ersal",
+    "deutsch": "Versand, Sendung",
+    "pos": "noun"
+  },
+  {
+    "rank": 864,
+    "farsi": "ابزار",
+    "transliteration": "abzar",
+    "deutsch": "Werkzeug, Hilfsmittel",
+    "pos": "noun"
+  },
+  {
+    "rank": 865,
+    "farsi": "هرچند",
+    "transliteration": "harchand",
+    "deutsch": "jedoch, obwohl",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 866,
+    "farsi": "بنابراین",
+    "transliteration": "banabarin",
+    "deutsch": "deshalb, daher",
+    "pos": "conjunction"
+  },
+  {
+    "rank": 867,
+    "farsi": "ژاپن",
+    "transliteration": "zhapon",
+    "deutsch": "Japan",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 868,
+    "farsi": "حرف",
+    "transliteration": "harf",
+    "deutsch": "Buchstabe, Gespräch",
+    "pos": "noun"
+  },
+  {
+    "rank": 869,
+    "farsi": "داستان",
+    "transliteration": "dastan",
+    "deutsch": "Geschichte, Erzählung",
+    "pos": "noun"
+  },
+  {
+    "rank": 870,
+    "farsi": "خانم",
+    "transliteration": "khanom",
+    "deutsch": "Dame, Frau",
+    "pos": "noun"
+  },
+  {
+    "rank": 871,
+    "farsi": "قربانی",
+    "transliteration": "ghorbani",
+    "deutsch": "Opfer",
+    "pos": "noun"
+  },
+  {
+    "rank": 872,
+    "farsi": "معدن",
+    "transliteration": "ma'dan",
+    "deutsch": "Bergwerk, Mine",
+    "pos": "noun"
+  },
+  {
+    "rank": 873,
+    "farsi": "مسافر",
+    "transliteration": "mosafer",
+    "deutsch": "Reisende, Passagier",
+    "pos": "noun"
+  },
+  {
+    "rank": 874,
+    "farsi": "قوه",
+    "transliteration": "ghovve",
+    "deutsch": "Stärke, Kraft",
+    "pos": "noun"
+  },
+  {
+    "rank": 875,
+    "farsi": "زیبا",
+    "transliteration": "ziba",
+    "deutsch": "schön",
+    "pos": "adjective"
+  },
+  {
+    "rank": 876,
+    "farsi": "مشغول",
+    "transliteration": "mashghul",
+    "deutsch": "beschäftigt",
+    "pos": "adjective"
+  },
+  {
+    "rank": 877,
+    "farsi": "حاصل",
+    "transliteration": "hasel",
+    "deutsch": "Ergebnis, Ertrag",
+    "pos": "noun"
+  },
+  {
+    "rank": 878,
+    "farsi": "اتفاق",
+    "transliteration": "ettefagh",
+    "deutsch": "Ereignis, Vorfall",
+    "pos": "noun"
+  },
+  {
+    "rank": 879,
+    "farsi": "اندازه",
+    "transliteration": "andaze",
+    "deutsch": "Größe, Ausmaß",
+    "pos": "noun"
+  },
+  {
+    "rank": 880,
+    "farsi": "ورزشی",
+    "transliteration": "varzeshi",
+    "deutsch": "sportlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 881,
+    "farsi": "باعث شدن",
+    "transliteration": "baes shodan",
+    "deutsch": "verursachen",
+    "pos": "verb",
+    "present_stem": "شو"
+  },
+  {
+    "rank": 882,
+    "farsi": "اجازه",
+    "transliteration": "eyaze",
+    "deutsch": "Erlaubnis",
+    "pos": "noun"
+  },
+  {
+    "rank": 883,
+    "farsi": "پدر",
+    "transliteration": "pedar",
+    "deutsch": "Vater",
+    "pos": "noun"
+  },
+  {
+    "rank": 884,
+    "farsi": "بازگشت",
+    "transliteration": "bazgasht",
+    "deutsch": "Rückkehr",
+    "pos": "noun",
+    "present_stem": "بازگرد"
+  },
+  {
+    "rank": 885,
+    "farsi": "پر",
+    "transliteration": "par",
+    "deutsch": "Feder, voll",
+    "pos": "adjective"
+  },
+  {
+    "rank": 886,
+    "farsi": "مطالعه",
+    "transliteration": "motale'e",
+    "deutsch": "Studie, Lektüre",
+    "pos": "noun"
+  },
+  {
+    "rank": 887,
+    "farsi": "ارتش",
+    "transliteration": "artesh",
+    "deutsch": "Armee, Streitkräfte",
+    "pos": "noun"
+  },
+  {
+    "rank": 888,
+    "farsi": "ضعف",
+    "transliteration": "za'f",
+    "deutsch": "Schwäche",
+    "pos": "noun"
+  },
+  {
+    "rank": 889,
+    "farsi": "افتخار",
+    "transliteration": "eftekhar",
+    "deutsch": "Ehre, Stolz",
+    "pos": "noun"
+  },
+  {
+    "rank": 890,
+    "farsi": "آمادگی",
+    "transliteration": "amadegi",
+    "deutsch": "Bereitschaft, Kindergarten",
+    "pos": "noun"
+  },
+  {
+    "rank": 891,
+    "farsi": "نامزد",
+    "transliteration": "namzad",
+    "deutsch": "Kandidat",
+    "pos": "noun"
+  },
+  {
+    "rank": 892,
+    "farsi": "ویژگی",
+    "transliteration": "vizhegi",
+    "deutsch": "Merkmal, Eigenschaft",
+    "pos": "noun"
+  },
+  {
+    "rank": 893,
+    "farsi": "تلویزیون",
+    "transliteration": "televiziyon",
+    "deutsch": "Fernsehen",
+    "pos": "noun"
+  },
+  {
+    "rank": 894,
+    "farsi": "شیعه",
+    "transliteration": "shi'e",
+    "deutsch": "schiitisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 895,
+    "farsi": "خواستار",
+    "transliteration": "khastar",
+    "deutsch": "Antragsteller, begehrend",
+    "pos": "noun"
+  },
+  {
+    "rank": 896,
+    "farsi": "مذهبی",
+    "transliteration": "mazhabi",
+    "deutsch": "religiös",
+    "pos": "adjective"
+  },
+  {
+    "rank": 897,
+    "farsi": "میلادی",
+    "transliteration": "miladi",
+    "deutsch": "n. Chr., nach Christus",
+    "pos": "adjective"
+  },
+  {
+    "rank": 898,
+    "farsi": "مناسبت",
+    "transliteration": "monasebat",
+    "deutsch": "Angemessenheit, Gelegenheit",
+    "pos": "noun"
+  },
+  {
+    "rank": 899,
+    "farsi": "محترم",
+    "transliteration": "mohtaram",
+    "deutsch": "ehrwürdig, geachtet",
+    "pos": "adjective"
+  },
+  {
+    "rank": 900,
+    "farsi": "کارخانه",
+    "transliteration": "karkhane",
+    "deutsch": "Fabrik",
+    "pos": "noun"
+  },
+  {
+    "rank": 901,
+    "farsi": "موافقت",
+    "transliteration": "movafeghat",
+    "deutsch": "Zustimmung, Einverständnis",
+    "pos": "noun"
+  },
+  {
+    "rank": 902,
+    "farsi": "مجموع",
+    "transliteration": "maymu'",
+    "deutsch": "Gesamtsumme",
+    "pos": "noun"
+  },
+  {
+    "rank": 903,
+    "farsi": "کشتن",
+    "transliteration": "koshtan",
+    "deutsch": "töten",
+    "pos": "verb",
+    "present_stem": "کش"
+  },
+  {
+    "rank": 904,
+    "farsi": "محلی",
+    "transliteration": "mahalli",
+    "deutsch": "lokal, örtlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 905,
+    "farsi": "عادی",
+    "transliteration": "adi",
+    "deutsch": "normal, gewöhnlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 906,
+    "farsi": "اتحادیه",
+    "transliteration": "ettehadiye",
+    "deutsch": "Gewerkschaft, Union",
+    "pos": "noun"
+  },
+  {
+    "rank": 907,
+    "farsi": "قدیمی",
+    "transliteration": "ghadimi",
+    "deutsch": "alt, altmodisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 908,
+    "farsi": "وحدت",
+    "transliteration": "vahdat",
+    "deutsch": "Einheit, Einigkeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 909,
+    "farsi": "بحران",
+    "transliteration": "bohran",
+    "deutsch": "Krise",
+    "pos": "noun"
+  },
+  {
+    "rank": 910,
+    "farsi": "دل",
+    "transliteration": "del",
+    "deutsch": "Herz",
+    "pos": "noun"
+  },
+  {
+    "rank": 911,
+    "farsi": "فرمانده",
+    "transliteration": "farmande",
+    "deutsch": "Kommandant",
+    "pos": "noun"
+  },
+  {
+    "rank": 912,
+    "farsi": "سنت",
+    "transliteration": "sonnat",
+    "deutsch": "Tradition",
+    "pos": "noun"
+  },
+  {
+    "rank": 913,
+    "farsi": "اسرائیل",
+    "transliteration": "esra'il",
+    "deutsch": "Israel",
+    "pos": "proper noun"
+  },
+  {
+    "rank": 914,
+    "farsi": "اروپایی",
+    "transliteration": "orupayi",
+    "deutsch": "europäisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 915,
+    "farsi": "مانده",
+    "transliteration": "mande",
+    "deutsch": "abgestanden, Restbetrag",
+    "pos": "adjective"
+  },
+  {
+    "rank": 916,
+    "farsi": "عدالت",
+    "transliteration": "edalat",
+    "deutsch": "Gerechtigkeit",
+    "pos": "noun"
+  },
+  {
+    "rank": 917,
+    "farsi": "سرمایه‌گذاری",
+    "transliteration": "sarmayegozari",
+    "deutsch": "Investition",
+    "pos": "noun"
+  },
+  {
+    "rank": 918,
+    "farsi": "صبح",
+    "transliteration": "sobh",
+    "deutsch": "Morgen",
+    "pos": "noun"
+  },
+  {
+    "rank": 919,
+    "farsi": "سخنرانی",
+    "transliteration": "sokhanrani",
+    "deutsch": "Rede, Vortrag",
+    "pos": "noun"
+  },
+  {
+    "rank": 920,
+    "farsi": "باشگاه",
+    "transliteration": "bashgah",
+    "deutsch": "Klub, Verein",
+    "pos": "noun"
+  },
+  {
+    "rank": 921,
+    "farsi": "کشف",
+    "transliteration": "kashf",
+    "deutsch": "Entdeckung",
+    "pos": "noun"
+  },
+  {
+    "rank": 922,
+    "farsi": "تبدیل شدن",
+    "transliteration": "tabdil shodan",
+    "deutsch": "umwandeln",
+    "pos": "verb",
+    "present_stem": "شو"
+  },
+  {
+    "rank": 923,
+    "farsi": "قهرمانی",
+    "transliteration": "ghahremani",
+    "deutsch": "Heldentum, Meisterschaft",
+    "pos": "noun"
+  },
+  {
+    "rank": 924,
+    "farsi": "جشنواره",
+    "transliteration": "yashnvare",
+    "deutsch": "Festival",
+    "pos": "noun"
+  },
+  {
+    "rank": 925,
+    "farsi": "سود",
+    "transliteration": "sud",
+    "deutsch": "Gewinn, Profit",
+    "pos": "noun"
+  },
+  {
+    "rank": 926,
+    "farsi": "شمالی",
+    "transliteration": "shomali",
+    "deutsch": "nördlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 927,
+    "farsi": "تهدید",
+    "transliteration": "tahdid",
+    "deutsch": "Drohung",
+    "pos": "noun"
+  },
+  {
+    "rank": 928,
+    "farsi": "ساده",
+    "transliteration": "sade",
+    "deutsch": "einfach, schlicht",
+    "pos": "adjective"
+  },
+  {
+    "rank": 929,
+    "farsi": "قادر",
+    "transliteration": "ghader",
+    "deutsch": "fähig, imstande",
+    "pos": "adjective"
+  },
+  {
+    "rank": 930,
+    "farsi": "مادر",
+    "transliteration": "madar",
+    "deutsch": "Mutter",
+    "pos": "noun"
+  },
+  {
+    "rank": 931,
+    "farsi": "فرار",
+    "transliteration": "farar",
+    "deutsch": "Flucht",
+    "pos": "noun"
+  },
+  {
+    "rank": 932,
+    "farsi": "زنده",
+    "transliteration": "zende",
+    "deutsch": "lebendig, lebend",
+    "pos": "adjective"
+  },
+  {
+    "rank": 933,
+    "farsi": "قتل",
+    "transliteration": "ghatl",
+    "deutsch": "Tötung, Mord",
+    "pos": "noun"
+  },
+  {
+    "rank": 934,
+    "farsi": "سالم",
+    "transliteration": "salem",
+    "deutsch": "gesund",
+    "pos": "adjective"
+  },
+  {
+    "rank": 935,
+    "farsi": "ثبت",
+    "transliteration": "sabt",
+    "deutsch": "Registrierung",
+    "pos": "noun"
+  },
+  {
+    "rank": 936,
+    "farsi": "شهروند",
+    "transliteration": "shahrvand",
+    "deutsch": "Bürger",
+    "pos": "noun"
+  },
+  {
+    "rank": 937,
+    "farsi": "صلح",
+    "transliteration": "solh",
+    "deutsch": "Frieden",
+    "pos": "noun"
+  },
+  {
+    "rank": 938,
+    "farsi": "طلا",
+    "transliteration": "tala",
+    "deutsch": "Gold",
+    "pos": "noun"
+  },
+  {
+    "rank": 939,
+    "farsi": "هوایی",
+    "transliteration": "havayi",
+    "deutsch": "Luft-, Flug-",
+    "pos": "adjective"
+  },
+  {
+    "rank": 940,
+    "farsi": "دیروز",
+    "transliteration": "diruz",
+    "deutsch": "gestern",
+    "pos": "adverb"
+  },
+  {
+    "rank": 941,
+    "farsi": "سعی کردن",
+    "transliteration": "sa'y kardan",
+    "deutsch": "versuchen",
+    "pos": "verb",
+    "present_stem": "کن"
+  },
+  {
+    "rank": 942,
+    "farsi": "عرب",
+    "transliteration": "arab",
+    "deutsch": "Araber",
+    "pos": "noun"
+  },
+  {
+    "rank": 943,
+    "farsi": "جاری",
+    "transliteration": "yari",
+    "deutsch": "fließend, laufend, aktuell",
+    "pos": "adjective"
+  },
+  {
+    "rank": 944,
+    "farsi": "هویت",
+    "transliteration": "hoviyyat",
+    "deutsch": "Identität",
+    "pos": "noun"
+  },
+  {
+    "rank": 945,
+    "farsi": "بدن",
+    "transliteration": "badan",
+    "deutsch": "Körper",
+    "pos": "noun"
+  },
+  {
+    "rank": 946,
+    "farsi": "سلاح",
+    "transliteration": "selah",
+    "deutsch": "Waffe",
+    "pos": "noun"
+  },
+  {
+    "rank": 947,
+    "farsi": "دانشمند",
+    "transliteration": "daneshmand",
+    "deutsch": "Wissenschaftler, Forscher",
+    "pos": "noun"
+  },
+  {
+    "rank": 948,
+    "farsi": "بدین",
+    "transliteration": "bedin",
+    "deutsch": "zu diesem, so viel",
+    "pos": "adverb"
+  },
+  {
+    "rank": 949,
+    "farsi": "منفی",
+    "transliteration": "manfi",
+    "deutsch": "negativ",
+    "pos": "adjective"
+  },
+  {
+    "rank": 950,
+    "farsi": "درون",
+    "transliteration": "darun",
+    "deutsch": "innen, innerhalb",
+    "pos": "preposition"
+  },
+  {
+    "rank": 951,
+    "farsi": "رنگ",
+    "transliteration": "rang",
+    "deutsch": "Farbe",
+    "pos": "noun"
+  },
+  {
+    "rank": 952,
+    "farsi": "فرانسوی",
+    "transliteration": "faransavi",
+    "deutsch": "Französisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 953,
+    "farsi": "کیفیت",
+    "transliteration": "keyfiyyat",
+    "deutsch": "Qualität",
+    "pos": "noun"
+  },
+  {
+    "rank": 954,
+    "farsi": "اجرایی",
+    "transliteration": "eyrayi",
+    "deutsch": "ausführend, exekutiv",
+    "pos": "adjective"
+  },
+  {
+    "rank": 955,
+    "farsi": "خشونت",
+    "transliteration": "khoshunat",
+    "deutsch": "Gewalt",
+    "pos": "noun"
+  },
+  {
+    "rank": 956,
+    "farsi": "مبنی",
+    "transliteration": "mabni",
+    "deutsch": "basierend",
+    "pos": "adjective"
+  },
+  {
+    "rank": 957,
+    "farsi": "شماره",
+    "transliteration": "shomare",
+    "deutsch": "Nummer, Zahl",
+    "pos": "noun"
+  },
+  {
+    "rank": 958,
+    "farsi": "پشت",
+    "transliteration": "posht",
+    "deutsch": "Rücken, hinter",
+    "pos": "noun"
+  },
+  {
+    "rank": 959,
+    "farsi": "عملی",
+    "transliteration": "amali",
+    "deutsch": "praktisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 960,
+    "farsi": "مذاکرات",
+    "transliteration": "mozakerat",
+    "deutsch": "Verhandlungen",
+    "pos": "noun"
+  },
+  {
+    "rank": 961,
+    "farsi": "ورزش",
+    "transliteration": "varzesh",
+    "deutsch": "Sport",
+    "pos": "noun"
+  },
+  {
+    "rank": 962,
+    "farsi": "جالب",
+    "transliteration": "yaleb",
+    "deutsch": "interessant, attraktiv",
+    "pos": "adjective"
+  },
+  {
+    "rank": 963,
+    "farsi": "موضع",
+    "transliteration": "mowze'",
+    "deutsch": "Position, Standpunkt",
+    "pos": "noun"
+  },
+  {
+    "rank": 964,
+    "farsi": "اضافه",
+    "transliteration": "ezafe",
+    "deutsch": "Zusatz, Ergänzung",
+    "pos": "adjective"
+  },
+  {
+    "rank": 965,
+    "farsi": "دستگیر",
+    "transliteration": "dastgir",
+    "deutsch": "verhaftet",
+    "pos": "adjective"
+  },
+  {
+    "rank": 966,
+    "farsi": "متوجه",
+    "transliteration": "motevayyeh",
+    "deutsch": "bewusst, bemerkt",
+    "pos": "adjective"
+  },
+  {
+    "rank": 967,
+    "farsi": "فرمودن",
+    "transliteration": "farmudan",
+    "deutsch": "befehlen, geruhen",
+    "pos": "verb",
+    "present_stem": "فرمای"
+  },
+  {
+    "rank": 968,
+    "farsi": "عبارت",
+    "transliteration": "ebarat",
+    "deutsch": "Ausdruck, Phrase",
+    "pos": "noun"
+  },
+  {
+    "rank": 969,
+    "farsi": "ارزیابی",
+    "transliteration": "arzyabi",
+    "deutsch": "Bewertung, Einschätzung",
+    "pos": "noun"
+  },
+  {
+    "rank": 970,
+    "farsi": "تصور",
+    "transliteration": "tasavvor",
+    "deutsch": "Vorstellung, Fantasie",
+    "pos": "noun"
+  },
+  {
+    "rank": 971,
+    "farsi": "شاعر",
+    "transliteration": "sha'er",
+    "deutsch": "Dichter",
+    "pos": "noun"
+  },
+  {
+    "rank": 972,
+    "farsi": "اعتماد",
+    "transliteration": "e'temad",
+    "deutsch": "Vertrauen",
+    "pos": "noun"
+  },
+  {
+    "rank": 973,
+    "farsi": "آرامش",
+    "transliteration": "aramesh",
+    "deutsch": "Ruhe, Gelassenheit",
+    "pos": "noun"
+  },
+  {
+    "rank": 974,
+    "farsi": "نفع",
+    "transliteration": "naf'",
+    "deutsch": "Gewinn, Vorteil",
+    "pos": "noun"
+  },
+  {
+    "rank": 975,
+    "farsi": "فقر",
+    "transliteration": "faghr",
+    "deutsch": "Armut",
+    "pos": "noun"
+  },
+  {
+    "rank": 976,
+    "farsi": "همکار",
+    "transliteration": "hamkar",
+    "deutsch": "Kollege, Mitarbeiter",
+    "pos": "noun"
+  },
+  {
+    "rank": 977,
+    "farsi": "اولویت",
+    "transliteration": "owlavviyat",
+    "deutsch": "Priorität",
+    "pos": "noun"
+  },
+  {
+    "rank": 978,
+    "farsi": "متخصص",
+    "transliteration": "motekhasses",
+    "deutsch": "Experte, Spezialist",
+    "pos": "noun"
+  },
+  {
+    "rank": 979,
+    "farsi": "صندوق",
+    "transliteration": "sandugh",
+    "deutsch": "Fonds, Kiste",
+    "pos": "noun"
+  },
+  {
+    "rank": 980,
+    "farsi": "مشابه",
+    "transliteration": "moshabeh",
+    "deutsch": "ähnlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 981,
+    "farsi": "فارسی",
+    "transliteration": "farsi",
+    "deutsch": "Persisch, Farsi",
+    "pos": "adjective"
+  },
+  {
+    "rank": 982,
+    "farsi": "نزدیکی",
+    "transliteration": "nazdiki",
+    "deutsch": "Nähe",
+    "pos": "noun"
+  },
+  {
+    "rank": 983,
+    "farsi": "رضایت",
+    "transliteration": "rezayat",
+    "deutsch": "Zufriedenheit",
+    "pos": "noun"
+  },
+  {
+    "rank": 984,
+    "farsi": "نگرانی",
+    "transliteration": "negarani",
+    "deutsch": "Sorge, Besorgnis",
+    "pos": "noun"
+  },
+  {
+    "rank": 985,
+    "farsi": "مؤثر",
+    "transliteration": "mo'asser",
+    "deutsch": "wirksam, effektiv",
+    "pos": "adjective"
+  },
+  {
+    "rank": 986,
+    "farsi": "برجسته",
+    "transliteration": "baryeste",
+    "deutsch": "herausragend, hervorragend",
+    "pos": "adjective"
+  },
+  {
+    "rank": 987,
+    "farsi": "قرن",
+    "transliteration": "gharn",
+    "deutsch": "Jahrhundert",
+    "pos": "noun"
+  },
+  {
+    "rank": 988,
+    "farsi": "رسیدگی",
+    "transliteration": "residegi",
+    "deutsch": "Untersuchung",
+    "pos": "noun"
+  },
+  {
+    "rank": 989,
+    "farsi": "ریال",
+    "transliteration": "riyal",
+    "deutsch": "Rial (Währung)",
+    "pos": "noun"
+  },
+  {
+    "rank": 990,
+    "farsi": "تصمیم گرفتن",
+    "transliteration": "tasmim gereftan",
+    "deutsch": "entscheiden",
+    "pos": "verb",
+    "present_stem": "گیر"
+  },
+  {
+    "rank": 991,
+    "farsi": "اولیه",
+    "transliteration": "avvaliyye",
+    "deutsch": "primär, ursprünglich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 992,
+    "farsi": "فنی",
+    "transliteration": "fanni",
+    "deutsch": "technisch",
+    "pos": "adjective"
+  },
+  {
+    "rank": 993,
+    "farsi": "خودرو",
+    "transliteration": "khodrow",
+    "deutsch": "Auto, Fahrzeug",
+    "pos": "noun"
+  },
+  {
+    "rank": 994,
+    "farsi": "عرض",
+    "transliteration": "arz",
+    "deutsch": "Breite, Aussage",
+    "pos": "noun"
+  },
+  {
+    "rank": 995,
+    "farsi": "مقدار",
+    "transliteration": "meghdar",
+    "deutsch": "Menge, Betrag",
+    "pos": "noun"
+  },
+  {
+    "rank": 996,
+    "farsi": "عمده",
+    "transliteration": "omde",
+    "deutsch": "hauptsächlich, überwiegend",
+    "pos": "adjective"
+  },
+  {
+    "rank": 997,
+    "farsi": "قول",
+    "transliteration": "ghowl",
+    "deutsch": "Versprechen, Aussage",
+    "pos": "noun"
+  },
+  {
+    "rank": 998,
+    "farsi": "سپرده",
+    "transliteration": "seporde",
+    "deutsch": "anvertraut, Einlage",
+    "pos": "noun"
+  },
+  {
+    "rank": 999,
+    "farsi": "تجاری",
+    "transliteration": "teyari",
+    "deutsch": "kommerziell, geschäftlich",
+    "pos": "adjective"
+  },
+  {
+    "rank": 1000,
+    "farsi": "ایتالیا",
+    "transliteration": "italiya",
+    "deutsch": "Italien",
+    "pos": "proper noun"
+  }
+]

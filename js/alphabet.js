@@ -136,6 +136,6 @@ function abcGetPos(e) {
 }
 
 /* ── NAVIGATION ── */
-function abcNext()  { if (abcIdx < ALPHABET.length - 1) showLetter(abcIdx + 1); }
-function abcPrev()  { if (abcIdx > 0) showLetter(abcIdx - 1); }
+function abcNext()  { showLetter(abcIdx < ALPHABET.length - 1 ? abcIdx + 1 : 0); }
+function abcPrev()  { showLetter(abcIdx > 0 ? abcIdx - 1 : ALPHABET.length - 1); }
 function abcClear() { abcDrawGuide(); }
