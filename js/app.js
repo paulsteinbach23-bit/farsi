@@ -7,6 +7,7 @@ function show(id, btn) {
 }
 
 /* ── INIT ── */
+initStreak();
 buildDeck('all');
 buildVocabTopics();
 buildGrammar();

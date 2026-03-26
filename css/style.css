@@ -132,11 +132,117 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
   height: 60px;
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 720px;
+}
+
+/* ── Daily progress bar ── */
+.daily-progress {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.dp-item {
+  flex: 1;
+  background: var(--bg);
+  border-radius: var(--radius-md);
+  padding: 8px 10px;
+  box-shadow: var(--shadow-xs);
+}
+
+.dp-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.dp-count { font-variant-numeric: tabular-nums; }
+
+.dp-done { color: var(--green-600); }
+
+.dp-track {
+  height: 6px;
+  background: var(--bg-tertiary);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.dp-fill {
+  height: 100%;
+  border-radius: 99px;
+  background: var(--grad-primary);
+  transition: width 0.35s ease;
+}
+
+.dp-fill-done { background: var(--grad-success); }
+
+/* ── Streak badge ── */
+.streak-badge {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  user-select: none;
+  transform-origin: center;
+}
+
+@keyframes streak-flicker {
+  0%   { transform: scale(1)    rotate(0deg);  }
+  20%  { transform: scale(1.45) rotate(-8deg); }
+  45%  { transform: scale(1.25) rotate(5deg);  }
+  65%  { transform: scale(1.4)  rotate(-4deg); }
+  85%  { transform: scale(1.15) rotate(2deg);  }
+  100% { transform: scale(1)    rotate(0deg);  }
+}
+
+.streak-flicker {
+  animation: streak-flicker 0.65s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+/* ── Streak milestone toast ── */
+.streak-milestone {
+  position: fixed;
+  top: 72px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--purple-600);
+  color: #fff;
+  padding: 11px 22px;
+  border-radius: var(--radius-lg);
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  z-index: 999;
+  pointer-events: none;
+  animation: toast-in 0.3s ease, toast-out 0.35s ease 2.85s forwards;
+}
+
+@keyframes toast-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(-8px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0);    }
+}
+
+@keyframes toast-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
 }
 
 .logo {

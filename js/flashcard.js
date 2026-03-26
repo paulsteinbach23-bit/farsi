@@ -75,6 +75,7 @@ function rate(correct) {
   if (fcSRSMode) updateSRS(card.id, correct, direction);
   if (correct) fcCorrect++;
   fcDone++; fcIdx++;
+  incrementVocab();
   updateFlashStats();
   showCurrentCard();
 }

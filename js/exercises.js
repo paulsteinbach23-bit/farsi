@@ -93,6 +93,7 @@ function pickAnswer(btn) {
   if (chosen === correct) {
     btn.classList.add('quiz-btn-correct');
     quizRight++;
+    incrementPhrases();
   } else {
     btn.classList.add('quiz-btn-wrong');
     btns.forEach(b => {

@@ -9,8 +9,9 @@
 <body>
 
 <header>
-  <div>
+  <div class="header-inner">
     <div class="logo"><span style="font-family:'Scheherazade New','Noto Nastaliq Urdu','Traditional Arabic',serif;direction:rtl">تعارف</span>academics</div>
+    <div class="streak-badge" id="streak-badge">🔥 <span id="streak-count">0</span></div>
   </div>
 </header>
 
@@ -24,6 +25,9 @@
     <button class="nav-btn" onclick="show('phrases', this)">Phrasebook</button>
     <button class="nav-btn" onclick="show('alphabet', this)">Alphabet</button>
   </nav>
+
+  <!-- DAILY PROGRESS -->
+  <div id="daily-progress" class="daily-progress"></div>
 
   <!-- FLASHCARDS -->
   <div id="flash" class="screen active">
@@ -118,6 +122,7 @@
 <script src="js/exercises.js"></script>
 <script src="js/phrases.js"></script>
 <script src="js/alphabet.js"></script>
+<script src="js/streak.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
