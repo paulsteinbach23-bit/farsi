@@ -52,17 +52,30 @@ function switchLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('app_lang', lang);
   _applyLangUI();
-  fcFilter = 'all';
-  buildDeck('all');
   buildSentences();
   buildPhrases();
-  show('flash', document.querySelector('.nav-btn'));
+  if (lang === 'farsi') {
+    startLessonSession(getActiveLessonIdx());
+  } else {
+    // French: simple full-deck mode (no lesson system)
+    fcDeck = shuffle(getActiveVocab().map(card => ({ card, direction: 'recognition', isLesson: true })));
+    fcIdx = 0; fcFlipped = false; fcCorrect = 0; fcDone = 0;
+    document.getElementById('fc-done-msg').style.display = 'none';
+    document.getElementById('flipcard').style.display    = 'block';
+    document.getElementById('fc-actions').style.display  = 'none';
+    const label = document.getElementById('fc-lesson-label');
+    if (label) label.textContent = 'Français';
+    updateFlashStats();
+    showCurrentCard();
+  }
+  show('flash', document.getElementById('nav-flash'));
 }
 
 function _applyLangUI() {
   const isFr = currentLang === 'french';
   document.getElementById('nav-alphabet').style.display   = isFr ? 'none' : '';
   document.getElementById('nav-phrases-fr').style.display = isFr ? '' : 'none';
+  document.getElementById('nav-lessons').style.display    = isFr ? 'none' : '';
   document.getElementById('farsi101-wrap').style.display  = isFr ? 'none' : '';
   document.getElementById('lang-farsi').classList.toggle('active', !isFr);
   document.getElementById('lang-french').classList.toggle('active', isFr);
@@ -71,10 +84,21 @@ function _applyLangUI() {
 /* ── INIT ── */
 _updateThemeBtn();
 initStreak();
-buildDeck('all');
+initLessons();
+buildLessonsScreen();
 buildVocabTopics();
 buildGrammar();
 buildSentences();
 buildPhrases();
 buildAlphabet();
 _applyLangUI();
+if (currentLang === 'farsi') {
+  startLessonSession(getActiveLessonIdx());
+} else {
+  fcDeck = shuffle(getActiveVocab().map(card => ({ card, direction: 'recognition', isLesson: true })));
+  fcIdx = 0; fcFlipped = false; fcCorrect = 0; fcDone = 0;
+  const label = document.getElementById('fc-lesson-label');
+  if (label) label.textContent = 'Français';
+  updateFlashStats();
+  showCurrentCard();
+}

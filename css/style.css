@@ -1011,3 +1011,93 @@ header {
   background: var(--bg-tertiary);
   color: var(--text);
 }
+
+/* ── LESSONS SCREEN ── */
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  padding: 4px 0 24px;
+}
+
+.lesson-card {
+  background: var(--bg);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  box-shadow: var(--shadow-xs);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.lesson-card:hover:not(.locked) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.lesson-card.locked {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
+}
+
+.lesson-card.is-active {
+  border-color: var(--purple-400);
+  background: var(--purple-50);
+}
+
+.lesson-card.mastered {
+  border-color: var(--green-400);
+}
+
+.lesson-number {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  margin-bottom: 4px;
+}
+
+.lesson-theme {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.lesson-count {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.lesson-status-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 99px;
+  margin-top: 8px;
+}
+
+.lesson-status-badge.locked   { background: var(--bg-secondary); color: var(--text-tertiary); }
+.lesson-status-badge.active   { background: var(--purple-50);    color: var(--purple-600); }
+.lesson-status-badge.mastered { background: var(--green-50);     color: var(--green-600); }
+
+/* ── FLASHCARD LESSON INFO BAR ── */
+.fc-lesson-info-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.75rem;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.fc-review-badge {
+  background: var(--amber-50);
+  color: var(--amber-600);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 99px;
+  letter-spacing: 0.03em;
+}

@@ -44,7 +44,8 @@
 <div class="app">
 
   <nav class="nav">
-    <button class="nav-btn active" onclick="show('flash', this)">Flashcards</button>
+    <button id="nav-lessons" class="nav-btn" onclick="show('lessons', this)">Lektionen</button>
+    <button id="nav-flash" class="nav-btn active" onclick="show('flash', this)">Flashcards</button>
     <button class="nav-btn" onclick="show('sentences', this)">Exercises</button>
     <button id="nav-alphabet"   class="nav-btn" onclick="show('alphabet', this)">Alphabet</button>
     <button id="nav-phrases-fr" class="nav-btn" style="display:none" onclick="show('phrases', this)">Phrases</button>
@@ -68,6 +69,12 @@
   <!-- DAILY PROGRESS -->
   <div id="daily-progress" class="daily-progress"></div>
 
+  <!-- LESSONS -->
+  <div id="lessons" class="screen">
+    <div class="section-title">Lektionen</div>
+    <div id="lessons-grid"></div>
+  </div>
+
   <!-- FLASHCARDS -->
   <div id="flash" class="screen active">
     <div class="stat-row">
@@ -76,9 +83,9 @@
       <div class="stat"><div class="stat-n" id="fc-left">30</div><div class="stat-l">remaining</div></div>
     </div>
     <div class="progress-bar"><div class="progress-fill" id="fc-prog" style="width:0%"></div></div>
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.75rem;font-size:13px;color:var(--text-secondary)">
-      <span id="srs-info"></span>
-      <button id="srs-toggle-btn" class="btn" style="padding:3px 10px;font-size:12px;margin-left:auto" onclick="toggleSRSMode()">Alle üben</button>
+    <div class="fc-lesson-info-bar">
+      <span id="fc-lesson-label"></span>
+      <span id="fc-review-badge" class="fc-review-badge" style="display:none">Review</span>
     </div>
     <div class="flip-card" id="flipcard" onclick="flipCard()">
       <div class="flip-inner" id="flipinner">
@@ -102,11 +109,6 @@
       <div class="done-title">Runde abgeschlossen!</div>
       <div class="done-sub" id="fc-score-msg"></div>
       <button class="btn btn-primary" onclick="restartFlash()">Nochmal</button>
-    </div>
-    <div class="done-msg" id="fc-caught-up">
-      <div class="done-title">Alles gelernt!</div>
-      <div class="done-sub">Heute keine Karten fällig. Komm morgen wieder oder übe alle Karten.</div>
-      <button class="btn btn-primary" onclick="toggleSRSMode()">Alle Karten üben</button>
     </div>
   </div>
 
@@ -162,6 +164,7 @@
 </script>
 <script src="js/french_data.js"></script>
 <script src="js/data.js"></script>
+<script src="js/lessons.js"></script>
 <script src="js/srs.js"></script>
 <script src="js/flashcard.js"></script>
 <script src="js/vocab.js"></script>
