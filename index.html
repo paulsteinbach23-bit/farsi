@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="icon.png" />
 
   <title>Farsi Beginner — Learn Persian</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=2" />
   <script>
     (function() {
       const t = localStorage.getItem('farsi_theme');
@@ -47,7 +47,7 @@
         <span id="lang-name">Farsi</span>
         <span class="lang-picker-chevron" id="lang-picker-chevron">▾</span>
       </button>
-      <div class="lang-picker-menu" id="lang-picker-menu">
+      <div class="lang-picker-menu" id="lang-picker-menu" style="display:none">
         <button class="lang-option" onclick="selectLang('farsi')">🇮🇷 Farsi</button>
         <button class="lang-option" onclick="selectLang('french')">🇫🇷 Français</button>
       </div>
@@ -172,17 +172,17 @@
   function getActivePhrases() { return currentLang === 'french' ? FRENCH_PHRASES : PHRASES; }
   function getActiveSRSKey()  { return currentLang === 'french' ? 'french_srs'   : 'farsi_srs'; }
 </script>
-<script src="js/french_data.js"></script>
-<script src="js/data.js"></script>
-<script src="js/lessons.js"></script>
-<script src="js/srs.js"></script>
-<script src="js/flashcard.js"></script>
-<script src="js/vocab.js"></script>
-<script src="js/grammar.js"></script>
-<script src="js/exercises.js"></script>
-<script src="js/phrases.js"></script>
-<script src="js/alphabet.js"></script>
-<script src="js/streak.js"></script>
-<script src="js/app.js"></script>
+<script src="js/french_data.js?v=2"></script>
+<script src="js/data.js?v=2"></script>
+<script src="js/lessons.js?v=2"></script>
+<script src="js/srs.js?v=2"></script>
+<script src="js/flashcard.js?v=2"></script>
+<script src="js/vocab.js?v=2"></script>
+<script src="js/grammar.js?v=2"></script>
+<script src="js/exercises.js?v=2"></script>
+<script src="js/phrases.js?v=2"></script>
+<script src="js/alphabet.js?v=2"></script>
+<script src="js/streak.js?v=2"></script>
+<script src="js/app.js?v=2"></script>
 </body>
 </html>

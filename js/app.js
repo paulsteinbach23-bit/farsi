@@ -98,20 +98,16 @@ function switchLanguage(lang) {
 
 function _applyLangUI() {
   const isFr = currentLang === 'french';
+  const css = (id, val) => { const e = document.getElementById(id); if (e) e.style.display = val; };
+  const txt = (id, val) => { const e = document.getElementById(id); if (e) e.textContent   = val; };
 
-  /* Language picker button */
-  document.getElementById('lang-flag').textContent = isFr ? '🇫🇷' : '🇮🇷';
-  document.getElementById('lang-name').textContent = isFr ? 'Français' : 'Farsi';
-
-  /* Lektionen tab — Farsi only */
-  document.getElementById('nav-lessons').style.display = isFr ? 'none' : '';
-
-  /* Farsi 101 collapsible — adapt for language */
-  document.getElementById('farsi101-title').textContent       = isFr ? 'Français' : 'Farsi 101';
-  document.getElementById('subnav-grammar').style.display    = isFr ? 'none' : '';
-  document.getElementById('subnav-vocab').style.display      = isFr ? 'none' : '';
-  document.getElementById('subnav-alphabet').style.display   = isFr ? 'none' : '';
-  /* Phrasebook always visible — it shows Farsi phrases for Farsi, French for French */
+  txt('lang-flag',       isFr ? '🇫🇷' : '🇮🇷');
+  txt('lang-name',       isFr ? 'Français' : 'Farsi');
+  css('nav-lessons',     isFr ? 'none' : '');
+  txt('farsi101-title',  isFr ? 'Français' : 'Farsi 101');
+  css('subnav-grammar',  isFr ? 'none' : '');
+  css('subnav-vocab',    isFr ? 'none' : '');
+  css('subnav-alphabet', isFr ? 'none' : '');
 }
 
 /* ── INIT ── */
