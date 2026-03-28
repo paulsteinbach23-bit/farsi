@@ -4,7 +4,7 @@ let fcSRSMode = true;
 
 /* ── Deck building ── */
 function buildDeck(filter) {
-  const pool  = filter === 'all' ? VOCAB : VOCAB.filter(v => v.t === filter);
+  const pool  = filter === 'all' ? getActiveVocab() : getActiveVocab().filter(v => v.t === filter);
   const items = fcSRSMode
     ? getDuePool(pool)
     : pool.map(card => ({ card, direction: 'recognition' }));
@@ -45,9 +45,9 @@ function showCurrentCard() {
   badge.className   = 'fc-direction-badge ' + (isPro ? 'production' : 'recognition');
 
   /* Front face */
-  document.getElementById('fc-topic').textContent = TOPICS.find(t => t.id === card.t)?.name || card.t;
+  document.getElementById('fc-topic').textContent = TOPICS.find(t => t.id === card.t)?.name || card.t || '';
   document.getElementById('fc-roman').textContent = isPro ? card.m : card.r;
-  document.getElementById('fc-hint').textContent  = isPro ? 'Farsi-Wort zeigen' : 'Bedeutung zeigen';
+  document.getElementById('fc-hint').textContent  = isPro ? (currentLang === 'french' ? 'Frz. Wort zeigen' : 'Farsi-Wort zeigen') : 'Bedeutung zeigen';
 
   /* Back face: swap content for production */
   document.getElementById('fc-meaning').textContent = isPro ? card.r : card.m;

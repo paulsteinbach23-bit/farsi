@@ -1,7 +1,7 @@
 /* ── PHRASEBOOK ── */
 function buildPhrases() {
   document.getElementById('phrase-content').innerHTML =
-    Object.entries(PHRASES).map(([sec, rows]) => `
+    Object.entries(getActivePhrases()).map(([sec, rows]) => `
       <div class="phrase-section">
         <div class="phrase-section-title">${sec}</div>
         <div class="card">

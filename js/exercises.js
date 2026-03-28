@@ -6,7 +6,7 @@ let quizRight = 0;
 function buildSentences() {
   /* Collect all phrase entries that have gap + distractors */
   quizDeck = [];
-  for (const entries of Object.values(PHRASES)) {
+  for (const entries of Object.values(getActivePhrases())) {
     for (const p of entries) {
       if (p.gap && p.distractors) quizDeck.push(p);
     }

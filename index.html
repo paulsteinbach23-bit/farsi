@@ -30,7 +30,11 @@
 <header>
   <div class="header-inner">
     <div class="logo"><span style="font-family:'Scheherazade New','Noto Nastaliq Urdu','Traditional Arabic',serif;direction:rtl">تعارف</span>academics</div>
-    <div style="display:flex;align-items:center;gap:6px">
+    <div style="display:flex;align-items:center;gap:8px">
+      <div class="lang-switcher">
+        <button id="lang-farsi"  class="lang-btn active" onclick="switchLanguage('farsi')">🇮🇷 Farsi</button>
+        <button id="lang-french" class="lang-btn"        onclick="switchLanguage('french')">🇫🇷 Français</button>
+      </div>
       <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()" title="Dark/Light Mode">🌙</button>
       <div class="streak-badge" id="streak-badge">🔥 <span id="streak-count">0</span></div>
     </div>
@@ -42,11 +46,12 @@
   <nav class="nav">
     <button class="nav-btn active" onclick="show('flash', this)">Flashcards</button>
     <button class="nav-btn" onclick="show('sentences', this)">Exercises</button>
-    <button class="nav-btn" onclick="show('alphabet', this)">Alphabet</button>
+    <button id="nav-alphabet"   class="nav-btn" onclick="show('alphabet', this)">Alphabet</button>
+    <button id="nav-phrases-fr" class="nav-btn" style="display:none" onclick="show('phrases', this)">Phrases</button>
   </nav>
 
   <!-- FARSI 101 COLLAPSIBLE -->
-  <div class="farsi101-wrap">
+  <div class="farsi101-wrap" id="farsi101-wrap">
     <button class="farsi101-toggle" id="farsi101-toggle" onclick="toggleFarsi101()">
       <span>Farsi 101</span>
       <span class="farsi101-arrow" id="farsi101-arrow">▾</span>
@@ -148,6 +153,14 @@
 
 </div>
 
+<script>
+  /* Language state — must be defined before all other scripts */
+  let currentLang = localStorage.getItem('app_lang') || 'farsi';
+  function getActiveVocab()   { return currentLang === 'french' ? FRENCH_VOCAB   : VOCAB; }
+  function getActivePhrases() { return currentLang === 'french' ? FRENCH_PHRASES : PHRASES; }
+  function getActiveSRSKey()  { return currentLang === 'french' ? 'french_srs'   : 'farsi_srs'; }
+</script>
+<script src="js/french_data.js"></script>
 <script src="js/data.js"></script>
 <script src="js/srs.js"></script>
 <script src="js/flashcard.js"></script>

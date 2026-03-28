@@ -979,3 +979,35 @@ header {
   gap: 10px;
   flex-wrap: wrap;
 }
+
+/* ── Language switcher ── */
+.lang-switcher {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-pill);
+  padding: 3px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.lang-btn.active {
+  background: var(--purple-600);
+  color: #fff;
+}
+
+.lang-btn:not(.active):hover {
+  background: var(--bg-tertiary);
+  color: var(--text);
+}

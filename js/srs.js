@@ -13,13 +13,12 @@
  * Production unlocks the day after the 3rd consecutive correct recognition answer.
  */
 
-const SRS_KEY             = 'farsi_srs';
 const PRODUCTION_THRESHOLD = 3;   // recognition reps needed to unlock production
 
 /* ── Storage ── */
 function loadSRS() {
   try {
-    const raw = JSON.parse(localStorage.getItem(SRS_KEY)) || {};
+    const raw = JSON.parse(localStorage.getItem(getActiveSRSKey())) || {};
     const out = {};
     for (const [id, entry] of Object.entries(raw)) out[id] = _migrate(entry);
     return out;
@@ -27,7 +26,7 @@ function loadSRS() {
 }
 
 function saveSRS(data) {
-  localStorage.setItem(SRS_KEY, JSON.stringify(data));
+  localStorage.setItem(getActiveSRSKey(), JSON.stringify(data));
 }
 
 /* Migrate old single-track format { ef, interval, reps, nextReview } */
@@ -125,7 +124,7 @@ function getSRSStats() {
   const today = todayStr();
   let recDue = 0, proDue = 0, learned = 0;
 
-  VOCAB.forEach(v => {
+  getActiveVocab().forEach(v => {
     const e = data[v.id];
     if (e && e.recReps > 0) learned++;
     if (!e || !e.recNextReview || e.recNextReview <= today) recDue++;

@@ -47,6 +47,27 @@ function toggleFarsi101() {
   arrow.classList.toggle('open', open);
 }
 
+/* ── LANGUAGE SWITCH ── */
+function switchLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('app_lang', lang);
+  _applyLangUI();
+  fcFilter = 'all';
+  buildDeck('all');
+  buildSentences();
+  buildPhrases();
+  show('flash', document.querySelector('.nav-btn'));
+}
+
+function _applyLangUI() {
+  const isFr = currentLang === 'french';
+  document.getElementById('nav-alphabet').style.display   = isFr ? 'none' : '';
+  document.getElementById('nav-phrases-fr').style.display = isFr ? '' : 'none';
+  document.getElementById('farsi101-wrap').style.display  = isFr ? 'none' : '';
+  document.getElementById('lang-farsi').classList.toggle('active', !isFr);
+  document.getElementById('lang-french').classList.toggle('active', isFr);
+}
+
 /* ── INIT ── */
 _updateThemeBtn();
 initStreak();
@@ -56,3 +77,4 @@ buildGrammar();
 buildSentences();
 buildPhrases();
 buildAlphabet();
+_applyLangUI();
