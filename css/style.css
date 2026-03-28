@@ -980,36 +980,81 @@ header {
   flex-wrap: wrap;
 }
 
-/* ── Language switcher ── */
-.lang-switcher {
+/* ── Language bar & picker ── */
+.lang-bar {
   display: flex;
-  gap: 4px;
-  background: var(--bg-secondary);
-  border-radius: var(--radius-pill);
-  padding: 3px;
+  justify-content: center;
+  padding: 12px 0 4px;
 }
 
-.lang-btn {
-  background: transparent;
+.lang-picker {
+  position: relative;
+}
+
+.lang-picker-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-secondary);
   border: none;
   border-radius: var(--radius-pill);
-  padding: 4px 10px;
-  font-size: 12px;
+  padding: 6px 14px 6px 12px;
+  font-size: 13px;
   font-weight: 600;
-  color: var(--text-secondary);
-  cursor: pointer;
-  transition: background 0.15s, color 0.15s;
-  white-space: nowrap;
-}
-
-.lang-btn.active {
-  background: var(--purple-600);
-  color: #fff;
-}
-
-.lang-btn:not(.active):hover {
-  background: var(--bg-tertiary);
   color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.lang-picker-btn:hover {
+  background: var(--bg-tertiary);
+}
+
+.lang-picker-chevron {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.lang-picker-chevron.open {
+  transform: rotate(180deg);
+}
+
+.lang-picker-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  z-index: 100;
+  min-width: 140px;
+}
+
+.lang-picker-menu.open {
+  display: block;
+}
+
+.lang-option {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.lang-option:hover {
+  background: var(--bg-secondary);
 }
 
 /* ── LESSONS SCREEN ── */

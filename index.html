@@ -31,10 +31,6 @@
   <div class="header-inner">
     <div class="logo"><span style="font-family:'Scheherazade New','Noto Nastaliq Urdu','Traditional Arabic',serif;direction:rtl">تعارف</span>academics</div>
     <div style="display:flex;align-items:center;gap:8px">
-      <div class="lang-switcher">
-        <button id="lang-farsi"  class="lang-btn active" onclick="switchLanguage('farsi')">🇮🇷 Farsi</button>
-        <button id="lang-french" class="lang-btn"        onclick="switchLanguage('french')">🇫🇷 Français</button>
-      </div>
       <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()" title="Dark/Light Mode">🌙</button>
       <div class="streak-badge" id="streak-badge">🔥 <span id="streak-count">0</span></div>
     </div>
@@ -43,25 +39,39 @@
 
 <div class="app">
 
+  <!-- LANGUAGE PICKER -->
+  <div class="lang-bar">
+    <div class="lang-picker" id="lang-picker">
+      <button class="lang-picker-btn" id="lang-picker-btn" onclick="toggleLangMenu()">
+        <span id="lang-flag">🇮🇷</span>
+        <span id="lang-name">Farsi</span>
+        <span class="lang-picker-chevron" id="lang-picker-chevron">▾</span>
+      </button>
+      <div class="lang-picker-menu" id="lang-picker-menu">
+        <button class="lang-option" onclick="selectLang('farsi')">🇮🇷 Farsi</button>
+        <button class="lang-option" onclick="selectLang('french')">🇫🇷 Français</button>
+      </div>
+    </div>
+  </div>
+
   <nav class="nav">
     <button id="nav-lessons" class="nav-btn" onclick="show('lessons', this)">Lektionen</button>
     <button id="nav-flash" class="nav-btn active" onclick="show('flash', this)">Flashcards</button>
     <button class="nav-btn" onclick="show('sentences', this)">Exercises</button>
-    <button id="nav-alphabet"   class="nav-btn" onclick="show('alphabet', this)">Alphabet</button>
-    <button id="nav-phrases-fr" class="nav-btn" style="display:none" onclick="show('phrases', this)">Phrases</button>
   </nav>
 
   <!-- FARSI 101 COLLAPSIBLE -->
   <div class="farsi101-wrap" id="farsi101-wrap">
     <button class="farsi101-toggle" id="farsi101-toggle" onclick="toggleFarsi101()">
-      <span>Farsi 101</span>
+      <span id="farsi101-title">Farsi 101</span>
       <span class="farsi101-arrow" id="farsi101-arrow">▾</span>
     </button>
     <div class="farsi101-sub" id="farsi101-sub">
       <div>
-        <button class="subnav-btn" onclick="showSub('grammar', this)">Grammar</button>
-        <button class="subnav-btn" onclick="showSub('phrases', this)">Phrasebook</button>
-        <button class="subnav-btn" onclick="showSub('vocab', this)">Vocabulary</button>
+        <button id="subnav-grammar"    class="subnav-btn" onclick="showSub('grammar', this)">Grammar</button>
+        <button id="subnav-phrasebook" class="subnav-btn" onclick="showSub('phrases', this)">Phrasebook</button>
+        <button id="subnav-vocab"      class="subnav-btn" onclick="showSub('vocab', this)">Vocabulary</button>
+        <button id="subnav-alphabet"   class="subnav-btn" onclick="showSub('alphabet', this)">Alphabet</button>
       </div>
     </div>
   </div>

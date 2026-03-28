@@ -47,6 +47,31 @@ function toggleFarsi101() {
   arrow.classList.toggle('open', open);
 }
 
+/* ── LANGUAGE PICKER ── */
+function toggleLangMenu() {
+  const menu    = document.getElementById('lang-picker-menu');
+  const chevron = document.getElementById('lang-picker-chevron');
+  const isOpen  = menu.classList.toggle('open');
+  chevron.classList.toggle('open', isOpen);
+}
+
+function selectLang(lang) {
+  const menu    = document.getElementById('lang-picker-menu');
+  const chevron = document.getElementById('lang-picker-chevron');
+  menu.classList.remove('open');
+  chevron.classList.remove('open');
+  switchLanguage(lang);
+}
+
+/* Close dropdown when clicking outside */
+document.addEventListener('click', function(e) {
+  const picker = document.getElementById('lang-picker');
+  if (picker && !picker.contains(e.target)) {
+    document.getElementById('lang-picker-menu')?.classList.remove('open');
+    document.getElementById('lang-picker-chevron')?.classList.remove('open');
+  }
+});
+
 /* ── LANGUAGE SWITCH ── */
 function switchLanguage(lang) {
   currentLang = lang;
@@ -73,12 +98,20 @@ function switchLanguage(lang) {
 
 function _applyLangUI() {
   const isFr = currentLang === 'french';
-  document.getElementById('nav-alphabet').style.display   = isFr ? 'none' : '';
-  document.getElementById('nav-phrases-fr').style.display = isFr ? '' : 'none';
-  document.getElementById('nav-lessons').style.display    = isFr ? 'none' : '';
-  document.getElementById('farsi101-wrap').style.display  = isFr ? 'none' : '';
-  document.getElementById('lang-farsi').classList.toggle('active', !isFr);
-  document.getElementById('lang-french').classList.toggle('active', isFr);
+
+  /* Language picker button */
+  document.getElementById('lang-flag').textContent = isFr ? '🇫🇷' : '🇮🇷';
+  document.getElementById('lang-name').textContent = isFr ? 'Français' : 'Farsi';
+
+  /* Lektionen tab — Farsi only */
+  document.getElementById('nav-lessons').style.display = isFr ? 'none' : '';
+
+  /* Farsi 101 collapsible — adapt for language */
+  document.getElementById('farsi101-title').textContent       = isFr ? 'Français' : 'Farsi 101';
+  document.getElementById('subnav-grammar').style.display    = isFr ? 'none' : '';
+  document.getElementById('subnav-vocab').style.display      = isFr ? 'none' : '';
+  document.getElementById('subnav-alphabet').style.display   = isFr ? 'none' : '';
+  /* Phrasebook always visible — it shows Farsi phrases for Farsi, French for French */
 }
 
 /* ── INIT ── */
