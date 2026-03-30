@@ -23,6 +23,9 @@
       if (t === 'dark')  document.documentElement.classList.add('theme-dark');
       if (t === 'light') document.documentElement.classList.add('theme-light');
     })();
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
   </script>
 </head>
 <body>
@@ -178,17 +181,17 @@
 <script src="js/french_data.js?v=2"></script>
 <script src="js/spanish_data.js?v=1"></script>
 <script src="js/data.js?v=2"></script>
-<script src="js/lessons.js?v=2"></script>
+<script src="js/lessons.js?v=3"></script>
 <script src="js/french_lessons.js?v=1"></script>
 <script src="js/spanish_lessons.js?v=1"></script>
 <script src="js/srs.js?v=2"></script>
-<script src="js/flashcard.js?v=2"></script>
+<script src="js/flashcard.js?v=3"></script>
 <script src="js/vocab.js?v=2"></script>
 <script src="js/grammar.js?v=2"></script>
 <script src="js/exercises.js?v=2"></script>
 <script src="js/phrases.js?v=2"></script>
 <script src="js/alphabet.js?v=2"></script>
 <script src="js/streak.js?v=2"></script>
-<script src="js/app.js?v=2"></script>
+<script src="js/app.js?v=3"></script>
 </body>
 </html>
