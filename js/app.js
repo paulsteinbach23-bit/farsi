@@ -24,12 +24,18 @@ function _updateThemeBtn() {
 }
 
 /* ── NAVIGATION ── */
+function _setGlobe(visible) {
+  const btn = document.getElementById('globe-btn');
+  if (btn) btn.style.display = visible ? 'flex' : 'none';
+}
+
 function show(id, btn) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
   document.querySelectorAll('.subnav-btn').forEach(b => b.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   if (btn) btn.classList.add('active');
+  _setGlobe(id === 'flash');
 }
 
 function showSub(id, btn) {
@@ -38,6 +44,7 @@ function showSub(id, btn) {
   document.querySelectorAll('.subnav-btn').forEach(b => b.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   if (btn) btn.classList.add('active');
+  _setGlobe(false);
 }
 
 function toggleFarsi101() {
@@ -47,30 +54,23 @@ function toggleFarsi101() {
   arrow.classList.toggle('open', open);
 }
 
-/* ── LANGUAGE PICKER ── */
-function toggleLangMenu() {
-  const menu    = document.getElementById('lang-picker-menu');
-  const chevron = document.getElementById('lang-picker-chevron');
-  const isOpen  = menu.classList.toggle('open');
-  chevron.classList.toggle('open', isOpen);
+/* ── LANGUAGE SCREEN ── */
+function openLangScreen() {
+  ['farsi', 'french', 'spanish'].forEach(lang => {
+    const card = document.getElementById('lang-card-' + lang);
+    if (card) card.classList.toggle('active', lang === currentLang);
+  });
+  document.getElementById('lang-screen').classList.add('open');
+}
+
+function closeLangScreen() {
+  document.getElementById('lang-screen').classList.remove('open');
 }
 
 function selectLang(lang) {
-  const menu    = document.getElementById('lang-picker-menu');
-  const chevron = document.getElementById('lang-picker-chevron');
-  menu.classList.remove('open');
-  chevron.classList.remove('open');
+  closeLangScreen();
   switchLanguage(lang);
 }
-
-/* Close dropdown when clicking outside */
-document.addEventListener('click', function(e) {
-  const picker = document.getElementById('lang-picker');
-  if (picker && !picker.contains(e.target)) {
-    document.getElementById('lang-picker-menu')?.classList.remove('open');
-    document.getElementById('lang-picker-chevron')?.classList.remove('open');
-  }
-});
 
 /* ── LANGUAGE SWITCH ── */
 function switchLanguage(lang) {
@@ -87,14 +87,8 @@ function switchLanguage(lang) {
 
 function _applyLangUI() {
   const isFarsi = currentLang === 'farsi';
-  const css = (id, val) => { const e = document.getElementById(id); if (e) e.style.display = val; };
-  const txt = (id, val) => { const e = document.getElementById(id); if (e) e.textContent   = val; };
-  const flags = { farsi: '🇮🇷', french: '🇫🇷', spanish: '🇪🇸' };
-  const names = { farsi: 'Farsi', french: 'Français', spanish: 'Español' };
-
-  txt('lang-flag', flags[currentLang] || '🌐');
-  txt('lang-name', names[currentLang] || currentLang);
-  css('farsi101-wrap', isFarsi ? '' : 'none');
+  const e = document.getElementById('farsi101-wrap');
+  if (e) e.style.display = isFarsi ? '' : 'none';
 }
 
 /* ── INIT ── */

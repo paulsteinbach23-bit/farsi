@@ -1,10 +1,10 @@
-const CACHE = 'farsi-app-v4';
+const CACHE = 'farsi-app-v5';
 
 const ASSETS = [
   './',
   './index.html',
   './manifest.json',
-  './css/style.css?v=3',
+  './css/style.css?v=4',
   './js/french_data.js?v=2',
   './js/spanish_data.js?v=1',
   './js/data.js?v=2',
@@ -19,7 +19,7 @@ const ASSETS = [
   './js/phrases.js?v=2',
   './js/alphabet.js?v=2',
   './js/streak.js?v=2',
-  './js/app.js?v=3',
+  './js/app.js?v=4',
 ];
 
 self.addEventListener('install', e => {

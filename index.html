@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="icon.png" />
 
   <title>Farsi Beginner — Learn Persian</title>
-  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link rel="stylesheet" href="css/style.css?v=4" />
   <script>
     (function() {
       const t = localStorage.getItem('farsi_theme');
@@ -32,18 +32,6 @@
 
 <header>
   <div class="header-inner">
-    <div class="lang-picker" id="lang-picker">
-      <button class="lang-picker-btn" id="lang-picker-btn" onclick="toggleLangMenu()">
-        <span id="lang-flag">🇮🇷</span>
-        <span id="lang-name">Farsi</span>
-        <span class="lang-picker-chevron" id="lang-picker-chevron">▾</span>
-      </button>
-      <div class="lang-picker-menu" id="lang-picker-menu">
-        <button class="lang-option" onclick="selectLang('farsi')">🇮🇷 Farsi</button>
-        <button class="lang-option" onclick="selectLang('french')">🇫🇷 Français</button>
-        <button class="lang-option" onclick="selectLang('spanish')">🇪🇸 Español</button>
-      </div>
-    </div>
     <div class="logo"><span style="font-family:'Scheherazade New','Noto Nastaliq Urdu','Traditional Arabic',serif;direction:rtl">تعارف</span>academics</div>
     <div style="display:flex;align-items:center;gap:8px">
       <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()" title="Dark/Light Mode">🌙</button>
@@ -51,6 +39,44 @@
     </div>
   </div>
 </header>
+
+<!-- GLOBE BUTTON -->
+<button class="globe-btn" id="globe-btn" onclick="openLangScreen()" style="display:none">🌍</button>
+
+<!-- LANGUAGE SELECTION SCREEN -->
+<div class="lang-screen" id="lang-screen">
+  <div class="lang-screen-header">
+    <button class="lang-screen-back" onclick="closeLangScreen()">✕</button>
+    <span class="lang-screen-title">Sprache wählen</span>
+    <div style="width:44px"></div>
+  </div>
+  <div class="lang-screen-body">
+    <button class="lang-card" id="lang-card-farsi" onclick="selectLang('farsi')">
+      <span class="lang-card-flag">🇮🇷</span>
+      <div class="lang-card-info">
+        <span class="lang-card-name">Farsi</span>
+        <span class="lang-card-sub">Persisch · 1000 Wörter</span>
+      </div>
+      <span class="lang-card-check">✓</span>
+    </button>
+    <button class="lang-card" id="lang-card-french" onclick="selectLang('french')">
+      <span class="lang-card-flag">🇫🇷</span>
+      <div class="lang-card-info">
+        <span class="lang-card-name">Français</span>
+        <span class="lang-card-sub">Französisch · 1000 Wörter</span>
+      </div>
+      <span class="lang-card-check">✓</span>
+    </button>
+    <button class="lang-card" id="lang-card-spanish" onclick="selectLang('spanish')">
+      <span class="lang-card-flag">🇪🇸</span>
+      <div class="lang-card-info">
+        <span class="lang-card-name">Español</span>
+        <span class="lang-card-sub">Spanisch · 1000 Wörter</span>
+      </div>
+      <span class="lang-card-check">✓</span>
+    </button>
+  </div>
+</div>
 
 <div class="app">
 
@@ -188,6 +214,6 @@
 <script src="js/phrases.js?v=2"></script>
 <script src="js/alphabet.js?v=2"></script>
 <script src="js/streak.js?v=2"></script>
-<script src="js/app.js?v=3"></script>
+<script src="js/app.js?v=4"></script>
 </body>
 </html>
