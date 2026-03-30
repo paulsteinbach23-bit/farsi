@@ -69,7 +69,7 @@ function showCurrentCard() {
 
   document.getElementById('fc-topic').textContent  = TOPICS.find(t => t.id === card.t)?.name || card.t || '';
   document.getElementById('fc-roman').textContent  = isPro ? card.m : card.r;
-  document.getElementById('fc-hint').textContent   = isPro ? (currentLang === 'french' ? 'Frz. Wort zeigen' : 'Farsi-Wort zeigen') : 'Bedeutung zeigen';
+  document.getElementById('fc-hint').textContent   = isPro ? 'Wort zeigen' : 'Bedeutung zeigen';
   document.getElementById('fc-meaning').textContent = isPro ? card.r : card.m;
   document.getElementById('fc-note').textContent    = card.n || '';
 
@@ -122,7 +122,7 @@ function updateFlashStats() {
 function updateLessonLabel() {
   const label = document.getElementById('fc-lesson-label');
   if (!label) return;
-  const lesson = LESSONS[fcActiveLessonIdx];
+  const lesson = getActiveLessons()[fcActiveLessonIdx];
   if (lesson) label.textContent = `Lektion ${fcActiveLessonIdx + 1} · ${lesson.theme}`;
 }
 

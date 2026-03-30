@@ -256,16 +256,14 @@ const LESSONS = [
 ];
 
 /* ── LESSON STATE ── */
-const LESSON_KEY = 'farsi_lesson_state';
-
 function loadLessonState() {
   try {
-    return JSON.parse(localStorage.getItem(LESSON_KEY)) || { unlocked: [0], mastered: [] };
+    return JSON.parse(localStorage.getItem(getActiveLessonStateKey())) || { unlocked: [0], mastered: [] };
   } catch { return { unlocked: [0], mastered: [] }; }
 }
 
 function saveLessonState(s) {
-  localStorage.setItem(LESSON_KEY, JSON.stringify(s));
+  localStorage.setItem(getActiveLessonStateKey(), JSON.stringify(s));
 }
 
 function initLessons() {
@@ -292,16 +290,16 @@ function markMastered(idx) {
   const s = loadLessonState();
   if (!s.mastered.includes(idx)) s.mastered.push(idx);
   const nextIdx = idx + 1;
-  if (nextIdx < LESSONS.length && !s.unlocked.includes(nextIdx)) {
+  if (nextIdx < getActiveLessons().length && !s.unlocked.includes(nextIdx)) {
     s.unlocked.push(nextIdx);
   }
   saveLessonState(s);
 }
 
 function getLessonWords(idx) {
-  const lesson = LESSONS[idx];
+  const lesson = getActiveLessons()[idx];
   if (!lesson) return [];
-  return lesson.words.map(id => VOCAB.find(v => v.id === id)).filter(Boolean);
+  return lesson.words.map(id => getActiveVocab().find(v => v.id === id)).filter(Boolean);
 }
 
 function getReviewPool(excludeIdx) {
@@ -320,7 +318,7 @@ function buildLessonsScreen() {
   const grid = document.getElementById('lessons-grid');
   if (!grid) return;
   const activeIdx = getActiveLessonIdx();
-  grid.innerHTML = LESSONS.map((lesson, idx) => {
+  grid.innerHTML = getActiveLessons().map((lesson, idx) => {
     const status = getLessonStatus(idx);
     const isActive = idx === activeIdx;
     const statusLabel = status === 'mastered' ? '✓ Gemeistert' : status === 'active' ? 'In Bearbeitung' : '🔒 Gesperrt';

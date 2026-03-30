@@ -76,38 +76,25 @@ document.addEventListener('click', function(e) {
 function switchLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('app_lang', lang);
+  initLessons();
   _applyLangUI();
   buildSentences();
   buildPhrases();
-  if (lang === 'farsi') {
-    startLessonSession(getActiveLessonIdx());
-  } else {
-    // French: simple full-deck mode (no lesson system)
-    fcDeck = shuffle(getActiveVocab().map(card => ({ card, direction: 'recognition', isLesson: true })));
-    fcIdx = 0; fcFlipped = false; fcCorrect = 0; fcDone = 0;
-    document.getElementById('fc-done-msg').style.display = 'none';
-    document.getElementById('flipcard').style.display    = 'block';
-    document.getElementById('fc-actions').style.display  = 'none';
-    const label = document.getElementById('fc-lesson-label');
-    if (label) label.textContent = 'Français';
-    updateFlashStats();
-    showCurrentCard();
-  }
+  buildLessonsScreen();
+  startLessonSession(getActiveLessonIdx());
   show('flash', document.getElementById('nav-flash'));
 }
 
 function _applyLangUI() {
-  const isFr = currentLang === 'french';
+  const isFarsi = currentLang === 'farsi';
   const css = (id, val) => { const e = document.getElementById(id); if (e) e.style.display = val; };
   const txt = (id, val) => { const e = document.getElementById(id); if (e) e.textContent   = val; };
+  const flags = { farsi: '🇮🇷', french: '🇫🇷', spanish: '🇪🇸' };
+  const names = { farsi: 'Farsi', french: 'Français', spanish: 'Español' };
 
-  txt('lang-flag',       isFr ? '🇫🇷' : '🇮🇷');
-  txt('lang-name',       isFr ? 'Français' : 'Farsi');
-  css('nav-lessons',     isFr ? 'none' : '');
-  txt('farsi101-title',  isFr ? 'Français' : 'Farsi 101');
-  css('subnav-grammar',  isFr ? 'none' : '');
-  css('subnav-vocab',    isFr ? 'none' : '');
-  css('subnav-alphabet', isFr ? 'none' : '');
+  txt('lang-flag', flags[currentLang] || '🌐');
+  txt('lang-name', names[currentLang] || currentLang);
+  css('farsi101-wrap', isFarsi ? '' : 'none');
 }
 
 /* ── INIT ── */
@@ -121,13 +108,4 @@ buildSentences();
 buildPhrases();
 buildAlphabet();
 _applyLangUI();
-if (currentLang === 'farsi') {
-  startLessonSession(getActiveLessonIdx());
-} else {
-  fcDeck = shuffle(getActiveVocab().map(card => ({ card, direction: 'recognition', isLesson: true })));
-  fcIdx = 0; fcFlipped = false; fcCorrect = 0; fcDone = 0;
-  const label = document.getElementById('fc-lesson-label');
-  if (label) label.textContent = 'Français';
-  updateFlashStats();
-  showCurrentCard();
-}
+startLessonSession(getActiveLessonIdx());

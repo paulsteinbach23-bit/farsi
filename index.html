@@ -47,9 +47,10 @@
         <span id="lang-name">Farsi</span>
         <span class="lang-picker-chevron" id="lang-picker-chevron">▾</span>
       </button>
-      <div class="lang-picker-menu" id="lang-picker-menu" style="display:none">
+      <div class="lang-picker-menu" id="lang-picker-menu">
         <button class="lang-option" onclick="selectLang('farsi')">🇮🇷 Farsi</button>
         <button class="lang-option" onclick="selectLang('french')">🇫🇷 Français</button>
+        <button class="lang-option" onclick="selectLang('spanish')">🇪🇸 Español</button>
       </div>
     </div>
   </div>
@@ -168,13 +169,18 @@
 <script>
   /* Language state — must be defined before all other scripts */
   let currentLang = localStorage.getItem('app_lang') || 'farsi';
-  function getActiveVocab()   { return currentLang === 'french' ? FRENCH_VOCAB   : VOCAB; }
-  function getActivePhrases() { return currentLang === 'french' ? FRENCH_PHRASES : PHRASES; }
-  function getActiveSRSKey()  { return currentLang === 'french' ? 'french_srs'   : 'farsi_srs'; }
+  function getActiveVocab()         { return currentLang === 'french' ? FRENCH_VOCAB : currentLang === 'spanish' ? SPANISH_VOCAB : VOCAB; }
+  function getActivePhrases()       { return currentLang === 'french' ? FRENCH_PHRASES : PHRASES; }
+  function getActiveSRSKey()        { return currentLang === 'french' ? 'french_srs' : currentLang === 'spanish' ? 'spanish_srs' : 'farsi_srs'; }
+  function getActiveLessons()       { return currentLang === 'french' ? FRENCH_LESSONS : currentLang === 'spanish' ? SPANISH_LESSONS : LESSONS; }
+  function getActiveLessonStateKey(){ return currentLang === 'french' ? 'french_lesson_state' : currentLang === 'spanish' ? 'spanish_lesson_state' : 'farsi_lesson_state'; }
 </script>
 <script src="js/french_data.js?v=2"></script>
+<script src="js/spanish_data.js?v=1"></script>
 <script src="js/data.js?v=2"></script>
 <script src="js/lessons.js?v=2"></script>
+<script src="js/french_lessons.js?v=1"></script>
+<script src="js/spanish_lessons.js?v=1"></script>
 <script src="js/srs.js?v=2"></script>
 <script src="js/flashcard.js?v=2"></script>
 <script src="js/vocab.js?v=2"></script>
