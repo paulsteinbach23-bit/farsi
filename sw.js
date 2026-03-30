@@ -1,10 +1,10 @@
-const CACHE = 'farsi-app-v3';
+const CACHE = 'farsi-app-v4';
 
 const ASSETS = [
   './',
   './index.html',
   './manifest.json',
-  './css/style.css?v=2',
+  './css/style.css?v=3',
   './js/french_data.js?v=2',
   './js/spanish_data.js?v=1',
   './js/data.js?v=2',

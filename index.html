@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="icon.png" />
 
   <title>Farsi Beginner — Learn Persian</title>
-  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
   <script>
     (function() {
       const t = localStorage.getItem('farsi_theme');
@@ -32,18 +32,6 @@
 
 <header>
   <div class="header-inner">
-    <div class="logo"><span style="font-family:'Scheherazade New','Noto Nastaliq Urdu','Traditional Arabic',serif;direction:rtl">تعارف</span>academics</div>
-    <div style="display:flex;align-items:center;gap:8px">
-      <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()" title="Dark/Light Mode">🌙</button>
-      <div class="streak-badge" id="streak-badge">🔥 <span id="streak-count">0</span></div>
-    </div>
-  </div>
-</header>
-
-<div class="app">
-
-  <!-- LANGUAGE PICKER -->
-  <div class="lang-bar">
     <div class="lang-picker" id="lang-picker">
       <button class="lang-picker-btn" id="lang-picker-btn" onclick="toggleLangMenu()">
         <span id="lang-flag">🇮🇷</span>
@@ -56,7 +44,15 @@
         <button class="lang-option" onclick="selectLang('spanish')">🇪🇸 Español</button>
       </div>
     </div>
+    <div class="logo"><span style="font-family:'Scheherazade New','Noto Nastaliq Urdu','Traditional Arabic',serif;direction:rtl">تعارف</span>academics</div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <button id="theme-toggle" class="theme-toggle-btn" onclick="toggleTheme()" title="Dark/Light Mode">🌙</button>
+      <div class="streak-badge" id="streak-badge">🔥 <span id="streak-count">0</span></div>
+    </div>
   </div>
+</header>
+
+<div class="app">
 
   <nav class="nav">
     <button id="nav-lessons" class="nav-btn" onclick="show('lessons', this)">Lektionen</button>
