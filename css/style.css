@@ -1040,6 +1040,65 @@ header {
   color: var(--red-800) !important;
 }
 
+.quiz-blank-revealed {
+  color: var(--green-600);
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.quiz-history-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 12px;
+}
+
+.quiz-badge-learned {
+  background: var(--green-50);
+  color: var(--green-800);
+}
+
+.quiz-badge-open {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.quiz-nav-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.quiz-nav-btn {
+  flex: 1;
+  background: var(--bg-secondary);
+  border: 1.5px solid var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: background 0.1s, border-color 0.1s, color 0.1s;
+}
+
+.quiz-nav-btn:hover:not(:disabled) {
+  background: var(--purple-50);
+  border-color: var(--purple-400);
+  color: var(--purple-600);
+}
+
+.quiz-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
 /* ── Phrasebook ── */
 .phrase-section { margin-bottom: 1.75rem; }
 

@@ -220,13 +220,13 @@
   /* Language state — must be defined before all other scripts */
   let currentLang = localStorage.getItem('app_lang') || 'farsi';
   function getActiveVocab()         { return currentLang === 'french' ? FRENCH_VOCAB : currentLang === 'spanish' ? SPANISH_VOCAB : VOCAB; }
-  function getActivePhrases()       { return currentLang === 'french' ? FRENCH_PHRASES : PHRASES; }
+  function getActivePhrases()       { return currentLang === 'french' ? FRENCH_PHRASES : currentLang === 'spanish' ? SPANISH_PHRASES : PHRASES; }
   function getActiveSRSKey()        { return currentLang === 'french' ? 'french_srs' : currentLang === 'spanish' ? 'spanish_srs' : 'farsi_srs'; }
   function getActiveLessons()       { return currentLang === 'french' ? FRENCH_LESSONS : currentLang === 'spanish' ? SPANISH_LESSONS : LESSONS; }
   function getActiveLessonStateKey(){ return currentLang === 'french' ? 'french_lesson_state' : currentLang === 'spanish' ? 'spanish_lesson_state' : 'farsi_lesson_state'; }
 </script>
 <script src="js/french_data.js?v=2"></script>
-<script src="js/spanish_data.js?v=1"></script>
+<script src="js/spanish_data.js?v=2"></script>
 <script src="js/data.js?v=2"></script>
 <script src="js/lessons.js?v=3"></script>
 <script src="js/french_lessons.js?v=1"></script>
@@ -235,7 +235,7 @@
 <script src="js/flashcard.js?v=3"></script>
 <script src="js/vocab.js?v=2"></script>
 <script src="js/grammar.js?v=2"></script>
-<script src="js/exercises.js?v=2"></script>
+<script src="js/exercises.js?v=3"></script>
 <script src="js/phrases.js?v=2"></script>
 <script src="js/alphabet.js?v=2"></script>
 <script src="js/streak.js?v=2"></script>

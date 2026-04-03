@@ -1000,3 +1000,47 @@ const SPANISH_VOCAB = [
   { id:  999, r: 'especialmente', m: 'besonders' },
   { id: 1000, r: 'empleo', m: 'Beschäftigung / Arbeit' }
 ];
+
+const SPANISH_PHRASES = {
+  'Notfall-Basics': [
+    { r: '¡Ayuda!',                           d: 'Hilfe!',                              gap: 'Ayuda',       distractors: ['Perdón', 'Hola', 'Gracias'] },
+    { r: '¿Habla inglés?',                    d: 'Sprechen Sie Englisch?',              gap: 'inglés',      distractors: ['español', 'alemán', 'francés'] },
+    { r: 'No entiendo.',                      d: 'Ich verstehe nicht.',                 gap: 'entiendo',    distractors: ['hablo', 'escucho', 'sé'] },
+    { r: 'Hable más despacio, por favor.',    d: 'Bitte sprechen Sie langsamer.',       gap: 'despacio',    distractors: ['rápido', 'fuerte', 'tarde'] },
+    { r: 'Me llamo ...',                      d: 'Ich heiße ...',                       gap: 'llamo',       distractors: ['vivo', 'trabajo', 'tengo'] },
+    { r: 'Soy de Alemania.',                  d: 'Ich komme aus Deutschland.',          gap: 'Alemania',    distractors: ['España', 'Francia', 'México'] },
+  ],
+  'Im Restaurant': [
+    { r: '¿Tiene la carta?',                  d: 'Haben Sie die Speisekarte?',          gap: 'carta',       distractors: ['cuenta', 'mesa', 'agua'] },
+    { r: '¿Qué es esto?',                     d: 'Was ist das?',                        gap: 'esto',        distractors: ['eso', 'aquí', 'allí'] },
+    { r: 'La cuenta, por favor.',             d: 'Die Rechnung bitte.',                 gap: 'cuenta',      distractors: ['carta', 'mesa', 'agua'] },
+    { r: '¡Estaba delicioso!',                d: 'Es war köstlich!',                    gap: 'delicioso',   distractors: ['caro', 'frío', 'picante'] },
+    { r: 'Sin carne, por favor.',             d: 'Ohne Fleisch bitte.',                 gap: 'carne',       distractors: ['sal', 'aceite', 'leche'] },
+  ],
+  'Unterwegs': [
+    { r: 'Quiero ir a ...',                   d: 'Ich möchte nach ... fahren.',         gap: 'ir',          distractors: ['comer', 'dormir', 'ver'] },
+    { r: '¿Dónde está esta dirección?',       d: 'Wo ist diese Adresse?',              gap: 'dirección',   distractors: ['hotel', 'metro', 'mercado'] },
+    { r: '¿A qué hora abre?',                 d: 'Wann öffnet es?',                    gap: 'abre',        distractors: ['cierra', 'empieza', 'llega'] },
+    { r: '¿Cuántos minutos a pie?',           d: 'Wie viele Minuten zu Fuß?',          gap: 'minutos',     distractors: ['kilómetros', 'horas', 'días'] },
+    { r: 'Pare aquí, por favor.',             d: 'Bitte hier anhalten. (Taxi)',         gap: 'Pare',        distractors: ['Vaya', 'Gire', 'Siga'] },
+  ],
+  'Einkaufen': [
+    { r: '¿Cuánto cuesta?',                   d: 'Wie viel kostet das?',               gap: 'cuesta',      distractors: ['vale', 'pesa', 'mide'] },
+    { r: 'Es caro.',                          d: 'Das ist teuer.',                      gap: 'caro',        distractors: ['barato', 'bueno', 'nuevo'] },
+    { r: '¿Tiene algo más barato?',           d: 'Haben Sie etwas Günstigeres?',       gap: 'barato',      distractors: ['grande', 'nuevo', 'pequeño'] },
+    { r: 'Me lo llevo.',                      d: 'Ich nehme es.',                      gap: 'llevo',       distractors: ['dejo', 'veo', 'pago'] },
+  ],
+  'Zahlen & Zeit': [
+    { r: '¿Qué hora es?',                     d: 'Wie viel Uhr ist es?',               gap: 'hora',        distractors: ['día', 'mes', 'año'] },
+    { r: '¿Qué fecha es hoy?',                d: 'Welches Datum ist heute?',           gap: 'hoy',         distractors: ['mañana', 'ayer', 'ahora'] },
+    { r: 'Mañana / Ayer',                     d: 'Morgen / Gestern',                   gap: 'Mañana',      distractors: ['Hoy', 'Ahora', 'Tarde'] },
+    { r: 'Mañana / Tarde / Noche',            d: 'Morgen / Nachmittag / Nacht',        gap: 'Tarde',       distractors: ['Noche', 'Ahora', 'Pronto'] },
+  ],
+  'Begrüßung & Verabschiedung': [
+    { r: '¡Hola! ¿Cómo estás?',              d: 'Hallo! Wie geht es dir?',            gap: 'Cómo',        distractors: ['Dónde', 'Cuándo', 'Qué'] },
+    { r: 'Bien, gracias.',                    d: 'Gut, danke.',                         gap: 'gracias',     distractors: ['perdón', 'hola', 'adiós'] },
+    { r: 'Hasta luego.',                      d: 'Auf Wiedersehen.',                    gap: 'luego',       distractors: ['mañana', 'pronto', 'siempre'] },
+    { r: 'Mucho gusto.',                      d: 'Sehr erfreut. / Schön, Sie zu treffen.', gap: 'gusto',   distractors: ['tiempo', 'trabajo', 'dinero'] },
+    { r: 'Por favor / Gracias / De nada.',    d: 'Bitte / Danke / Bitte sehr.',        gap: 'Gracias',     distractors: ['Perdón', 'Hola', 'Adiós'] },
+  ],
+};
