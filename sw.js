@@ -1,9 +1,9 @@
-const CACHE = 'farsi-app-v5';
+const CACHE = 'farsi-app-v6';
 
 const ASSETS = [
   './',
   './index.html',
-  './manifest.json',
+  './manifest.json?v=2',
   './css/style.css?v=4',
   './js/french_data.js?v=2',
   './js/spanish_data.js?v=1',
@@ -20,6 +20,7 @@ const ASSETS = [
   './js/alphabet.js?v=2',
   './js/streak.js?v=2',
   './js/app.js?v=4',
+  './js/install-prompt.js?v=1',
 ];
 
 self.addEventListener('install', e => {

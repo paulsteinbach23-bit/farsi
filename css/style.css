@@ -198,11 +198,19 @@ header {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 18px;
   padding: 4px;
   border-radius: var(--radius-md);
-  line-height: 1;
+  line-height: 0;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.2s ease;
+}
+.theme-toggle-btn .theme-toggle-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
 }
 .theme-toggle-btn:hover { transform: scale(1.2); }
 
@@ -216,6 +224,17 @@ header {
   gap: 3px;
   user-select: none;
   transform-origin: center;
+}
+
+.streak-icon {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  color: var(--amber-600);
+}
+
+.streak-icon svg {
+  display: block;
 }
 
 @keyframes streak-flicker {
@@ -260,10 +279,31 @@ header {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28em;
   font-size: 18px;
   font-weight: 700;
   color: var(--purple-600);
   letter-spacing: -0.3px;
+}
+
+.logo-mark {
+  font-family: 'Scheherazade New', 'Noto Nastaliq Urdu', 'Traditional Arabic', serif;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.logo-dot {
+  opacity: 0.45;
+  font-weight: 600;
+  user-select: none;
+}
+
+.logo-suffix {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
 }
 
 .logo-sub {
@@ -283,6 +323,7 @@ header {
 
 /* ── Navigation ── */
 .nav {
+  position: relative;
   display: flex;
   gap: 4px;
   flex-wrap: wrap;
@@ -293,7 +334,33 @@ header {
   box-shadow: var(--shadow-sm);
 }
 
+.nav-slider {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 0;
+  opacity: 0;
+  border-radius: var(--radius-pill);
+  background: var(--grad-primary);
+  box-shadow: 0 4px 14px rgba(98, 86, 196, 0.35);
+  transition: none;
+}
+
+/* Nur nach echtem Klick auf .nav-btn (siehe app.js, capture) */
+.nav-slider.nav-slider--animate {
+  transition:
+    left 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+    width 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+    top 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+    height 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.2s ease;
+}
+
 .nav-btn {
+  position: relative;
+  z-index: 1;
   flex: 1;
   min-width: 90px;
   padding: 9px 14px;
@@ -304,26 +371,29 @@ header {
   background: transparent;
   color: var(--text-secondary);
   cursor: pointer;
-  transition: all 0.18s ease;
+  transition: color 0.18s ease, font-weight 0.18s ease;
   text-align: center;
   letter-spacing: 0.01em;
 }
 
-.nav-btn:hover {
+.nav-btn:hover:not(.active) {
   background: var(--bg-secondary);
   color: var(--text);
 }
 
 .nav-btn.active {
-  background: var(--grad-primary);
+  background: transparent;
   color: #fff;
-  box-shadow: 0 4px 14px rgba(98, 86, 196, 0.35);
   font-weight: 600;
 }
 
 /* ── Farsi 101 collapsible ── */
+/* Wrapper ist immer die eine Karte — so gibt es kein Zucken beim Auf/Zu (kein Umschalten von Shadow/Radius/overflow) */
 .farsi101-wrap {
   margin-bottom: 12px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
 
 .farsi101-toggle {
@@ -334,13 +404,13 @@ header {
   padding: 11px 16px;
   background: var(--bg);
   border: none;
-  border-radius: var(--radius-xl);
+  border-radius: 0;
   font-size: 13px;
   font-weight: 600;
   color: var(--text-secondary);
   cursor: pointer;
-  box-shadow: var(--shadow-sm);
-  transition: background 0.15s, border-radius 0.15s, color 0.15s;
+  box-shadow: none;
+  transition: background 0.2s ease, color 0.2s ease;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
@@ -360,16 +430,19 @@ header {
 .farsi101-sub {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 0.25s ease;
+  transition: grid-template-rows 0.32s cubic-bezier(0.4, 0, 0.2, 1);
   background: var(--bg);
-  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
-  box-shadow: var(--shadow-sm);
+  border-radius: 0;
+  box-shadow: none;
   overflow: hidden;
 }
 
 .farsi101-sub.open { grid-template-rows: 1fr; }
 
-.farsi101-sub > * { overflow: hidden; }
+.farsi101-sub > * {
+  min-height: 0;
+  overflow: hidden;
+}
 
 .subnav-btn {
   display: block;
@@ -706,7 +779,33 @@ header {
   box-shadow: 0 4px 16px rgba(98, 86, 196, 0.18);
 }
 
-.topic-icon  { font-size: 22px; margin-bottom: 8px; }
+.topic-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+  color: var(--purple-600);
+}
+.topic-icon-svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+.vocab-modal-title-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.vocab-modal-title-inner .topic-icon-svg {
+  flex-shrink: 0;
+  color: var(--purple-600);
+}
+.vocab-modal-title-text {
+  font-size: 17px;
+  font-weight: 700;
+}
+
 .topic-name  { font-size: 13px; font-weight: 600; color: var(--text); }
 .topic-count { font-size: 11px; color: var(--text-tertiary); margin-top: 3px; }
 
@@ -723,40 +822,58 @@ header {
 .vocab-note    { font-size: 12px; color: var(--text-tertiary); margin-top: 2px; line-height: 1.4; }
 .vocab-meaning { font-weight: 500; color: var(--text); font-size: 14px; text-align: right; }
 
-/* ── Vocab Modal ── */
+/* ── Vocab Modal (fixed = ganzes Viewport, inkl. Header) ── */
 .vocab-modal-overlay {
   display: none;
-  position: absolute;
+  position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  z-index: 100;
-  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.22);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  z-index: 200;
+  align-items: center;
   justify-content: center;
-  padding: 4rem 1rem 1rem;
+  padding: max(12px, env(safe-area-inset-top, 0px)) max(12px, env(safe-area-inset-right, 0px))
+    max(12px, env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px));
 }
-.vocab-modal-overlay.open { display: flex; }
+
+.vocab-modal-overlay.open {
+  display: flex;
+}
 
 .vocab-modal {
   background: var(--bg);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-lg);
   width: 100%;
-  max-width: 520px;
-  max-height: 80vh;
+  max-width: min(520px, 100%);
+  max-height: min(88vh, 88dvh, calc(100dvh - 24px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)));
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  flex: 0 1 auto;
+  min-height: 0;
 }
 
 .vocab-modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.1rem 1.25rem;
+  gap: 10px;
+  padding: 1rem 1.1rem;
   font-size: 17px;
   font-weight: 700;
   border-bottom: 1px solid var(--bg-tertiary);
   flex-shrink: 0;
+}
+
+.vocab-modal-header #vocab-modal-title {
+  min-width: 0;
+  flex: 1;
 }
 
 .vocab-modal-close {
@@ -765,6 +882,7 @@ header {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+  flex-shrink: 0;
   font-size: 12px;
   color: var(--text-secondary);
   cursor: pointer;
@@ -772,11 +890,30 @@ header {
   align-items: center;
   justify-content: center;
 }
-.vocab-modal-close:hover { color: var(--text); }
+
+.vocab-modal-close:hover {
+  color: var(--text);
+}
 
 .vocab-modal-body {
+  flex: 1 1 auto;
+  min-height: 0;
   overflow-y: auto;
-  padding: 0.5rem 1.25rem 1.25rem;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5rem 1.1rem 1.1rem;
+}
+
+@media (max-width: 480px) {
+  .vocab-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .vocab-meaning {
+    text-align: left;
+  }
 }
 
 /* ── Grammar ── */
@@ -983,19 +1120,18 @@ header {
 /* ── Globe button ── */
 .globe-btn {
   position: fixed;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 56px;
-  height: 56px;
+  bottom: 1rem;
+  right: 1rem;
+  left: auto;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: none;
   background: var(--grad-primary);
   color: #fff;
-  font-size: 1.6rem;
-  line-height: 1;
+  line-height: 0;
   cursor: pointer;
-  box-shadow: 0 4px 20px rgba(98, 86, 196, 0.45);
+  box-shadow: 0 4px 16px rgba(98, 86, 196, 0.4);
   z-index: 50;
   display: flex;
   align-items: center;
@@ -1003,7 +1139,7 @@ header {
   transition: transform 0.15s, box-shadow 0.15s;
 }
 .globe-btn:active {
-  transform: translateX(-50%) scale(0.92);
+  transform: scale(0.92);
   box-shadow: 0 2px 10px rgba(98, 86, 196, 0.4);
 }
 
@@ -1208,4 +1344,95 @@ header {
   padding: 2px 8px;
   border-radius: 99px;
   letter-spacing: 0.03em;
+}
+
+/* ── PWA Install-Hinweis ── */
+body.pwa-install-banner-active {
+  overflow: hidden;
+}
+
+.pwa-install-banner {
+  position: fixed;
+  inset: 0;
+  z-index: 250;
+  align-items: center;
+  justify-content: center;
+  padding: max(16px, env(safe-area-inset-top, 0px)) 16px max(16px, env(safe-area-inset-bottom, 0px));
+  box-sizing: border-box;
+}
+
+.pwa-install-banner[hidden] {
+  display: none !important;
+}
+
+.pwa-install-banner.pwa-install-banner--open {
+  display: flex !important;
+}
+
+.pwa-install-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.22);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.pwa-install-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 400px;
+  background: var(--bg);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem 1.35rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.pwa-install-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.pwa-install-text {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+.pwa-install-text strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.pwa-install-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pwa-install-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+@media (max-width: 400px) {
+  .pwa-install-actions {
+    flex-direction: column;
+  }
+
+  .pwa-install-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }

@@ -4,15 +4,15 @@
 */
 
 const TOPICS = [
-  { id: 'verb', name: 'Verben', icon: '⚡' },
-  { id: 'noun', name: 'Nomen', icon: '📦' },
-  { id: 'adjective', name: 'Adjektive', icon: '🎨' },
-  { id: 'adverb', name: 'Adverbien', icon: '⏩' },
-  { id: 'preposition', name: 'Präpositionen', icon: '🔗' },
-  { id: 'pronoun', name: 'Pronomen', icon: '👤' },
-  { id: 'conjunction', name: 'Konjunktionen', icon: '➕' },
-  { id: 'quantifier', name: 'Quantoren', icon: '🔢' },
-  { id: 'proper noun', name: 'Eigennamen', icon: '🏷️' },
+  { id: 'verb', name: 'Verben' },
+  { id: 'noun', name: 'Nomen' },
+  { id: 'adjective', name: 'Adjektive' },
+  { id: 'adverb', name: 'Adverbien' },
+  { id: 'preposition', name: 'Präpositionen' },
+  { id: 'pronoun', name: 'Pronomen' },
+  { id: 'conjunction', name: 'Konjunktionen' },
+  { id: 'quantifier', name: 'Quantoren' },
+  { id: 'proper noun', name: 'Eigennamen' },
 ];
 
 const VOCAB = [

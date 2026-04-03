@@ -1,6 +1,6 @@
 {
-  "name": "Farsi Beginner — Learn Persian",
-  "short_name": "Farsi",
+  "name": "تعارف app",
+  "short_name": "تعارف",
   "description": "Offline-first Farsi learning app for German speakers",
   "start_url": "./index.html",
   "display": "standalone",
