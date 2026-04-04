@@ -115,6 +115,10 @@ function _applyLangUI() {
   const isFarsi = currentLang === 'farsi';
   const e = document.getElementById('farsi101-wrap');
   if (e) e.style.display = isFarsi ? '' : 'none';
+  const iranBtn = document.getElementById('nav-iran');
+  if (iranBtn) iranBtn.style.display = isFarsi ? '' : 'none';
+  const uebBtn = document.getElementById('nav-uebungen');
+  if (uebBtn) uebBtn.style.display = isFarsi ? '' : 'none';
 }
 
 /* ── INIT ── */
@@ -127,6 +131,7 @@ buildGrammar();
 buildSentences();
 buildPhrases();
 buildAlphabet();
+buildIran().catch(console.error);
 _applyLangUI();
 startLessonSession(getActiveLessonIdx());
 _updateNavSlider();

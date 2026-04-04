@@ -92,6 +92,7 @@
     <button type="button" id="nav-lessons" class="nav-btn" onclick="show('lessons', this)">Lektionen</button>
     <button type="button" id="nav-flash" class="nav-btn active" onclick="show('flash', this)">Flashcards</button>
     <button type="button" class="nav-btn" onclick="show('sentences', this)">Exercises</button>
+    <button type="button" id="nav-iran" class="nav-btn" onclick="show('iran',this)" style="display:none">Iran</button>
   </nav>
 
   <!-- FARSI 101 COLLAPSIBLE -->
@@ -186,6 +187,11 @@
     <div id="alphabet-content"></div>
   </div>
 
+  <!-- IRAN -->
+  <div id="iran" class="screen">
+    <div id="iran-content"></div>
+  </div>
+
 </div>
 
 <!-- Vocab-Modal: außerhalb .app → fixed Overlay über gesamtes Fenster inkl. Header -->
@@ -234,12 +240,14 @@
 <script src="js/srs.js?v=2"></script>
 <script src="js/flashcard.js?v=3"></script>
 <script src="js/vocab.js?v=2"></script>
-<script src="js/grammar.js?v=2"></script>
+<script src="grammar-data-farsi.js"></script>
+<script src="js/grammar.js?v=3"></script>
 <script src="js/exercises.js?v=3"></script>
 <script src="js/phrases.js?v=2"></script>
 <script src="js/alphabet.js?v=2"></script>
 <script src="js/streak.js?v=2"></script>
 <script src="js/app.js?v=4"></script>
+<script src="js/iran.js?v=1"></script>
 <script src="js/install-prompt.js?v=1"></script>
 </body>
 </html>

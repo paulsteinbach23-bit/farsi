@@ -7,6 +7,7 @@ const ASSETS = [
   './css/style.css?v=4',
   './js/french_data.js?v=2',
   './js/spanish_data.js?v=1',
+  './grammar-data-farsi.js',
   './js/data.js?v=2',
   './js/lessons.js?v=3',
   './js/french_lessons.js?v=1',
@@ -20,7 +21,9 @@ const ASSETS = [
   './js/alphabet.js?v=2',
   './js/streak.js?v=2',
   './js/app.js?v=4',
+  './js/iran.js?v=1',
   './js/install-prompt.js?v=1',
+  './iran-facts.json',
 ];
 
 self.addEventListener('install', e => {
