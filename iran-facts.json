@@ -1,0 +1,338 @@
+{
+  "meta": {
+    "title": "Iran — Allgemeinwissen",
+    "description": "Fakten, Geschichte und Kultur über den Iran für die Farsi-Lern-App",
+    "language": "de",
+    "last_updated": "2026"
+  },
+
+  "categories": [
+
+    {
+      "id": "geography",
+      "title": "Geographie & Staat",
+      "icon": "globe",
+      "facts": [
+        {
+          "id": "geo_01",
+          "question": "Was ist die Hauptstadt des Iran?",
+          "correct": "Teheran",
+          "options": ["Teheran", "Isfahan", "Shiraz", "Mashhad"],
+          "explanation": "Teheran ist seit 1796 die Hauptstadt und mit ca. 9 Millionen Einwohnern die größte Stadt des Iran."
+        },
+        {
+          "id": "geo_02",
+          "question": "Wie viele Einwohner hat der Iran (ca.)?",
+          "correct": "ca. 87 Millionen",
+          "options": ["ca. 87 Millionen", "ca. 45 Millionen", "ca. 120 Millionen", "ca. 60 Millionen"],
+          "explanation": "Der Iran hat etwa 87 Millionen Einwohner (Stand 2024) und ist damit eines der bevölkerungsreichsten Länder des Nahen Ostens."
+        },
+        {
+          "id": "geo_03",
+          "question": "An welches Land grenzt der Iran im Norden?",
+          "correct": "Aserbaidschan und Turkmenistan",
+          "options": ["Aserbaidschan und Turkmenistan", "Russland und Kasachstan", "Armenien und Ukraine", "Georgien und Usbekistan"],
+          "explanation": "Im Norden grenzt der Iran an Aserbaidschan, Armenien und Turkmenistan sowie an das Kaspische Meer."
+        },
+        {
+          "id": "geo_04",
+          "question": "Mit welchem Land teilt der Iran die längste Landgrenze?",
+          "correct": "Pakistan",
+          "options": ["Pakistan", "Türkei", "Irak", "Afghanistan"],
+          "explanation": "Die Grenze zu Pakistan ist mit ca. 900 km die längste Landgrenze des Iran, gefolgt von Afghanistan mit ca. 921 km."
+        },
+        {
+          "id": "geo_05",
+          "question": "Welches Meer liegt südlich des Iran?",
+          "correct": "Persischer Golf und Golf von Oman",
+          "options": ["Persischer Golf und Golf von Oman", "Arabisches Meer", "Rotes Meer", "Indischer Ozean"],
+          "explanation": "Im Süden grenzt der Iran an den Persischen Golf und den Golf von Oman, die beide zum Indischen Ozean gehören."
+        },
+        {
+          "id": "geo_06",
+          "question": "Welche Länder grenzen westlich an den Iran?",
+          "correct": "Irak und Türkei",
+          "options": ["Irak und Türkei", "Syrien und Jordanien", "Saudi-Arabien und Kuwait", "Libanon und Israel"],
+          "explanation": "Im Westen grenzt der Iran an den Irak und die Türkei. Die Grenze zum Irak war Schauplatz des Iran-Irak-Kriegs (1980–1988)."
+        },
+        {
+          "id": "geo_07",
+          "question": "Wie groß ist die Fläche des Iran?",
+          "correct": "ca. 1,65 Millionen km²",
+          "options": ["ca. 1,65 Millionen km²", "ca. 800.000 km²", "ca. 2,5 Millionen km²", "ca. 500.000 km²"],
+          "explanation": "Mit 1,648 Millionen km² ist der Iran das 17. größte Land der Welt — fast fünfmal so groß wie Deutschland."
+        },
+        {
+          "id": "geo_08",
+          "question": "Welcher Berg ist der höchste des Iran?",
+          "correct": "Damâvand",
+          "options": ["Damâvand", "Elbrus", "Ararat", "Sabalan"],
+          "explanation": "Der Damâvand ist mit 5.610 m der höchste Berg des Iran und zugleich der höchste Vulkan Asiens."
+        },
+        {
+          "id": "geo_09",
+          "question": "Welche Stadt gilt als kulturelle Hauptstadt und Kunstzentrum des Iran?",
+          "correct": "Isfahan",
+          "options": ["Isfahan", "Shiraz", "Tabriz", "Qom"],
+          "explanation": "Isfahan war unter den Safawiden im 17. Jahrhundert Hauptstadt und ist für seine prächtigen Moscheen und den Naqsh-e Jahan-Platz bekannt."
+        },
+        {
+          "id": "geo_10",
+          "question": "Welches große Binnenmeer liegt nördlich des Iran?",
+          "correct": "Kaspisches Meer",
+          "options": ["Kaspisches Meer", "Schwarzes Meer", "Aralsee", "Totes Meer"],
+          "explanation": "Das Kaspische Meer ist der größte Binnensee der Welt. Der Iran teilt seine Küste mit Russland, Kasachstan, Turkmenistan und Aserbaidschan."
+        }
+      ]
+    },
+
+    {
+      "id": "language_culture",
+      "title": "Sprache & Bevölkerung",
+      "icon": "users",
+      "facts": [
+        {
+          "id": "lang_01",
+          "question": "Was ist die Amtssprache des Iran?",
+          "correct": "Persisch (Fârsi)",
+          "options": ["Persisch (Fârsi)", "Arabisch", "Türkisch", "Kurdisch"],
+          "explanation": "Persisch (Fârsi) ist die einzige Amtssprache. Es ist eine indoeuropäische Sprache — näher verwandt mit Deutsch als mit Arabisch."
+        },
+        {
+          "id": "lang_02",
+          "question": "Welche Sprache sprechen die Aserbaidschaner im Nordwesten des Iran?",
+          "correct": "Aserbaidschanisch (Türkisch)",
+          "options": ["Aserbaidschanisch (Türkisch)", "Arabisch", "Kurdisch", "Armenisch"],
+          "explanation": "Etwa 15–20% der Iraner sind Aserbaidschaner. Sie sprechen eine türkische Sprache und leben hauptsächlich in der Provinz Ost-Aserbaidschan."
+        },
+        {
+          "id": "lang_03",
+          "question": "Welche Schrift wird im Iran verwendet?",
+          "correct": "Persische Schrift (modifiziertes Arabisch)",
+          "options": ["Persische Schrift (modifiziertes Arabisch)", "Kyrillisch", "Lateinisch", "Arabische Schrift (unverändert)"],
+          "explanation": "Der Iran verwendet eine modifizierte arabische Schrift mit 4 zusätzlichen Buchstaben für persische Laute (پ چ ژ گ). Die Schrift läuft von rechts nach links."
+        },
+        {
+          "id": "lang_04",
+          "question": "Zu welcher Sprachfamilie gehört Persisch?",
+          "correct": "Indoeuropäisch (Iranische Gruppe)",
+          "options": ["Indoeuropäisch (Iranische Gruppe)", "Semitisch", "Turkisch-Altaisch", "Dravidisch"],
+          "explanation": "Persisch ist indoeuropäisch — wie Deutsch, Englisch und Latein. Deshalb gibt es Ähnlichkeiten: pedar (Vater), mâdar (Mutter), dokhtar (Tochter)."
+        },
+        {
+          "id": "lang_05",
+          "question": "Wie viele Iraner sprechen Persisch als Muttersprache?",
+          "correct": "ca. 50–60%",
+          "options": ["ca. 50–60%", "ca. 90%", "ca. 30%", "100%"],
+          "explanation": "Nur etwa die Hälfte der Iraner hat Persisch als Muttersprache. Die restlichen Ethnien (Aserbaidschaner, Kurden, Araber, Belutschen u.a.) sprechen eigene Sprachen, lernen aber Persisch in der Schule."
+        },
+        {
+          "id": "lang_06",
+          "question": "Was ist die Staatsreligion des Iran?",
+          "correct": "Schiitischer Islam (Zwölfer-Schia)",
+          "options": ["Schiitischer Islam (Zwölfer-Schia)", "Sunnitischer Islam", "Zoroastrismus", "Alevitentum"],
+          "explanation": "Ca. 90–95% der Iraner sind Muslime, die meisten davon Schiiten (Zwölfer-Schia). Der Iran ist das wichtigste schiitische Land der Welt."
+        },
+        {
+          "id": "lang_07",
+          "question": "Welche alte iranische Religion entstand im heutigen Iran?",
+          "correct": "Zoroastrismus",
+          "options": ["Zoroastrismus", "Manichäismus", "Mithraismus", "Bahaitum"],
+          "explanation": "Der Zoroastrismus ist eine der ältesten monotheistischen Religionen und entstand im heutigen Iran. Sein Gründer Zarathustra lebte vermutlich um 1000 v. Chr. Heute gibt es noch ca. 25.000 Zoroastrier im Iran."
+        }
+      ]
+    },
+
+    {
+      "id": "history",
+      "title": "Geschichte",
+      "icon": "scroll",
+      "facts": [
+        {
+          "id": "hist_01",
+          "question": "Welches persische Reich gilt als erstes Weltreich der Geschichte?",
+          "correct": "Achämenidenreich",
+          "options": ["Achämenidenreich", "Sassanidenreich", "Partherreich", "Safawidenreich"],
+          "explanation": "Das Achämenidenreich (ca. 550–330 v. Chr.) unter Kyros dem Großen war das erste Großreich der Geschichte, das sich von Ägypten bis Indien erstreckte."
+        },
+        {
+          "id": "hist_02",
+          "question": "Wer eroberte das Achämenidenreich und beendete es 330 v. Chr.?",
+          "correct": "Alexander der Große",
+          "options": ["Alexander der Große", "Julius Caesar", "Dschingis Khan", "Timur Lenk"],
+          "explanation": "Alexander der Große besiegte den letzten Achämenidenkönig Darius III. und brannte die Hauptstadt Persepolis nieder. Sein Reich zerfiel jedoch nach seinem Tod 323 v. Chr."
+        },
+        {
+          "id": "hist_03",
+          "question": "In welchem Jahrhundert wurde der Islam im Iran eingeführt?",
+          "correct": "7. Jahrhundert n. Chr.",
+          "options": ["7. Jahrhundert n. Chr.", "10. Jahrhundert n. Chr.", "4. Jahrhundert n. Chr.", "12. Jahrhundert n. Chr."],
+          "explanation": "Nach der arabischen Eroberung (636–651 n. Chr.) wurde der Islam im Iran eingeführt und verdrängte den Zoroastrismus als Staatsreligion. Die persische Sprache und Kultur blieb jedoch erhalten."
+        },
+        {
+          "id": "hist_04",
+          "question": "Welche Dynastie machte die Zwölfer-Schia zur Staatsreligion des Iran?",
+          "correct": "Safawiden (ab 1501)",
+          "options": ["Safawiden (ab 1501)", "Kadscharen (ab 1789)", "Sassaniden (ab 224)", "Zand-Dynastie (ab 1750)"],
+          "explanation": "Die Safawiden erhoben 1501 die Zwölfer-Schia zur Staatsreligion — ein Schritt, der den Iran bis heute prägt und ihn von seinen sunnitischen Nachbarn unterscheidet."
+        },
+        {
+          "id": "hist_05",
+          "question": "Wann fand die Islamische Revolution im Iran statt?",
+          "correct": "1979",
+          "options": ["1979", "1953", "1963", "1989"],
+          "explanation": "Die Islamische Revolution von 1979 unter Ayatollah Khomeini beendete die Pahlewi-Monarchie und gründete die Islamische Republik Iran."
+        },
+        {
+          "id": "hist_06",
+          "question": "Wie lange dauerte der Iran-Irak-Krieg?",
+          "correct": "8 Jahre (1980–1988)",
+          "options": ["8 Jahre (1980–1988)", "3 Jahre (1990–1993)", "5 Jahre (1975–1980)", "12 Jahre (1980–1992)"],
+          "explanation": "Der Iran-Irak-Krieg (1980–1988) kostete schätzungsweise 500.000 bis 1 Million Menschen das Leben. Er endete ohne territoriale Veränderungen."
+        },
+        {
+          "id": "hist_07",
+          "question": "Was ist Persepolis?",
+          "correct": "Die zeremonielle Hauptstadt des Achämenidenreichs",
+          "options": ["Die zeremonielle Hauptstadt des Achämenidenreichs", "Eine alte Hafenstadt am Persischen Golf", "Das erste islamische Zentrum Persiens", "Die Hauptstadt unter den Safawiden"],
+          "explanation": "Persepolis wurde ca. 515 v. Chr. unter Darius I. erbaut und diente als zeremonielle Hauptstadt. Die Ruinen in der Nähe von Shiraz sind UNESCO-Weltkulturerbe."
+        },
+        {
+          "id": "hist_08",
+          "question": "Was geschah 1953 im Iran?",
+          "correct": "Staatsstreich gegen Premierminister Mossadegh",
+          "options": ["Staatsstreich gegen Premierminister Mossadegh", "Ausrufung der Islamischen Republik", "Beginn des Iran-Irak-Kriegs", "Entdeckung der Ölfelder"],
+          "explanation": "1953 wurde der demokratisch gewählte Premierminister Mohammad Mossadegh durch einen von CIA und MI6 unterstützten Staatsstreich gestürzt, nachdem er die Ölindustrie verstaatlicht hatte."
+        },
+        {
+          "id": "hist_09",
+          "question": "Welcher iranische Dichter schrieb das Schahnameh — das Buch der Könige?",
+          "correct": "Ferdousi",
+          "options": ["Ferdousi", "Hafez", "Rumi", "Omar Khayyam"],
+          "explanation": "Ferdousi (940–1020 n. Chr.) schrieb das Schahnameh, das längste Epos der Weltliteratur von einem einzigen Autor. Es bewahrt die persische Sprache und Mythologie vor dem arabischen Einfluss."
+        },
+        {
+          "id": "hist_10",
+          "question": "Welche Stadt war die Hauptstadt unter den Safawiden?",
+          "correct": "Isfahan",
+          "options": ["Isfahan", "Teheran", "Tabriz", "Shiraz"],
+          "explanation": "Isfahan war von 1598 bis 1722 die Hauptstadt des Safawidenreichs. Shah Abbas I. ließ die Stadt zu einer der prachtvollsten der islamischen Welt ausbauen."
+        }
+      ]
+    },
+
+    {
+      "id": "culture",
+      "title": "Kultur & Bräuche",
+      "icon": "star",
+      "facts": [
+        {
+          "id": "cult_01",
+          "question": "Was ist Nowruz?",
+          "correct": "Das persische Neujahr zum Frühlingsbeginn",
+          "options": ["Das persische Neujahr zum Frühlingsbeginn", "Ein islamisches Fest nach dem Ramadan", "Ein Erntedankfest im Herbst", "Der Geburtstag des Propheten"],
+          "explanation": "Nowruz (»Neuer Tag«) ist das persische Neujahr und fällt auf den astronomischen Frühlingsanfang (ca. 21. März). Es ist das wichtigste Fest des Iran und wird seit über 3.000 Jahren gefeiert — noch vor dem Islam."
+        },
+        {
+          "id": "cult_02",
+          "question": "Was ist der Haft-Sin-Tisch bei Nowruz?",
+          "correct": "Ein Tisch mit 7 Dingen die mit S beginnen",
+          "options": ["Ein Tisch mit 7 Dingen die mit S beginnen", "Ein Festmahl mit 7 Fleischgerichten", "Ein Altar mit 7 heiligen Texten", "Ein Gabentisch mit 7 Geschenken"],
+          "explanation": "Haft-Sin bedeutet »sieben S«. Auf dem Tisch stehen 7 symbolische Dinge, deren Namen auf Persisch mit »s« beginnen — z.B. Sabze (Keimsprossen), Sib (Apfel), Serkeh (Essig). Jedes Symbol steht für einen Wunsch wie Gesundheit oder Wohlstand."
+        },
+        {
+          "id": "cult_03",
+          "question": "Was ist Ta'arof?",
+          "correct": "Ein persisches Höflichkeitssystem mit rituellen Angeboten",
+          "options": ["Ein persisches Höflichkeitssystem mit rituellen Angeboten", "Eine traditionelle Kampfkunst", "Ein islamisches Gebet", "Ein persisches Brettspiel"],
+          "explanation": "Ta'arof ist ein komplexes Höflichkeitsritual: Man bietet etwas an (z.B. Essen, Geld) ohne es wirklich zu meinen, und der andere lehnt zunächst ab. Erst beim dritten Angebot darf man annehmen. Als Ausländer kann man ruhig direkt fragen: »Ta'arof dari?« — Meinst du das ernst?"
+        },
+        {
+          "id": "cult_04",
+          "question": "Was ist das Nationalgericht des Iran?",
+          "correct": "Chelo Kabab (Reis mit Fleischspieß)",
+          "options": ["Chelo Kabab (Reis mit Fleischspieß)", "Hummus mit Fladenbrot", "Fesenjan (Granatapfel-Walnuss-Eintopf)", "Ash Reshteh (Nudelsuppe)"],
+          "explanation": "Chelo Kabab gilt als inoffizielles Nationalgericht: safrangewürzter Basmati-Reis mit gegrilltem Fleischspieß. Fesenjan und Ash Reshteh sind ebenfalls sehr typisch."
+        },
+        {
+          "id": "cult_05",
+          "question": "Welcher persische Dichter ist auch in Deutschland als Mystiker bekannt?",
+          "correct": "Rumi (Dschalal ad-Din ar-Rumi)",
+          "options": ["Rumi (Dschalal ad-Din ar-Rumi)", "Hafez", "Ferdousi", "Saadi"],
+          "explanation": "Rumi (1207–1273) war ein persischer Sufi-Dichter und Mystiker. Sein Hauptwerk, das Masnavi, ist eines der bedeutendsten Werke der persischen Literatur. Er gründete den Orden der »tanzenden Derwische«."
+        },
+        {
+          "id": "cult_06",
+          "question": "Was ist Yalda?",
+          "correct": "Das Fest der längsten Nacht des Jahres",
+          "options": ["Das Fest der längsten Nacht des Jahres", "Das Ende des Ramadan", "Der persische Valentinstag", "Ein Erntedankfest"],
+          "explanation": "Yalda (Wintersonnenwende, 21./22. Dezember) ist das Fest der längsten Nacht. Familien kommen zusammen, lesen Gedichte von Hafez, essen Granatäpfel und Wassermelone und bleiben bis Mitternacht auf."
+        },
+        {
+          "id": "cult_07",
+          "question": "Was ist Tee-Kultur im Iran?",
+          "correct": "Tee ist das wichtigste Getränk und wird mit Kandiszucker getrunken",
+          "options": ["Tee ist das wichtigste Getränk und wird mit Kandiszucker getrunken", "Kaffee ist beliebter als Tee", "Tee wird nur morgens getrunken", "Tee wird kalt mit Minze serviert"],
+          "explanation": "Chây (Tee) ist im Iran allgegenwärtig. Er wird stark gebrüht, in Gläsern serviert und oft mit Kandiszucker (Nabât) oder einem Stück Würfelzucker im Mund getrunken. Tee anzubieten ist ein Zeichen der Gastfreundschaft."
+        },
+        {
+          "id": "cult_08",
+          "question": "Was ist der Bazar im iranischen Alltag?",
+          "correct": "Traditionelles Handelszentrum und sozialer Treffpunkt",
+          "options": ["Traditionelles Handelszentrum und sozialer Treffpunkt", "Ein religiöses Zentrum", "Ein staatlicher Supermarkt", "Ein Wochenmarkt nur für Lebensmittel"],
+          "explanation": "Der Bazar (Wort ist persischen Ursprungs) ist das wirtschaftliche und soziale Herz iranischer Städte. Der Große Bazar von Teheran ist einer der größten der Welt mit Kilometern überdachter Gassen."
+        },
+        {
+          "id": "cult_09",
+          "question": "Welches Spiel wurde im Iran erfunden?",
+          "correct": "Schach (Chatrang)",
+          "options": ["Schach (Chatrang)", "Backgammon", "Polo", "Go"],
+          "explanation": "Schach entstand in Indien und gelangte über Persien nach Europa — auf Persisch heißt es Chatrang oder Shatranj. Auch Polo wurde im alten Persien gespielt und erfunden."
+        },
+        {
+          "id": "cult_10",
+          "question": "Wofür ist die iranische Teppichweb-Tradition bekannt?",
+          "correct": "Als eine der ältesten und kunstvollsten Teppichkulturen der Welt",
+          "options": ["Als eine der ältesten und kunstvollsten Teppichkulturen der Welt", "Als Erfinder des maschinellen Webens", "Als günstigste Teppichproduktion weltweit", "Als Exporteur synthetischer Teppiche"],
+          "explanation": "Persische Teppiche (Fârsh) gehören zum UNESCO-Kulturerbe. Die Stadt Tabriz, Isfahan und Kashan sind berühmt für ihre handgeknüpften Teppiche mit bis zu einer Million Knoten pro Quadratmeter."
+        }
+      ]
+    },
+
+    {
+      "id": "economy",
+      "title": "Wirtschaft & Gegenwart",
+      "icon": "chart",
+      "facts": [
+        {
+          "id": "econ_01",
+          "question": "Womit erzielt der Iran den größten Teil seiner Exporteinnahmen?",
+          "correct": "Erdöl und Erdgas",
+          "options": ["Erdöl und Erdgas", "Textilien und Teppiche", "Pistazien und Safran", "Technologie und Software"],
+          "explanation": "Der Iran besitzt die viertgrößten Erdölreserven und die zweitgrößten Erdgasreserven der Welt. Öl und Gas machen den Großteil der Staatseinnahmen aus, obwohl Sanktionen den Export stark einschränken."
+        },
+        {
+          "id": "econ_02",
+          "question": "Wofür ist der Iran weltweit führend in der Produktion?",
+          "correct": "Safran und Pistazien",
+          "options": ["Safran und Pistazien", "Datteln und Kaffee", "Baumwolle und Seide", "Reis und Weizen"],
+          "explanation": "Der Iran produziert über 90% des weltweiten Safrans und ist einer der größten Pistazien-Exporteure. Safranfelder finden sich hauptsächlich in der Provinz Khorasan."
+        },
+        {
+          "id": "econ_03",
+          "question": "Was ist die Währung des Iran?",
+          "correct": "Iranischer Rial (IRR)",
+          "options": ["Iranischer Rial (IRR)", "Iranischer Dirham", "Iranisches Pound", "Toman"],
+          "explanation": "Die offizielle Währung ist der Rial, aber im Alltag rechnen die Iraner in Toman (1 Toman = 10 Rial). Die Inflation hat den Rial stark abgewertet."
+        },
+        {
+          "id": "econ_04",
+          "question": "Welche Universität gilt als die renommierteste des Iran?",
+          "correct": "Sharif University of Technology (Teheran)",
+          "options": ["Sharif University of Technology (Teheran)", "Universität Isfahan", "Universität Teheran", "Ferdowsi-Universität Mashhad"],
+          "explanation": "Die Sharif University of Technology ist vor allem in Ingenieurwesen und Naturwissenschaften führend. Die Universität Teheran ist die älteste und größte des Landes."
+        }
+      ]
+    }
+  ]
+}
