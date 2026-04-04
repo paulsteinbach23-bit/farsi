@@ -21,6 +21,8 @@ const ASSETS = [
   './js/alphabet.js?v=2',
   './js/streak.js?v=2',
   './js/app.js?v=4',
+  './js/exercises_levels.js?v=1',
+  './js/exercises_ui.js?v=1',
   './js/iran.js?v=1',
   './js/install-prompt.js?v=1',
   './iran-facts.json',

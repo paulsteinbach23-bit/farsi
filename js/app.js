@@ -131,6 +131,7 @@ buildGrammar();
 buildSentences();
 buildPhrases();
 buildAlphabet();
+buildUebungen();
 buildIran().catch(console.error);
 _applyLangUI();
 startLessonSession(getActiveLessonIdx());
