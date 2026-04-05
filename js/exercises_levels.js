@@ -64,8 +64,8 @@ const EXERCISE_LEVELS = [
         options:['hastam','hasti','hastid','hastand'],
         correct:'hastam', explanation:'hast-am: die betonte vollständige Form von "ich bin".' },
       { type:1, de:'Ich bin nicht gut.',
-        tiles:['Man','nistam','.'], solution:['Man','nistam','.'],
-        explanation:'Verneinung von "sein": nist- + Endung. nistam = ich bin nicht.' },
+        tiles:['Man','khub','nistam','.'], solution:['Man','khub','nistam','.'],
+        explanation:'Verneinung von "sein": nist- + Endung. Man khub nistam = Ich bin nicht gut.' },
     ]
   },
 
