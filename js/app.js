@@ -129,10 +129,10 @@ buildGrammar();
 buildSentences();
 buildPhrases();
 buildAlphabet();
-buildUebungen();
-buildIran().catch(console.error);
 _applyLangUI();
 startLessonSession(getActiveLessonIdx());
+try { buildUebungen(); } catch(e) { console.error('buildUebungen failed:', e); }
+buildIran().catch(console.error);
 _updateNavSlider();
 window.addEventListener('resize', _updateNavSlider);
 
