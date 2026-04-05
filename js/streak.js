@@ -1,7 +1,7 @@
 /* ── STREAK ── */
-const STREAK_KEY  = 'farsi_streak';
-const VOCAB_GOAL  = 15;
-const PHRASE_GOAL = 5;
+const STREAK_KEY    = 'farsi_streak';
+const VOCAB_GOAL    = 15;
+const EXERCISE_GOAL = 1;
 
 let _streakJustExtended = false;
 let _newStreakValue      = 0;
@@ -14,7 +14,7 @@ function loadStreakData() {
 }
 
 function _defaultStreakData() {
-  return { streak: 0, lastStreakDate: null, todayDate: null, todayVocab: 0, todayPhrases: 0 };
+  return { streak: 0, lastStreakDate: null, todayDate: null, todayVocab: 0, todayExercises: 0 };
 }
 
 function saveStreakData(s) {
@@ -33,9 +33,9 @@ function _refreshDay(s) {
       const diffDays = (new Date(today) - new Date(s.lastStreakDate)) / 86400000;
       if (diffDays > 1) s.streak = 0;   // missed at least one day
     }
-    s.todayDate    = today;
-    s.todayVocab   = 0;
-    s.todayPhrases = 0;
+    s.todayDate      = today;
+    s.todayVocab     = 0;
+    s.todayExercises = 0;
   }
   return s;
 }
@@ -43,7 +43,7 @@ function _refreshDay(s) {
 /* Check if today's goal was just met for the first time */
 function _checkGoal(s) {
   const today = _today();
-  if (s.todayVocab >= VOCAB_GOAL && s.todayPhrases >= PHRASE_GOAL && s.lastStreakDate !== today) {
+  if (s.todayVocab >= VOCAB_GOAL && s.todayExercises >= EXERCISE_GOAL && s.lastStreakDate !== today) {
     s.streak        = s.streak > 0 ? s.streak + 1 : 1;
     s.lastStreakDate = today;
     _streakJustExtended = true;
@@ -67,9 +67,9 @@ function incrementVocab() {
   _handleStreakExtension();
 }
 
-function incrementPhrases() {
+function incrementExercises() {
   const s = _refreshDay(loadStreakData());
-  s.todayPhrases++;
+  s.todayExercises++;
   _checkGoal(s);
   saveStreakData(s);
   renderStreakBadge(s);
@@ -95,12 +95,12 @@ function renderDailyProgress(s) {
   const el = document.getElementById('daily-progress');
   if (!el) return;
 
-  const vCount  = Math.min(s.todayVocab,   VOCAB_GOAL);
-  const pCount  = Math.min(s.todayPhrases, PHRASE_GOAL);
-  const vPct    = Math.round(vCount / VOCAB_GOAL  * 100);
-  const pPct    = Math.round(pCount / PHRASE_GOAL * 100);
-  const vDone   = s.todayVocab   >= VOCAB_GOAL;
-  const pDone   = s.todayPhrases >= PHRASE_GOAL;
+  const vCount  = Math.min(s.todayVocab,     VOCAB_GOAL);
+  const eCount  = Math.min(s.todayExercises, EXERCISE_GOAL);
+  const vPct    = Math.round(vCount / VOCAB_GOAL    * 100);
+  const ePct    = Math.round(eCount / EXERCISE_GOAL * 100);
+  const vDone   = s.todayVocab     >= VOCAB_GOAL;
+  const eDone   = s.todayExercises >= EXERCISE_GOAL;
 
   el.innerHTML = `
     <div class="dp-item">
@@ -115,10 +115,10 @@ function renderDailyProgress(s) {
     <div class="dp-item">
       <div class="dp-label">
         <span>Übungen</span>
-        <span class="dp-count ${pDone ? 'dp-done' : ''}">${pDone ? '✓' : `${s.todayPhrases} / ${PHRASE_GOAL}`}</span>
+        <span class="dp-count ${eDone ? 'dp-done' : ''}">${eDone ? '✓' : `${s.todayExercises} / ${EXERCISE_GOAL}`}</span>
       </div>
       <div class="dp-track">
-        <div class="dp-fill ${pDone ? 'dp-fill-done' : ''}" style="width:${pPct}%"></div>
+        <div class="dp-fill ${eDone ? 'dp-fill-done' : ''}" style="width:${ePct}%"></div>
       </div>
     </div>
   `;

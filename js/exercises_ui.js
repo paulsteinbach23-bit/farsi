@@ -22,7 +22,7 @@ function _exLevelStatus(n) {
   return s ? 'passed' : 'open';
 }
 
-const _PHASE_LABELS = { 1: 'Phase 1 — Fundament', 2: 'Phase 2 — Aufbau', 3: 'Phase 3 — Konsolidierung' };
+const _PHASE_LABELS = { 1: 'Phase 1 — Fundament', 2: 'Phase 2 — Aufbau', 3: 'Phase 3 — Konsolidierung', 4: 'Phase 4 — Fortgeschritten' };
 
 /* ── Level Grid ── */
 function buildUebungen() {
@@ -133,6 +133,7 @@ function _renderExRunner() {
   else if (task.type === 2) _renderTyp2(task, wrap, onDone);
   else if (task.type === 5) _renderTyp5(task, wrap, onDone);
   else if (task.type === 6) _renderTyp6(task, wrap, onDone);
+  else if (task.type === 7) _renderTyp7(task, wrap, onDone);
   else { onDone(false); }
 }
 
@@ -152,6 +153,7 @@ function _showLevelResult() {
         bestTotal: total,
       }));
     }
+    if (!prev) incrementExercises();  // count first pass of each level toward streak
   }
 
   const el = document.getElementById('uebungen-content');
@@ -324,7 +326,23 @@ function _renderTyp6(task, wrap, onDone) {
   _buildMcOptions(task, onDone);
 }
 
-/* ── Shared MC option builder (Typ 2, 5, 6) ── */
+/* ──────────────────────────────────────────
+   TYP 7 — Iran-Allgemeinwissen
+────────────────────────────────────────── */
+function _renderTyp7(task, wrap, onDone) {
+  wrap.innerHTML = `
+    <div class="ex-typ-label">Iran — Allgemeinwissen</div>
+    <div class="ex-typ7-prompt">${task.prompt}</div>
+    <div class="ex-mc-options" id="ex-options"></div>
+    <div class="ex-feedback" id="ex-feedback" hidden></div>
+    <div class="ex-next-wrap" id="ex-next-wrap" hidden>
+      <button class="btn btn-primary" id="ex-next">Weiter →</button>
+    </div>`;
+
+  _buildMcOptions(task, onDone);
+}
+
+/* ── Shared MC option builder (Typ 2, 5, 6, 7) ── */
 function _buildMcOptions(task, onDone) {
   const container = document.getElementById('ex-options');
   const shuffled  = [...task.options].sort(() => Math.random() - 0.5);

@@ -1,4 +1,4 @@
-const CACHE = 'farsi-app-v6';
+const CACHE = 'farsi-app-v7';
 
 const ASSETS = [
   './',
@@ -15,17 +15,14 @@ const ASSETS = [
   './js/srs.js?v=2',
   './js/flashcard.js?v=3',
   './js/vocab.js?v=2',
-  './js/grammar.js?v=2',
-  './js/exercises.js?v=2',
+  './js/grammar.js?v=3',
   './js/phrases.js?v=2',
   './js/alphabet.js?v=2',
   './js/streak.js?v=2',
   './js/app.js?v=4',
   './js/exercises_levels.js?v=1',
   './js/exercises_ui.js?v=1',
-  './js/iran.js?v=1',
   './js/install-prompt.js?v=1',
-  './iran-facts.json',
 ];
 
 self.addEventListener('install', e => {

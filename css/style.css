@@ -1219,6 +1219,18 @@ header {
   line-height: 1.5;
 }
 
+/* Typ 7 */
+.ex-typ7-prompt {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
 /* Shared MC options */
 .ex-mc-options {
   display: flex;

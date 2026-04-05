@@ -104,7 +104,6 @@ function switchLanguage(lang) {
   localStorage.setItem('app_lang', lang);
   initLessons();
   _applyLangUI();
-  buildSentences();
   buildPhrases();
   buildLessonsScreen();
   startLessonSession(getActiveLessonIdx());
@@ -126,13 +125,11 @@ initLessons();
 buildLessonsScreen();
 buildVocabTopics();
 buildGrammar();
-buildSentences();
 buildPhrases();
 buildAlphabet();
 _applyLangUI();
 startLessonSession(getActiveLessonIdx());
 try { buildUebungen(); } catch(e) { console.error('buildUebungen failed:', e); }
-buildIran().catch(console.error);
 _updateNavSlider();
 window.addEventListener('resize', _updateNavSlider);
 
