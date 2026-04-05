@@ -94,9 +94,7 @@
     <span class="nav-slider" id="nav-slider" aria-hidden="true"></span>
     <button type="button" id="nav-lessons" class="nav-btn" onclick="show('lessons', this)">Lektionen</button>
     <button type="button" id="nav-flash" class="nav-btn active" onclick="show('flash', this)">Flashcards</button>
-    <button type="button" class="nav-btn" onclick="show('sentences', this)">Exercises</button>
     <button type="button" id="nav-uebungen" class="nav-btn" onclick="show('uebungen',this);buildUebungen()" style="display:none">Übungen</button>
-    <button type="button" id="nav-iran" class="nav-btn" onclick="show('iran',this)" style="display:none">Iran</button>
   </nav>
 
   <!-- FARSI 101 COLLAPSIBLE -->
@@ -111,6 +109,8 @@
         <button id="subnav-phrasebook" class="subnav-btn" onclick="showSub('phrases', this)">Phrasebook</button>
         <button id="subnav-vocab"      class="subnav-btn" onclick="showSub('vocab', this)">Vocabulary</button>
         <button id="subnav-alphabet"   class="subnav-btn" onclick="showSub('alphabet', this)">Alphabet</button>
+        <button id="subnav-exercises"  class="subnav-btn" onclick="showSub('sentences', this)">Exercises</button>
+        <button id="subnav-iran"       class="subnav-btn" onclick="showSub('iran', this);buildIran()">Iran</button>
       </div>
     </div>
   </div>
