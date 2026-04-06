@@ -108,7 +108,7 @@
         <button id="subnav-grammar"    class="subnav-btn" onclick="showSub('grammar', this)">Grammar</button>
         <button id="subnav-phrasebook" class="subnav-btn" onclick="showSub('phrases', this)">Phrasebook</button>
         <button id="subnav-vocab"      class="subnav-btn" onclick="showSub('vocab', this)">Vocabulary</button>
-        <button id="subnav-alphabet"   class="subnav-btn" onclick="showSub('alphabet', this)">Alphabet</button>
+        <button id="subnav-alphabet"   class="subnav-btn" onclick="showSub('alphabet', this);buildAlphabet()">Alphabet</button>
       </div>
     </div>
   </div>
@@ -240,7 +240,43 @@
 <script src="grammar-data-farsi.js"></script>
 <script src="js/grammar.js?v=3"></script>
 <script src="js/phrases.js?v=2"></script>
-<script src="js/alphabet.js?v=2"></script>
+<script>
+const ALPHABET_DATA = [
+  { id:'alef',    persian:'ا', roman:'â / a',  name:'Alef',     group:1, forms:{isolated:'ا',  initial:'ا',   medial:'ـا',  final:'ـا'},  similar_to:[],                        note:'Verbindet nicht nach links — immer gleiche Form' },
+  { id:'be',      persian:'ب', roman:'b',       name:'Be',       group:1, forms:{isolated:'ب',  initial:'بـ',  medial:'ـبـ', final:'ـب'},  similar_to:['pe','te','se'],           note:'Ein Punkt darunter — verwechslungsgefährdet mit پ (3 Punkte) und ت (2 Punkte oben)' },
+  { id:'pe',      persian:'پ', roman:'p',       name:'Pe',       group:1, forms:{isolated:'پ',  initial:'پـ',  medial:'ـپـ', final:'ـپ'},  similar_to:['be','te','se'],           note:'Drei Punkte darunter — persischer Buchstabe, nicht im Arabischen' },
+  { id:'te',      persian:'ت', roman:'t',       name:'Te',       group:1, forms:{isolated:'ت',  initial:'تـ',  medial:'ـتـ', final:'ـت'},  similar_to:['be','pe','se'],           note:'Zwei Punkte oben' },
+  { id:'se',      persian:'ث', roman:'s',       name:'Se',       group:1, forms:{isolated:'ث',  initial:'ثـ',  medial:'ـثـ', final:'ـث'},  similar_to:['be','pe','te'],           note:'Drei Punkte oben — selten in persischen Originalwörtern, meist arabische Lehnwörter' },
+  { id:'jim',     persian:'ج', roman:'j',       name:'Jim',      group:2, forms:{isolated:'ج',  initial:'جـ',  medial:'ـجـ', final:'ـج'},  similar_to:['che','he_jimi','khe'],    note:'Ein Punkt darunter' },
+  { id:'che',     persian:'چ', roman:'ch',      name:'Che',      group:2, forms:{isolated:'چ',  initial:'چـ',  medial:'ـچـ', final:'ـچ'},  similar_to:['jim','he_jimi','khe'],    note:'Drei Punkte darunter — persischer Buchstabe' },
+  { id:'he_jimi', persian:'ح', roman:'h',       name:'He (jimi)',group:2, forms:{isolated:'ح',  initial:'حـ',  medial:'ـحـ', final:'ـح'},  similar_to:['jim','che','khe'],        note:'Keine Punkte — arabischer Ursprung, starkes H' },
+  { id:'khe',     persian:'خ', roman:'kh',      name:'Khe',      group:2, forms:{isolated:'خ',  initial:'خـ',  medial:'ـخـ', final:'ـخ'},  similar_to:['jim','che','he_jimi'],    note:'Ein Punkt oben — wie "ch" in Bach' },
+  { id:'dal',     persian:'د', roman:'d',       name:'Dal',      group:3, forms:{isolated:'د',  initial:'د',   medial:'ـد',  final:'ـد'},  similar_to:['zal'],                    note:'Verbindet nicht nach links' },
+  { id:'zal',     persian:'ذ', roman:'z',       name:'Zal',      group:3, forms:{isolated:'ذ',  initial:'ذ',   medial:'ـذ',  final:'ـذ'},  similar_to:['dal'],                    note:'Ein Punkt oben — arabisches Lehnwort-Zeichen' },
+  { id:'re',      persian:'ر', roman:'r',       name:'Re',       group:3, forms:{isolated:'ر',  initial:'ر',   medial:'ـر',  final:'ـر'},  similar_to:['ze','zhe'],               note:'Verbindet nicht nach links' },
+  { id:'ze',      persian:'ز', roman:'z',       name:'Ze',       group:3, forms:{isolated:'ز',  initial:'ز',   medial:'ـز',  final:'ـز'},  similar_to:['re','zhe'],               note:'Ein Punkt oben — verbindet nicht nach links' },
+  { id:'zhe',     persian:'ژ', roman:'zh',      name:'Zhe',      group:3, forms:{isolated:'ژ',  initial:'ژ',   medial:'ـژ',  final:'ـژ'},  similar_to:['re','ze'],                note:'Drei Punkte oben — persischer Buchstabe, wie franz. "j"' },
+  { id:'sin',     persian:'س', roman:'s',       name:'Sin',      group:4, forms:{isolated:'س',  initial:'سـ',  medial:'ـسـ', final:'ـس'},  similar_to:['shin'],                   note:'Drei Zacken — keine Punkte' },
+  { id:'shin',    persian:'ش', roman:'sh',      name:'Shin',     group:4, forms:{isolated:'ش',  initial:'شـ',  medial:'ـشـ', final:'ـش'},  similar_to:['sin'],                    note:'Drei Zacken mit drei Punkten oben' },
+  { id:'sad',     persian:'ص', roman:'s',       name:'Sad',      group:4, forms:{isolated:'ص',  initial:'صـ',  medial:'ـصـ', final:'ـص'},  similar_to:['zad'],                    note:'Arabischer Ursprung — emphatisches S' },
+  { id:'zad',     persian:'ض', roman:'z',       name:'Zad',      group:4, forms:{isolated:'ض',  initial:'ضـ',  medial:'ـضـ', final:'ـض'},  similar_to:['sad'],                    note:'Ein Punkt oben — arabischer Ursprung' },
+  { id:'ta',      persian:'ط', roman:'t',       name:'Ta',       group:5, forms:{isolated:'ط',  initial:'طـ',  medial:'ـطـ', final:'ـط'},  similar_to:['za'],                     note:'Arabischer Ursprung — emphatisches T' },
+  { id:'za',      persian:'ظ', roman:'z',       name:'Za',       group:5, forms:{isolated:'ظ',  initial:'ظـ',  medial:'ـظـ', final:'ـظ'},  similar_to:['ta'],                     note:'Ein Punkt oben — arabischer Ursprung' },
+  { id:'eyn',     persian:'ع', roman:"'",       name:'Eyn',      group:5, forms:{isolated:'ع',  initial:'عـ',  medial:'ـعـ', final:'ـع'},  similar_to:['gheyn'],                  note:'Kehlkopflaut — im Persischen meist wie ein Vokal ausgesprochen' },
+  { id:'gheyn',   persian:'غ', roman:'gh',      name:'Gheyn',    group:5, forms:{isolated:'غ',  initial:'غـ',  medial:'ـغـ', final:'ـغ'},  similar_to:['eyn'],                    note:'Ein Punkt oben — wie ein gaumiges R' },
+  { id:'fe',      persian:'ف', roman:'f',       name:'Fe',       group:6, forms:{isolated:'ف',  initial:'فـ',  medial:'ـفـ', final:'ـف'},  similar_to:['qaf'],                    note:'Ein Punkt oben' },
+  { id:'qaf',     persian:'ق', roman:'q / gh',  name:'Qaf',      group:6, forms:{isolated:'ق',  initial:'قـ',  medial:'ـقـ', final:'ـق'},  similar_to:['fe'],                     note:'Zwei Punkte oben — tiefer Kehlkopflaut' },
+  { id:'kaf',     persian:'ک', roman:'k',       name:'Kaf',      group:6, forms:{isolated:'ک',  initial:'کـ',  medial:'ـکـ', final:'ـک'},  similar_to:['gaf'],                    note:'Persische Form leicht anders als arabisches ك' },
+  { id:'gaf',     persian:'گ', roman:'g',       name:'Gaf',      group:6, forms:{isolated:'گ',  initial:'گـ',  medial:'ـگـ', final:'ـگ'},  similar_to:['kaf'],                    note:'Persischer Buchstabe — nicht im Arabischen' },
+  { id:'lam',     persian:'ل', roman:'l',       name:'Lam',      group:7, forms:{isolated:'ل',  initial:'لـ',  medial:'ـلـ', final:'ـل'},  similar_to:[],                         note:'Eindeutige Form' },
+  { id:'mim',     persian:'م', roman:'m',       name:'Mim',      group:7, forms:{isolated:'م',  initial:'مـ',  medial:'ـمـ', final:'ـم'},  similar_to:[],                         note:'Eindeutige Form' },
+  { id:'nun',     persian:'ن', roman:'n',       name:'Nun',      group:7, forms:{isolated:'ن',  initial:'نـ',  medial:'ـنـ', final:'ـن'},  similar_to:[],                         note:'Ein Punkt oben — in medialer Form nur noch als kleiner Zahn erkennbar' },
+  { id:'vav',     persian:'و', roman:'v / u / o',name:'Vav',     group:7, forms:{isolated:'و',  initial:'و',   medial:'ـو',  final:'ـو'},  similar_to:[],                         note:'Verbindet nicht nach links — kann Konsonant (v) oder Vokal (u/o) sein' },
+  { id:'he',      persian:'ه', roman:'h',       name:'He',       group:8, forms:{isolated:'ه',  initial:'هـ',  medial:'ـهـ', final:'ـه'},  similar_to:[],                         note:'Vier verschiedene Formen — eine der schwierigsten visuell' },
+  { id:'ye',      persian:'ی', roman:'y / i',   name:'Ye',       group:8, forms:{isolated:'ی',  initial:'یـ',  medial:'ـیـ', final:'ـی'},  similar_to:[],                         note:'Kann Konsonant (y) oder Vokal (i) sein — am Wortende keine Punkte im modernen Persisch' },
+];
+</script>
+<script src="js/alphabet.js?v=3"></script>
 <script src="js/streak.js?v=2"></script>
 <script src="js/app.js?v=4"></script>
 <script src="js/exercises_levels.js?v=1"></script>

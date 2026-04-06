@@ -1,4 +1,4 @@
-const CACHE = 'farsi-app-v8';
+const CACHE = 'farsi-app-v9';
 
 const ASSETS = [
   './',
@@ -17,7 +17,7 @@ const ASSETS = [
   './js/vocab.js?v=2',
   './js/grammar.js?v=3',
   './js/phrases.js?v=2',
-  './js/alphabet.js?v=2',
+  './js/alphabet.js?v=3',
   './js/streak.js?v=2',
   './js/app.js?v=4',
   './js/exercises_levels.js?v=1',
