@@ -1,10 +1,10 @@
-const CACHE = 'farsi-app-v7';
+const CACHE = 'farsi-app-v8';
 
 const ASSETS = [
   './',
   './index.html',
   './manifest.json?v=2',
-  './css/style.css?v=4',
+  './css/style.css?v=5',
   './js/french_data.js?v=2',
   './js/spanish_data.js?v=1',
   './grammar-data-farsi.js',
@@ -23,6 +23,10 @@ const ASSETS = [
   './js/exercises_levels.js?v=1',
   './js/exercises_ui.js?v=1',
   './js/install-prompt.js?v=1',
+  './fonts/Playfair_9pt_SemiCondensed-Black.ttf',
+  './fonts/Playfair_9pt_SemiCondensed-Regular.ttf',
+  './fonts/Playfair_9pt_SemiCondensed-Light.ttf',
+  './fonts/Playfair_9pt-Medium.ttf',
 ];
 
 self.addEventListener('install', e => {

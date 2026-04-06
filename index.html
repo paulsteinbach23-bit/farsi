@@ -16,12 +16,12 @@
   <link rel="apple-touch-icon" sizes="180x180" href="icon.png" />
 
   <title>تعارف app — Farsi lernen</title>
-  <link rel="stylesheet" href="css/style.css?v=4" />
+  <link rel="stylesheet" href="css/style.css?v=5" />
   <script>
     (function() {
       const t = localStorage.getItem('farsi_theme');
-      if (t === 'dark')  document.documentElement.classList.add('theme-dark');
-      if (t === 'light') document.documentElement.classList.add('theme-light');
+      if (t === 'dark') document.documentElement.classList.add('theme-dark');
+      else              document.documentElement.classList.add('theme-light');
     })();
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./sw.js');

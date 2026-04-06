@@ -1,8 +1,7 @@
 /* ── THEME ── */
 function toggleTheme() {
   const html   = document.documentElement;
-  const isDark = html.classList.contains('theme-dark') ||
-    (!html.classList.contains('theme-light') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const isDark = html.classList.contains('theme-dark');
   html.classList.remove('theme-dark', 'theme-light');
   if (isDark) {
     html.classList.add('theme-light');
@@ -23,8 +22,7 @@ function _updateThemeBtn() {
   const btn    = document.getElementById('theme-toggle');
   if (!btn) return;
   const html   = document.documentElement;
-  const isDark = html.classList.contains('theme-dark') ||
-    (!html.classList.contains('theme-light') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const isDark = html.classList.contains('theme-dark');
   btn.innerHTML = isDark ? _THEME_ICON_SUN : _THEME_ICON_MOON;
 }
 
