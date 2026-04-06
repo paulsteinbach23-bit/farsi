@@ -1176,6 +1176,16 @@ header {
 .tile--ok  { border-color: var(--green-600); background: var(--green-50); color: var(--green-800); }
 .tile--err { border-color: var(--red-600);   background: var(--red-50);   color: var(--red-800); }
 
+@keyframes wrongFlash {
+  0%   { background: var(--red-50);  border-color: var(--red-600); color: var(--red-800); }
+  40%  { background: var(--red-400); border-color: var(--red-600); color: #fff; }
+  100% { background: var(--red-50);  border-color: var(--red-600); color: var(--red-800); }
+}
+.wrong-flash {
+  animation: wrongFlash 0.6s ease;
+  pointer-events: none;
+}
+
 .ex-check-btn { width: 100%; margin-bottom: 12px; }
 .ex-check-btn:disabled { opacity: 0.4; transform: none !important; cursor: default; }
 

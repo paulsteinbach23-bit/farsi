@@ -195,7 +195,9 @@ function _showLevelResult() {
 ────────────────────────────────────────── */
 function _renderTyp1(task, wrap, onDone) {
   const shuffled = [...task.tiles].sort(() => Math.random() - 0.5);
-  let answer = [];
+  let answer     = [];
+  let scorable   = true;   // first attempt = counts toward score
+  let locked     = false;  // true only after correct answer
 
   wrap.innerHTML = `
     <div class="ex-typ-label">Satz zusammenbauen</div>
@@ -211,7 +213,6 @@ function _renderTyp1(task, wrap, onDone) {
   const answerEl = document.getElementById('tile-answer');
   const poolEl   = document.getElementById('tile-pool');
   const checkBtn = document.getElementById('ex-check');
-  let answered = false;
 
   function renderTiles() {
     poolEl.innerHTML   = '';
@@ -223,7 +224,7 @@ function _renderTyp1(task, wrap, onDone) {
         btn.className = 'tile tile--pool';
         btn.textContent = tile;
         btn.addEventListener('click', () => {
-          if (answered) return;
+          if (locked) return;
           answer.push(i);
           checkBtn.disabled = answer.length !== task.solution.length;
           renderTiles();
@@ -237,7 +238,7 @@ function _renderTyp1(task, wrap, onDone) {
       btn.className = 'tile tile--answer';
       btn.textContent = shuffled[tileIdx];
       btn.addEventListener('click', () => {
-        if (answered) return;
+        if (locked) return;
         answer.splice(pos, 1);
         checkBtn.disabled = true;
         renderTiles();
@@ -249,29 +250,32 @@ function _renderTyp1(task, wrap, onDone) {
   renderTiles();
 
   checkBtn.addEventListener('click', () => {
-    answered = true;
+    if (locked) return;
     checkBtn.disabled = true;
+
     const given   = answer.map(i => shuffled[i]).join(' ').toLowerCase();
     const correct = task.solution.join(' ').toLowerCase();
     const isRight = given === correct;
 
-    const fb = document.getElementById('ex-feedback');
-    fb.hidden = false;
-    fb.className = 'ex-feedback ' + (isRight ? 'ex-feedback--correct' : 'ex-feedback--wrong');
-    fb.innerHTML = isRight
-      ? `<strong>Richtig!</strong>`
-      : `<strong>Falsch.</strong> Korrekt: <span class="ex-correct-sentence">${task.solution.join(' ')}</span>`;
-    if (task.explanation) fb.innerHTML += `<div class="ex-explanation">${task.explanation}</div>`;
-
-    document.getElementById('ex-next-wrap').hidden = false;
-    document.getElementById('ex-next').addEventListener('click', () => onDone(isRight));
-
-    // highlight answer tiles
-    document.querySelectorAll('.tile--answer').forEach((btn, i) => {
-      const given = shuffled[answer[i]];
-      const exp   = task.solution[i];
-      btn.classList.add(given && given.toLowerCase() === exp.toLowerCase() ? 'tile--ok' : 'tile--err');
-    });
+    if (isRight) {
+      locked = true;
+      const fb = document.getElementById('ex-feedback');
+      fb.hidden = false;
+      fb.className = 'ex-feedback ex-feedback--correct';
+      fb.innerHTML = '<strong>Richtig!</strong>';
+      if (task.explanation) fb.innerHTML += `<div class="ex-explanation">${task.explanation}</div>`;
+      document.getElementById('ex-next-wrap').hidden = false;
+      document.getElementById('ex-next').addEventListener('click', () => onDone(scorable));
+      document.querySelectorAll('.tile--answer').forEach(btn => btn.classList.add('tile--ok'));
+    } else {
+      scorable = false;
+      // Flash answer tiles red, then reset
+      document.querySelectorAll('.tile--answer').forEach(btn => btn.classList.add('wrong-flash'));
+      setTimeout(() => {
+        answer = [];
+        renderTiles();
+      }, 600);
+    }
   });
 }
 
@@ -346,7 +350,8 @@ function _renderTyp7(task, wrap, onDone) {
 function _buildMcOptions(task, onDone) {
   const container = document.getElementById('ex-options');
   const shuffled  = [...task.options].sort(() => Math.random() - 0.5);
-  let   answered  = false;
+  let scorable    = true;   // becomes false after first wrong tap
+  let answered    = false;  // becomes true after correct answer chosen
 
   shuffled.forEach(opt => {
     const btn = document.createElement('button');
@@ -354,23 +359,27 @@ function _buildMcOptions(task, onDone) {
     btn.textContent = opt;
     btn.addEventListener('click', () => {
       if (answered) return;
-      answered = true;
 
       const isRight = opt === task.correct;
-      container.querySelectorAll('.ex-mc-btn').forEach(b => {
-        b.disabled = true;
-        if (b.textContent === task.correct) b.classList.add('ex-mc--correct');
-      });
-      if (!isRight) btn.classList.add('ex-mc--wrong');
 
-      const fb = document.getElementById('ex-feedback');
-      fb.hidden    = false;
-      fb.className = 'ex-feedback ' + (isRight ? 'ex-feedback--correct' : 'ex-feedback--wrong');
-      fb.innerHTML = isRight ? '<strong>Richtig!</strong>' : '<strong>Falsch.</strong>';
-      if (task.explanation) fb.innerHTML += `<div class="ex-explanation">${task.explanation}</div>`;
-
-      document.getElementById('ex-next-wrap').hidden = false;
-      document.getElementById('ex-next').addEventListener('click', () => onDone(isRight));
+      if (isRight) {
+        answered = true;
+        container.querySelectorAll('.ex-mc-btn').forEach(b => {
+          b.disabled = true;
+          if (b.textContent === task.correct) b.classList.add('ex-mc--correct');
+        });
+        const fb = document.getElementById('ex-feedback');
+        fb.hidden    = false;
+        fb.className = 'ex-feedback ex-feedback--correct';
+        fb.innerHTML = '<strong>Richtig!</strong>';
+        if (task.explanation) fb.innerHTML += `<div class="ex-explanation">${task.explanation}</div>`;
+        document.getElementById('ex-next-wrap').hidden = false;
+        document.getElementById('ex-next').addEventListener('click', () => onDone(scorable));
+      } else {
+        scorable = false;
+        btn.classList.add('wrong-flash');
+        setTimeout(() => btn.classList.remove('wrong-flash'), 600);
+      }
     });
     container.appendChild(btn);
   });
