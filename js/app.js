@@ -99,6 +99,7 @@ function switchLanguage(lang) {
   localStorage.setItem('app_lang', lang);
   initLessons();
   _applyLangUI();
+  initStreak();          // Streak und Tagesziel der neuen Sprache anzeigen
   buildPhrases();
   buildLessonsScreen();
   startLessonSession(getActiveLessonIdx());

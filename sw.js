@@ -1,4 +1,4 @@
-const CACHE = 'farsi-app-v11';
+const CACHE = 'farsi-app-v12';
 
 const ASSETS = [
   './',
@@ -18,8 +18,9 @@ const ASSETS = [
   './js/grammar.js?v=3',
   './js/phrases.js?v=2',
   './js/alphabet.js?v=3',
-  './js/streak.js?v=2',
-  './js/app.js?v=5',
+  './js/streak.js?v=3',
+  './js/progress-sync.js?v=1',
+  './js/app.js?v=6',
   './js/exercises_levels.js?v=1',
   './js/exercises_ui.js?v=2',
   './js/install-prompt.js?v=1',
@@ -50,6 +51,8 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
+  // Nur GET-Anfragen der App selbst cachen – Meldungen an Supabase (POST) unberührt lassen
+  if (e.request.method !== 'GET' || new URL(e.request.url).origin !== self.location.origin) return;
   e.respondWith(
     fetch(e.request)
       .then(response => {
