@@ -51,31 +51,28 @@ function _updateNavSlider() {
   slider.style.height = btnRect.height + 'px';
 }
 
+function _activateScreen(id, navId) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => {
+    const on = b.id === navId;
+    b.classList.toggle('active', on);
+    if (on) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current');
+  });
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
 function show(id, btn) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-  document.querySelectorAll('.subnav-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  if (btn) btn.classList.add('active');
-  _updateNavSlider();
-  _setGlobe(id === 'flash');
+  _activateScreen(id, btn ? btn.id : null);
 }
 
-function showSub(id, btn) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-  document.querySelectorAll('.subnav-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  if (btn) btn.classList.add('active');
-  _updateNavSlider();
-  _setGlobe(false);
+/* Unterseiten von „Nachschlagen“ (Grammatik, Redewendungen, Wortschatz, Alphabet) */
+function showSub(id) {
+  _activateScreen(id, 'nav-lookup');
 }
 
-function toggleFarsi101() {
-  const sub   = document.getElementById('farsi101-sub');
-  const arrow = document.getElementById('farsi101-arrow');
-  const open  = sub.classList.toggle('open');
-  arrow.classList.toggle('open', open);
+function showLookup() {
+  _activateScreen('lookup', 'nav-lookup');
 }
 
 /* ── LANGUAGE SCREEN ── */
@@ -108,12 +105,23 @@ function switchLanguage(lang) {
   show('flash', document.getElementById('nav-flash'));
 }
 
+const LANG_CODES = { farsi: 'FA', french: 'FR', spanish: 'ES' };
+const LANG_NAMES = { farsi: 'Farsi', french: 'Französisch', spanish: 'Spanisch' };
+
 function _applyLangUI() {
   const isFarsi = currentLang === 'farsi';
-  const e = document.getElementById('farsi101-wrap');
-  if (e) e.style.display = isFarsi ? '' : 'none';
-  const uebBtn = document.getElementById('nav-uebungen');
-  if (uebBtn) uebBtn.style.display = isFarsi ? '' : 'none';
+  // Übungen und Nachschlagen gibt es bisher nur für Farsi
+  ['nav-uebungen', 'nav-lookup'].forEach(id => {
+    const b = document.getElementById(id);
+    if (b) b.style.display = isFarsi ? '' : 'none';
+  });
+  const bar = document.querySelector('.tabbar');
+  if (bar) bar.style.setProperty('--tabs', isFarsi ? 4 : 2);
+  const lb = document.getElementById('lang-btn');
+  if (lb) {
+    lb.textContent = LANG_CODES[currentLang] || 'FA';
+    lb.setAttribute('aria-label', 'Sprache wählen: ' + (LANG_NAMES[currentLang] || 'Farsi'));
+  }
 }
 
 /* ── INIT ── */

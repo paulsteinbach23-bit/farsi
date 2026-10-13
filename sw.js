@@ -1,25 +1,25 @@
-const CACHE = 'farsi-app-v9';
+const CACHE = 'farsi-app-v10';
 
 const ASSETS = [
   './',
   './index.html',
   './manifest.json?v=2',
-  './css/style.css?v=5',
+  './css/style.css?v=6',
   './js/french_data.js?v=2',
-  './js/spanish_data.js?v=1',
+  './js/spanish_data.js?v=2',
   './grammar-data-farsi.js',
   './js/data.js?v=2',
   './js/lessons.js?v=3',
   './js/french_lessons.js?v=1',
   './js/spanish_lessons.js?v=1',
   './js/srs.js?v=2',
-  './js/flashcard.js?v=3',
+  './js/flashcard.js?v=4',
   './js/vocab.js?v=2',
   './js/grammar.js?v=3',
   './js/phrases.js?v=2',
   './js/alphabet.js?v=3',
   './js/streak.js?v=2',
-  './js/app.js?v=4',
+  './js/app.js?v=5',
   './js/exercises_levels.js?v=1',
   './js/exercises_ui.js?v=1',
   './js/install-prompt.js?v=1',
@@ -27,6 +27,12 @@ const ASSETS = [
   './fonts/Playfair_9pt_SemiCondensed-Regular.ttf',
   './fonts/Playfair_9pt_SemiCondensed-Light.ttf',
   './fonts/Playfair_9pt-Medium.ttf',
+  './fonts/InstrumentSans-latin.woff2',
+  './fonts/InstrumentSans-latin-ext.woff2',
+  './fonts/PlayfairDisplay-Italic-latin.woff2',
+  './fonts/PlayfairDisplay-Italic-latin-ext.woff2',
+  './fonts/Vazirmatn-arabic.woff2',
+  './fonts/Vazirmatn-latin.woff2',
 ];
 
 self.addEventListener('install', e => {

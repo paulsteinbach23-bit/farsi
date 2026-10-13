@@ -6,8 +6,8 @@
   "display": "standalone",
   "orientation": "portrait",
   "lang": "de",
-  "background_color": "#FFFFFF",
-  "theme_color": "#5B52C2",
+  "background_color": "#F6F1E7",
+  "theme_color": "#F6F1E7",
   "icons": [
     {
       "src": "icons/icon.svg",

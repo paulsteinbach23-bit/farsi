@@ -36,9 +36,10 @@ function startLessonSession(idx) {
   fcCorrect = 0;
   fcDone    = 0;
 
-  document.getElementById('fc-done-msg').style.display  = 'none';
-  document.getElementById('flipcard').style.display     = 'block';
-  document.getElementById('fc-actions').style.display   = 'none';
+  document.getElementById('fc-done-msg').style.display    = 'none';
+  document.getElementById('flipcard').style.display       = '';
+  document.getElementById('fc-actions').style.display     = 'none';
+  document.getElementById('fc-placeholder').style.display = '';
 
   updateFlashStats();
   updateLessonLabel();
@@ -49,44 +50,52 @@ function startLessonSession(idx) {
 }
 
 /* ── Card rendering ── */
+function _setFlipped(on) {
+  fcFlipped = on;
+  document.getElementById('flipinner').classList.toggle('flipped', on);
+  document.getElementById('flipcard').setAttribute('aria-label', on ? 'Karte zurückdrehen' : 'Karte umdrehen und Bedeutung zeigen');
+  document.getElementById('fc-actions').style.display     = on ? 'flex' : 'none';
+  document.getElementById('fc-placeholder').style.display = on ? 'none' : '';
+}
+
 function showCurrentCard() {
   if (fcIdx >= fcDeck.length) { showFlashDone(); return; }
 
   const { card, direction, isLesson } = fcDeck[fcIdx];
-  const isPro = direction === 'production';
+  const isPro    = direction === 'production';
+  // Persische Schrift (Feld n) nur bei Farsi – bei Französisch/Spanisch ist n eine Notiz
+  const script   = currentLang === 'farsi' ? (card.n || '') : '';
+  const note     = currentLang === 'farsi' ? '' : (card.n || '');
+  const topic    = (typeof TOPICS !== 'undefined' && TOPICS.find(t => t.id === card.t)?.name) || '';
 
   document.getElementById('flipcard').classList.toggle('is-production', isPro);
+  document.getElementById('flipcard').classList.toggle('has-script', !!script && !isPro);
 
   const badge = document.getElementById('fc-direction-badge');
-  if (badge) {
-    badge.textContent = isPro ? 'Produktion' : 'Erkennung';
-    badge.className   = 'fc-direction-badge ' + (isPro ? 'production' : 'recognition');
-  }
+  badge.textContent = (isPro ? 'Produzieren' : 'Erkennen') + (isLesson ? '' : ' · Wiederholung');
 
-  // Review badge
-  const reviewBadge = document.getElementById('fc-review-badge');
-  if (reviewBadge) reviewBadge.style.display = isLesson ? 'none' : 'inline-block';
+  document.getElementById('fc-topic').textContent      = topic;
+  document.getElementById('fc-topic-back').textContent = topic;
 
-  document.getElementById('fc-topic').textContent  = TOPICS.find(t => t.id === card.t)?.name || card.t || '';
+  // Vorderseite
+  document.getElementById('fc-script').textContent = isPro ? '' : script;
   document.getElementById('fc-roman').textContent  = isPro ? card.m : card.r;
-  document.getElementById('fc-hint').textContent   = isPro ? 'Wort zeigen' : 'Bedeutung zeigen';
-  document.getElementById('fc-meaning').textContent = isPro ? card.r : card.m;
-  document.getElementById('fc-note').textContent    = card.n || '';
+  // Rückseite
+  document.getElementById('fc-back-script').textContent = script;
+  document.getElementById('fc-back-roman').textContent  = card.r;
+  document.getElementById('fc-meaning').textContent     = card.m;
+  document.getElementById('fc-note').textContent        = note;
 
   const inner = document.getElementById('flipinner');
   inner.style.transition = 'none';
-  inner.classList.remove('flipped');
+  _setFlipped(false);
   inner.offsetHeight;
   inner.style.transition = '';
-  fcFlipped = false;
-  document.getElementById('fc-actions').style.display = 'none';
 }
 
 function flipCard() {
   if (fcIdx >= fcDeck.length) return;
-  fcFlipped = !fcFlipped;
-  document.getElementById('flipinner').classList.toggle('flipped', fcFlipped);
-  if (fcFlipped) document.getElementById('fc-actions').style.display = 'flex';
+  _setFlipped(!fcFlipped);
 }
 
 /* ── Rating ── */
@@ -112,25 +121,36 @@ function rate(correct) {
 
 /* ── Stats ── */
 function updateFlashStats() {
-  const total = fcDeck.length || 1;
-  document.getElementById('fc-done').textContent    = fcDone;
-  document.getElementById('fc-correct').textContent = fcCorrect;
-  document.getElementById('fc-left').textContent    = Math.max(0, total - fcDone);
-  document.getElementById('fc-prog').style.width    = Math.round(fcDone / total * 100) + '%';
+  const total = fcDeck.length;
+  const answered = fcDeck.slice(0, fcIdx);
+  const nNew = answered.filter(i => i.isLesson).length;
+  const nRev = answered.length - nNew;
+  const nOpen = Math.max(0, total - answered.length);
+  const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  set('fc-done-count', answered.length);
+  set('fc-total', total);
+  set('fc-n-new', nNew);
+  set('fc-n-rev', nRev);
+  set('fc-n-open', nOpen);
+  // flex-grow statt Breite: Segmente teilen sich den Balken anteilig
+  document.getElementById('fc-seg-new').style.flexGrow  = nNew;
+  document.getElementById('fc-seg-rev').style.flexGrow  = nRev;
+  document.getElementById('fc-seg-open').style.flexGrow = nOpen;
 }
 
 function updateLessonLabel() {
-  const label = document.getElementById('fc-lesson-label');
-  if (!label) return;
   const lesson = getActiveLessons()[fcActiveLessonIdx];
-  if (lesson) label.textContent = `Lektion ${fcActiveLessonIdx + 1} · ${lesson.theme}`;
+  if (!lesson) return;
+  document.getElementById('fc-lesson-num').textContent   = `Lektion ${fcActiveLessonIdx + 1}`;
+  document.getElementById('fc-lesson-theme').textContent = lesson.theme;
 }
 
 /* ── End states ── */
 function showFlashDone() {
-  document.getElementById('flipcard').style.display    = 'none';
-  document.getElementById('fc-actions').style.display  = 'none';
-  document.getElementById('fc-done-msg').style.display = 'block';
+  document.getElementById('flipcard').style.display       = 'none';
+  document.getElementById('fc-actions').style.display     = 'none';
+  document.getElementById('fc-placeholder').style.display = 'none';
+  document.getElementById('fc-done-msg').style.display    = 'block';
 
   const lessonWords  = getLessonWords(fcActiveLessonIdx);
   const allGotIt     = lessonWords.length > 0 && lessonWords.every(w => fcLessonCardsDone.has(w.id));
