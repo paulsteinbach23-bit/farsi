@@ -100,6 +100,8 @@ function switchLanguage(lang) {
   initLessons();
   _applyLangUI();
   initStreak();          // Streak und Tagesziel der neuen Sprache anzeigen
+  buildGrammar();
+  try { buildUebungen(); } catch (e) { /* Übungsskripte laden nach app.js */ }
   buildPhrases();
   buildLessonsScreen();
   startLessonSession(getActiveLessonIdx());
@@ -111,13 +113,19 @@ const LANG_NAMES = { farsi: 'Farsi', french: 'Französisch', spanish: 'Spanisch'
 
 function _applyLangUI() {
   const isFarsi = currentLang === 'farsi';
-  // Übungen und Nachschlagen gibt es bisher nur für Farsi
+  // Übungen und Nachschlagen: Farsi und Spanisch (Französisch noch nicht)
+  const hasExercises = isFarsi || currentLang === 'spanish';
   ['nav-uebungen', 'nav-lookup'].forEach(id => {
+    const b = document.getElementById(id);
+    if (b) b.style.display = hasExercises ? '' : 'none';
+  });
+  // Wortschatz und Alphabet gibt es nur für Farsi
+  ['subnav-vocab', 'subnav-alphabet'].forEach(id => {
     const b = document.getElementById(id);
     if (b) b.style.display = isFarsi ? '' : 'none';
   });
   const bar = document.querySelector('.tabbar');
-  if (bar) bar.style.setProperty('--tabs', isFarsi ? 4 : 2);
+  if (bar) bar.style.setProperty('--tabs', hasExercises ? 4 : 2);
   const lb = document.getElementById('lang-btn');
   if (lb) {
     lb.textContent = LANG_CODES[currentLang] || 'FA';

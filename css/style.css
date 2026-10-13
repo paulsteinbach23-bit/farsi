@@ -2004,3 +2004,13 @@ header {
 @media (prefers-reduced-motion: reduce) {
   .flip-inner, .fc-segbar .seg { transition: none; }
 }
+
+/* ── Übungen: Regelkarte (Spanisch) ── */
+.ex-rule-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-xl);
+  padding: 20px; margin: 12px 0 16px; box-shadow: var(--shadow-card);
+}
+.ex-rule-title { font-family: var(--font-display); font-size: 22px; font-weight: 900; margin: 4px 0 10px; }
+.ex-rule-card .grammar-rule { font-size: 15px; line-height: 1.6; margin-bottom: 12px; }
+.ex-rule-card .example-row { padding: 6px 0; border-top: 1px solid var(--border); font-size: 15px; }
+.ex-rule-start { width: 100%; min-height: 52px; border-radius: 14px; font-size: 15px; }

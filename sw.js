@@ -1,4 +1,4 @@
-const CACHE = 'farsi-app-v12';
+const CACHE = 'farsi-app-v13';
 
 const ASSETS = [
   './',
@@ -15,14 +15,15 @@ const ASSETS = [
   './js/srs.js?v=2',
   './js/flashcard.js?v=4',
   './js/vocab.js?v=2',
-  './js/grammar.js?v=3',
+  './js/grammar.js?v=4',
   './js/phrases.js?v=2',
   './js/alphabet.js?v=3',
-  './js/streak.js?v=3',
+  './js/streak.js?v=4',
   './js/progress-sync.js?v=1',
-  './js/app.js?v=6',
+  './js/app.js?v=7',
   './js/exercises_levels.js?v=1',
-  './js/exercises_ui.js?v=2',
+  './js/spanish_exercises.js?v=1',
+  './js/exercises_ui.js?v=3',
   './js/install-prompt.js?v=1',
   './fonts/Playfair_9pt_SemiCondensed-Black.ttf',
   './fonts/Playfair_9pt_SemiCondensed-Regular.ttf',

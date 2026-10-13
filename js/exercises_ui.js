@@ -3,10 +3,15 @@
 /* ── State ── */
 let _exState = null;  // { levelId, tasks, idx, correct }
 
+/* ── Sprache: Farsi oder Spanisch ── */
+function _exLang() { return (typeof currentLang !== 'undefined' && currentLang === 'spanish') ? 'spanish' : 'farsi'; }
+function getActiveExerciseLevels() { return _exLang() === 'spanish' ? SPANISH_EXERCISE_LEVELS : EXERCISE_LEVELS; }
+function _exStorageKey(n) { return (_exLang() === 'spanish' ? 'spanish' : 'farsi') + '_exercise_level_' + n; }
+
 /* ── Helpers ── */
 function _exGetLevelState(n) {
   try {
-    return JSON.parse(localStorage.getItem('farsi_exercise_level_' + n) || 'null');
+    return JSON.parse(localStorage.getItem(_exStorageKey(n)) || 'null');
   } catch { return null; }
 }
 
@@ -34,13 +39,14 @@ function buildUebungen() {
   header.textContent = 'Übungen';
   el.appendChild(header);
 
+  const phaseLabels = _exLang() === 'spanish' ? SPANISH_EXERCISE_PHASES : _PHASE_LABELS;
   let currentPhase = 0;
-  EXERCISE_LEVELS.forEach(level => {
+  getActiveExerciseLevels().forEach(level => {
     if (level.phase !== currentPhase) {
       currentPhase = level.phase;
       const ph = document.createElement('div');
       ph.className = 'ex-phase-label';
-      ph.textContent = _PHASE_LABELS[level.phase] || ('Phase ' + level.phase);
+      ph.textContent = phaseLabels[level.phase] || ('Phase ' + level.phase);
       el.appendChild(ph);
     }
 
@@ -69,14 +75,47 @@ function buildUebungen() {
 
 /* ── Exercise Runner ── */
 function _startLevel(levelId) {
-  const level = EXERCISE_LEVELS.find(l => l.id === levelId);
+  const level = getActiveExerciseLevels().find(l => l.id === levelId);
   if (!level) return;
   if (!level.tasks || level.tasks.length === 0) {
     _showNoTasks(levelId, level.title);
     return;
   }
   _exState = { levelId, tasks: [...level.tasks], idx: 0, correct: 0 };
-  _renderExRunner();
+  if (level.rule) _renderRuleCard(level);
+  else _renderExRunner();
+}
+
+/* ── Regelkarte vor dem Level: erst die Regel explizit, dann üben ── */
+function renderRuleHtml(rule) {
+  const table = rule.table ? `
+    <div class="grammar-table-wrap"><table class="grammar-table">
+      <thead><tr>${rule.table.headers.map(h => `<th>${h}</th>`).join('')}</tr></thead>
+      <tbody>${rule.table.rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody>
+    </table></div>` : '';
+  const examples = (rule.examples || []).map(([es, de]) => `
+    <div class="example-row"><span class="ex-roman">${es}</span><span class="ex-meaning">&nbsp;→ ${de}</span></div>`).join('');
+  return `<div class="grammar-rule">${rule.text}</div>${table}${examples}`;
+}
+
+function _renderRuleCard(level) {
+  const el = document.getElementById('uebungen-content');
+  el.innerHTML = `
+    <div class="ex-runner">
+      <div class="ex-runner-header">
+        <button class="ex-back-btn" id="ex-back">← Übersicht</button>
+        <span class="ex-runner-progress">Level ${level.id}</span>
+      </div>
+      <div class="ex-rule-card">
+        <div class="ex-typ-label">Regel</div>
+        <div class="ex-rule-title">${level.title}</div>
+        ${renderRuleHtml(level.rule)}
+      </div>
+      <button class="btn btn-primary ex-rule-start" id="ex-rule-start">Los geht’s – ${level.tasks.length} Aufgaben</button>
+    </div>`;
+  document.getElementById('ex-back').addEventListener('click', buildUebungen);
+  document.getElementById('ex-rule-start').addEventListener('click', _renderExRunner);
+  window.scrollTo(0, 0);
 }
 
 function _showNoTasks(levelId, title) {
@@ -142,13 +181,13 @@ function _showLevelResult() {
   const total  = tasks.length;
   const pct    = Math.round(correct / total * 100);
   const passed = pct >= 75;
-  const level  = EXERCISE_LEVELS.find(l => l.id === levelId);
+  const level  = getActiveExerciseLevels().find(l => l.id === levelId);
 
   if (passed) {
     const prev = _exGetLevelState(levelId);
     const prevBest = prev ? prev.bestScore / prev.bestTotal : 0;
     if (!prev || correct / total > prevBest) {
-      localStorage.setItem('farsi_exercise_level_' + levelId, JSON.stringify({
+      localStorage.setItem(_exStorageKey(levelId), JSON.stringify({
         bestScore: correct,
         bestTotal: total,
       }));
@@ -169,7 +208,7 @@ function _showLevelResult() {
 
   const btns = document.getElementById('ex-result-btns');
 
-  if (passed && levelId < EXERCISE_LEVELS.length) {
+  if (passed && levelId < getActiveExerciseLevels().length) {
     const nextBtn = document.createElement('button');
     nextBtn.className = 'btn btn-primary';
     nextBtn.textContent = 'Weiter → Level ' + (levelId + 1);
@@ -304,7 +343,7 @@ function _renderTyp2(task, wrap, onDone) {
 function _renderTyp5(task, wrap, onDone) {
   wrap.innerHTML = `
     <div class="ex-typ-label">Was bedeutet das?</div>
-    <div class="ex-typ5-farsi">${task.farsi}</div>
+    <div class="ex-typ5-farsi">${task.farsi || task.source}</div>
     <div class="ex-mc-options" id="ex-options"></div>
     <div class="ex-feedback" id="ex-feedback" hidden></div>
     <div class="ex-next-wrap" id="ex-next-wrap" hidden>

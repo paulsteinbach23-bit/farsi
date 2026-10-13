@@ -1,10 +1,10 @@
 /* ── STREAK (pro Sprache) ──
    Jede Sprache hat ihren eigenen Streak und ihr eigenes Tagesziel:
-   Farsi 15 Karten + 1 Übungslevel, Spanisch/Französisch 15 Karten.
+   Farsi und Spanisch 15 Karten + 1 Übungslevel, Französisch 15 Karten.
    Der bisherige gemeinsame Streak ('farsi_streak') läuft als Farsi-Streak weiter. */
 const STREAK_KEYS   = { farsi: 'farsi_streak', spanish: 'spanish_streak', french: 'french_streak' };
 const VOCAB_GOAL    = 15;
-const EXERCISE_GOALS = { farsi: 1, spanish: 0, french: 0 };
+const EXERCISE_GOALS = { farsi: 1, spanish: 1, french: 0 };
 
 let _streakJustExtended = false;
 let _newStreakValue      = 0;

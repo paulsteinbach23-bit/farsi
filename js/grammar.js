@@ -26,7 +26,27 @@ function _renderGrammarSubsection(sub) {
     </div>`;
 }
 
+/* Spanisch: Nachschlage-Grammatik aus den Regelkarten der Übungen (eine Quelle für beides) */
+function _spanishGrammarHtml() {
+  const phases = {};
+  SPANISH_EXERCISE_LEVELS.filter(l => l.rule && !/Wiederholung|Abschluss/.test(l.title))
+    .forEach(l => (phases[l.phase] = phases[l.phase] || []).push(l));
+  return Object.entries(phases).map(([phase, levels]) => `
+    <div class="grammar-block">
+      <div class="grammar-title">${SPANISH_EXERCISE_PHASES[phase]}</div>
+      ${levels.map(l => `
+        <div class="grammar-subsection">
+          <div class="grammar-subtitle">${l.title}</div>
+          ${renderRuleHtml(l.rule)}
+        </div>`).join('')}
+    </div>`).join('');
+}
+
 function buildGrammar() {
+  if (typeof currentLang !== 'undefined' && currentLang === 'spanish') {
+    document.getElementById('grammar-content').innerHTML = _spanishGrammarHtml();
+    return;
+  }
   document.getElementById('grammar-content').innerHTML =
     GRAMMAR_DATA.sections.map(section => `
       <div class="grammar-block">
