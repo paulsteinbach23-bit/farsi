@@ -153,7 +153,7 @@ function _showLevelResult() {
         bestTotal: total,
       }));
     }
-    if (!prev) incrementExercises();  // count first pass of each level toward streak
+    incrementExercises();  // jedes bestandene Level zählt für den Streak – auch Wiederholungen
   }
 
   const el = document.getElementById('uebungen-content');

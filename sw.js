@@ -1,4 +1,4 @@
-const CACHE = 'farsi-app-v10';
+const CACHE = 'farsi-app-v11';
 
 const ASSETS = [
   './',
@@ -21,7 +21,7 @@ const ASSETS = [
   './js/streak.js?v=2',
   './js/app.js?v=5',
   './js/exercises_levels.js?v=1',
-  './js/exercises_ui.js?v=1',
+  './js/exercises_ui.js?v=2',
   './js/install-prompt.js?v=1',
   './fonts/Playfair_9pt_SemiCondensed-Black.ttf',
   './fonts/Playfair_9pt_SemiCondensed-Regular.ttf',
